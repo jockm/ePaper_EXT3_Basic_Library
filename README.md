@@ -1,13 +1,18 @@
 # ePaper EXT3 Basic Library
-Library for Pervasive Displays screens and EXT3 extension kit with basic features
+
+Library for Pervasive Displays [EPD Extension Kit Gen 3 (EXT3)](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-3-ext3/) and iTC screens [BW](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white) or [BWR](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white-red) with basic features
 
 ## Features
 
-
++ Graphics routines
++ Four extended fonts
++ Go to the [documentation](./docs/index/index.html)
 
 ## Installation
 
-See [Installing Additional Arduino Libraries](https://www.arduino.cc/en/guide/libraries)
+See 
+
++ [Installing Additional Arduino Libraries](https://www.arduino.cc/en/guide/libraries)
 
 ## Configuration
 
