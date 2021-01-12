@@ -208,6 +208,28 @@
 /// * dark red: combined colour, one dot red, another dot black
 ///
 ///
+/// @section    Port Porting to another SDK
+/// When porting the example to another SDK,
+/// define main() and call setup() and loop() as follow:
+///
+/// @code
+/// // Prototypes
+/// void setup();
+/// void loop();
+///
+/// int main(void)
+/// {
+///     setup();
+///
+///     while (1)
+///     {
+///         loop();
+///     }
+///     return 0;
+/// }
+/// @endcode
+///
+///
 /// @section    Resource Other resources
 /// @brief      More resources are available online.
 /// @details    The LCD_screen Library Suite is supported by the dedicated Embedded Computing website at https://embeddedcomputing.weebly.com

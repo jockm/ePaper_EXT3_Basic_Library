@@ -200,7 +200,26 @@ Colours</h1>
 <li>light red: combined colour, one dot red, another dot white</li>
 <li>dark red: combined colour, one dot red, another dot black</li>
 </ul>
-<h1><a class="anchor" id="Resource"></a>
+<h1><a class="anchor" id="Port"></a>
+Porting to another SDK</h1>
+<p>When porting the example to another SDK, define main() and call <a class="el" href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d" title="Setup.">setup()</a> and <a class="el" href="a00005.html#afe461d27b9c48d5921c00d521181f12f" title="Loop, empty.">loop()</a> as follow:</p>
+<div class="fragment"><div class="line"><span class="comment">// Prototypes</span></div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>();</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="a00005.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (1)</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="a00005.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aa00005_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Setup.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Basic_Example.ino:307</div></div>
+<div class="ttc" id="aa00005_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="a00005.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Loop, empty.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Basic_Example.ino:365</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="Resource"></a>
 Other resources</h1>
 <p>More resources are available online.</p>
 <p>The LCD_screen Library Suite is supported by the dedicated Embedded Computing website at <a href="https://embeddedcomputing.weebly.com">https://embeddedcomputing.weebly.com</a></p>

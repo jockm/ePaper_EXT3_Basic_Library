@@ -301,6 +301,8 @@ void displayOrientation(bool flag = true)
 // !!! Help: https://bit.ly/2BmKRzI
 ///
 /// @brief    Setup
+/// 
+/// See @ref Port
 ///
 void setup()
 {
@@ -357,6 +359,8 @@ void setup()
 // Add loop code
 ///
 /// @brief    Loop, empty
+///
+/// See @ref Port
 ///
 void loop()
 {
