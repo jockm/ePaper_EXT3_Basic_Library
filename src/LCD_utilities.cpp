@@ -339,43 +339,6 @@ String btoa(uint32_t number, uint8_t size)
     return bufferOut;
 }
 
-/*
-    String htoa(uint32_t number, uint8_t size = 2)
-    {
-    String result = "";
-    String hexadecimal = "0123456789abcdef";
-
-    while (number > 0)
-    {
-        result = hexadecimal[number & 0xf] + result;
-        number >>= 4;
-    }
-
-    while (result.length() < size) result = "0" + result;
-
-    if (result.length() > size) result = "#";
-    return result;
-    }
-*/
-/*
-    String btoa(uint32_t number, uint8_t size = 8)
-    {
-    String result = "";
-    String binary = "01";
-
-    while (number > 0)
-    {
-        result = binary[number & 0x1] + result;
-        number >>= 1;
-    }
-
-    while (result.length() < size) result = "0" + result;
-
-    if (result.length() > size) result = "#";
-    return result;
-    }
-*/
-
 uint16_t checkRange(uint16_t value, uint16_t valueMin, uint16_t valueMax)
 {
     uint16_t localMin = min(valueMin, valueMax);

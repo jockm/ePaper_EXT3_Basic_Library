@@ -346,22 +346,6 @@ void LCD_screen_buffer::_triangleArea(uint16_t x1, uint16_t y1, uint16_t x2, uin
     int16_t wx5 = wx1;
     int16_t wy5 = wy1;
 
-    /*
-        Serial.println("*** area");
-        Serial.print("1 =\t");
-        Serial.print(x1, DEC);
-        Serial.print(",\t");
-        Serial.println(y1, DEC);
-        Serial.print("2 =\t");
-        Serial.print(x2, DEC);
-        Serial.print(",\t");
-        Serial.println(y2, DEC);
-        Serial.print("3 =\t");
-        Serial.print(x3, DEC);
-        Serial.print(",\t");
-        Serial.println(y3, DEC);
-    */
-
     bool changed1 = false;
     bool changed2 = false;
 
@@ -522,31 +506,6 @@ void LCD_screen_buffer::triangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t
     }
 }
 
-/*
-    // Touch functions
-    bool LCD_screen_buffer::isTouch()
-    {
-    return (_touchTrim > 0);
-    }
-    bool LCD_screen_buffer::isTouchEvent()
-    {
-    return _touchEvent;
-    }
-    bool LCD_screen_buffer::isReadable()
-    {
-    return _flagRead;
-    }
-    bool LCD_screen_buffer::isStorage()
-    {
-    return _flagStorage;
-    }
-
-    // Area functions
-    bool LCD_screen_buffer::isArea()
-    {
-    return (_fsmArea > 0);
-    }
-*/
 // Font functions
 void LCD_screen_buffer::setFontSolid(bool flag)
 {

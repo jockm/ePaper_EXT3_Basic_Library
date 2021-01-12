@@ -407,7 +407,7 @@ void Screen_iTC_BWR::flush()
     uint8_t * blackBuffer = _newImage;
     uint8_t * redBuffer = _newImage + _sizePageColour;
 
-    // Switch..case doesn't allow variable declarations
+    // switch..case doesn't allow variable declarations
     //
     if (_eScreen_iTC_BWR == eScreen_EPD_iTC_420_BWR)
     {
@@ -563,7 +563,7 @@ void Screen_iTC_BWR::flush()
         uint8_t  index51_565[] = {0x50, 0x01, 0x0a, 0x01};
         _sendIndexData(0x51, &index51_565[0], 2);
         uint8_t  index09_565[] = {0x1f, 0x9f, 0x7f, 0xff};
-        ///*
+
         for (int value = 1; value <= 4; value++)
         {
             _sendIndexData(0x09, &index09_565[0], 1);
@@ -572,7 +572,7 @@ void Screen_iTC_BWR::flush()
             _sendIndexData(0x09, &index09_565[1], 1);
             delay_ms(2);
         }
-        //*
+
         for (int value = 1; value <= 10; value++)
         {
             _sendIndexData(0x09, &index09_565[0], 1);
@@ -685,7 +685,7 @@ void Screen_iTC_BWR::flush()
         uint8_t  index51_581[] = {0x50, 0x01, 0x0a, 0x01};
         _sendIndexData(0x51, &index51_581[0], 2);
         uint8_t  index09_581[] = {0x1f, 0x9f, 0x7f, 0xff};
-        // /*
+
         for (int value = 1; value <= 4; value++)
         {
             _sendIndexData(0x09, &index09_581[0], 1);
@@ -809,7 +809,7 @@ void Screen_iTC_BWR::flush()
         uint8_t  index51b_data_740[] = {0x50, 0x01, 0x0a, 0x01};
         _sendIndexData(0x51, &index51b_data_740[0], 2);
         uint8_t  index09b_data_740[] = {0x1f, 0x9f, 0x7f, 0xff};
-        // /*
+
         for (int value = 1; value <= 4; value++)
         {
             _sendIndexData(0x09, &index09b_data_740[0], 1);
@@ -954,7 +954,7 @@ void Screen_iTC_BWR::flush()
         uint8_t  index51_970[] = {0x50, 0x01, 0x0a, 0x01};
         _sendIndexData(0x51, &index51_970[0], 2);
         uint8_t  index09_970[] = {0x1f, 0x9f, 0x7f, 0xff};
-        // /*
+
         for (int value = 1; value <= 4; value++)
         {
             _sendIndexData(0x09, &index09_970[0], 1);
@@ -1100,7 +1100,7 @@ void Screen_iTC_BWR::flush()
         uint8_t  index51_1220[] = {0x50, 0x01, 0x0a, 0x01};
         _sendIndexData(0x51, &index51_1220[0], 2);
         uint8_t  index09_1220[] = {0x1f, 0x9f, 0x7f, 0xff};
-        // /*
+
         for (int value = 1; value <= 4; value++)
         {
             _sendIndexData(0x09, &index09_1220[0], 1);
