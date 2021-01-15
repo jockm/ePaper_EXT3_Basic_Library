@@ -44,7 +44,7 @@
 #define CONFIGURATION_REDBEAR_DUO 4 // specific REDBEAR_DUO
 #define CONFIGURATION_CC1352 5 ///< specific CC1352
 
-#define CONFIGURATION_OPTION CONFIGURATION_CC1352 ///< selected option
+#define CONFIGURATION_OPTION CONFIGURATION_BOOSTERPACK_EXT2 ///< selected option
 /// @}
 
 ///

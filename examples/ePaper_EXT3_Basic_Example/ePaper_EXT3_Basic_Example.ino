@@ -41,7 +41,7 @@
 
 // Define variables and constants
 // === Pervasive Displays iTC
-#include "Screen_EPD_iTC.h"
+#include "ePaper_EXT3_Basic_Library.h"
 //Screen_iTC_BWR myScreen(eScreen_EPD_iTC_154_BWR);
 //Screen_iTC_BWR myScreen(eScreen_EPD_iTC_213_BWR);
 Screen_iTC_BWR myScreen(eScreen_EPD_iTC_271_BWR);
