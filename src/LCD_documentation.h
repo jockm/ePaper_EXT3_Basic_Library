@@ -29,6 +29,9 @@
 ///
 /// The ePaper_EXT3_Basic_Example.ino example showcases the features the library and how to use it.
 ///
+/// Use LCD_configuration.h to select the configuration for GPIOs and SPI bus.
+/// 
+///
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
 ///
@@ -56,7 +59,7 @@
 /// @section    Structure Library structure
 /// @details    The LCD_screen Library Suite contains three layers:
 /// * top level end-user libraries like GUI.h with label, button, dialog, menu or slider with, and Graphics.h with  graphics.
-/// * intermediate level screen-specific libraries, ie. Screen_EPD_iTC.h
+/// * intermediate level screen-specific libraries, ie. ePaper_EXT3_Basic_Library.h
 /// * low level virtual classes, ie. LCD_screen_buffer or LCD_Font_Terminal.h
 ///
 ///

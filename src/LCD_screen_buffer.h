@@ -155,50 +155,6 @@ class LCD_screen_buffer : protected LCD_font_Terminal
     virtual void circle(uint16_t x0, uint16_t y0, uint16_t radius, uint16_t colour);
 
     ///
-    /// @brief      Draw arc
-    /// @param      x0 center, point coordinate, x-axis
-    /// @param      y0 center, point coordinate, y-axis
-    /// @param      radius radius
-    /// @param      start starting angle, in degrees
-    /// @param      end ending angle, in degrees
-    /// @param      colour 16-bit colour
-    /// @note       if ending angle < starting angle, then starting angle..360 and 0..starting angle arcs are drawn
-    /// @warning    Not implemented on basic edition
-    ///
-    /// @n @b More: @ref Coordinate, @ref Colour
-    ///
-    virtual void arc(uint16_t x0, uint16_t y0, uint16_t radius, uint16_t start, uint16_t end, uint16_t colour) { };
-
-    ///
-    /// @brief      Draw level in a circle
-    /// @param      x0 center, point coordinate, x-axis
-    /// @param      y0 center, point coordinate, y-axis
-    /// @param      radius radius
-    /// @param      start starting angle, in degrees
-    /// @param      end ending angle, in degrees
-    /// @param      colour 16-bit colour
-    /// @note       0 <= starting angle < ending angle <= 180
-    /// @warning    Not implemented on basic edition
-    ///
-    /// @n @b More: @ref Coordinate, @ref Colour
-    ///
-    virtual void level(uint16_t x0, uint16_t y0, uint16_t radius, uint16_t start, uint16_t end, uint16_t colour) { };
-
-    ///
-    /// @brief      Draw ring
-    /// @param      x0 center, point coordinate, x-axis
-    /// @param      y0 center, point coordinate, y-axis
-    /// @param      inner inner radius
-    /// @param      outer outer radius
-    /// @param      colour 16-bit colour
-    /// @note       inner radius < outer radius
-    /// @warning    Not implemented on basic edition
-    ///
-    /// @n @b More: @ref Coordinate, @ref Colour
-    ///
-    virtual void ring(uint16_t x0, uint16_t y0, uint16_t inner, uint16_t outer, uint16_t colour) { };
-
-    ///
     /// @brief      Draw line, rectangle coordinates
     /// @param      x1 top left coordinate, x-axis
     /// @param      y1 top left coordinate, y-axis
@@ -266,34 +222,6 @@ class LCD_screen_buffer : protected LCD_font_Terminal
     /// @n @b More: @ref Coordinate, @ref Colour
     ///
     virtual void dRectangle(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t colour);
-
-    ///
-    /// @brief      Draw rectangle, rectangle coordinates
-    /// @param      x1 top left coordinate, x-axis
-    /// @param      y1 top left coordinate, y-axis
-    /// @param      x2 bottom right coordinate, x-axis
-    /// @param      y2 bottom right coordinate, y-axis
-    /// @param      radius radius for rounded corners, pixels
-    /// @param	    colour 16-bit colour
-    /// @warning    Not implemented on basic edition
-    ///
-    /// @n @b More: @ref Coordinate, @ref Colour
-    ///
-    virtual void roundedRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t radius, uint16_t colour) { };
-
-    ///
-    /// @brief      Draw rounded rectangle, vector coordinates
-    /// @param      x0 point coordinate, x-axis
-    /// @param      y0 point coordinate, y-axis
-    /// @param      dx length, x-axis
-    /// @param      dy height, y-axis
-    /// @param      radius radius for rounded corners, pixels
-    /// @param	    colour 16-bit colour
-    /// @warning    Not implemented on basic edition
-    ///
-    /// @n @b More: @ref Coordinate, @ref Colour
-    ///
-    virtual void dRoundedRectangle(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t radius, uint16_t colour) { };
 
     ///
     /// @brief      Draw pixel

@@ -168,6 +168,41 @@ void displayPalette(bool flag = true)
     }
 }
 
+
+///
+/// @brief    Basic forms test screen
+/// @param    flag true=default=perform flush, otherwise no
+///
+/// @image html T2_FORMS.PDF
+/// @image latex T2_FORMS.PDF width=10cm
+///
+void displayForms(bool flag = true)
+{
+    Serial.print(1);
+    myScreen.setOrientation(7);
+    Serial.print(2);
+
+    uint16_t x = myScreen.screenSizeX();
+    uint16_t y = myScreen.screenSizeY();
+    uint16_t z = min(x, y);
+
+    myScreen.setPenSolid(false);
+    myScreen.dRectangle(0, 0, x, y, myColours.black);
+    myScreen.dLine(0, 0, x, y, myColours.red);
+    Serial.print(4);
+
+    myScreen.setPenSolid(true);
+    myScreen.circle(x/3, y/3, z / 4, myColours.grey);
+    // myScreen.triangle(x*2/3, y/3, x/2, y*2/3, x*3/4, y*2/3-10, myColours.black);
+    myScreen.triangle(x*2/3, y/3, x*3/4, y*2/3-10, x-10, 10, myColours.black);
+    myScreen.dRectangle(x/3, y*2/3, x/3, y/4, myColours.red);
+    Serial.print(6);
+    if (flag)
+    {
+        flush_ms();
+    }
+}
+
 ///
 /// @brief    Fonts test screen
 /// @param    flag true=default=perform flush, otherwise no
@@ -261,7 +296,7 @@ void displayCharacters(bool flag = true)
         {
             k = (i - 1) + j * 16;
 
-            text = char(k);
+            text = (String)char(k);
             dx = i * x / 17 + (x / 17 - myScreen.stringSizeX(text)) / 2;
             myScreen.gText(dx, (j - 1)*y / 15, text, myColours.black);
         }
@@ -301,15 +336,17 @@ void displayOrientation(bool flag = true)
 // !!! Help: https://bit.ly/2BmKRzI
 ///
 /// @brief    Setup
-/// 
-/// See @ref Port
 ///
 void setup()
 {
+    pinMode(38, OUTPUT);
+    digitalWrite(38, HIGH);
+
     Serial.begin(115200);
     delay(500);
     Serial.println();
     Serial.println("=== " __FILE__);
+    Serial.println("=== " __DATE__ " " __TIME__);
 
 #if defined(ARDUINO_ARCH_PIDUINO)
     pinMode(21, OUTPUT);
@@ -322,6 +359,11 @@ void setup()
     Serial.print("begin... ");
     myScreen.begin();
     Serial.println(formatString("%s %ix%i", myScreen.WhoAmI().c_str(), myScreen.screenSizeX(), myScreen.screenSizeY()));
+
+    Serial.print("Forms... ");
+    myScreen.clear();
+    displayForms();
+    wait(8);
 
     Serial.print("Fonts... ");
     myScreen.clear();
@@ -359,8 +401,6 @@ void setup()
 // Add loop code
 ///
 /// @brief    Loop, empty
-///
-/// See @ref Port
 ///
 void loop()
 {

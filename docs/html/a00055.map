@@ -1,5 +1,6 @@
-<map id="Screen_EPD_iTC.h" name="Screen_EPD_iTC.h">
-<area shape="rect" id="node1" title="Library header." alt="" coords="117,5,255,32"/>
-<area shape="rect" id="node2" href="$a00050.html" title=" " alt="" coords="5,80,156,107"/>
-<area shape="rect" id="node3" href="$a00005.html" title="Example of features for basic edition." alt="" coords="180,80,403,107"/>
+<map id="LCD_screen_buffer.h" name="LCD_screen_buffer.h">
+<area shape="rect" id="node1" title="Class library header." alt="" coords="140,5,285,32"/>
+<area shape="rect" id="node2" href="$a00029.html" title="Library header." alt="" coords="12,80,211,107"/>
+<area shape="rect" id="node4" href="$a00050.html" title=" " alt="" coords="235,80,393,107"/>
+<area shape="rect" id="node3" href="$a00026.html" title=" " alt="" coords="5,155,217,181"/>
 </map>
