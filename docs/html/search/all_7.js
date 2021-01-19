@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['getfont_84',['getFont',['../a00085.html#a0f131e20e71663f7078ce6a64d6170a1',1,'LCD_screen_buffer']]],
-  ['getfontdetails_85',['getFontDetails',['../a00077.html#a860b440e8cf57582f8e2c85919727309',1,'Screen_iTC_BWR']]],
-  ['getorientation_86',['getOrientation',['../a00085.html#a56859ffbd809ff63ee23e894fa045ff3',1,'LCD_screen_buffer']]],
-  ['getrefreshtime_87',['getRefreshTime',['../a00077.html#a1128ad51156a5268232cd3d9fcd44f24',1,'Screen_iTC_BWR']]],
-  ['gray_88',['gray',['../a00081.html#a226df36e2a63aa4b24a45fff25e686a4',1,'LCD_colours565']]],
-  ['green_89',['green',['../a00081.html#a97686fac228506801437f858b78bf143',1,'LCD_colours565']]],
-  ['grey_90',['grey',['../a00081.html#ad32c39998b9b6388d47182491cc31f43',1,'LCD_colours565']]],
-  ['gtext_91',['gText',['../a00085.html#afa008e8547a514ef0d228cb0e0d19ed7',1,'LCD_screen_buffer']]]
+  ['getfont_87',['getFont',['../a00108.html#abc6f0d5eb3401fece2dd916d8e2f77ce',1,'LCD_Screen_Buffer']]],
+  ['getfontdetails_88',['getFontDetails',['../a00112.html#a860b440e8cf57582f8e2c85919727309',1,'Screen_iTC_BWR']]],
+  ['getorientation_89',['getOrientation',['../a00108.html#ad099ada6642de9df1d87e369f4971920',1,'LCD_Screen_Buffer']]],
+  ['getrefreshtime_90',['getRefreshTime',['../a00112.html#a1128ad51156a5268232cd3d9fcd44f24',1,'Screen_iTC_BWR']]],
+  ['gray_91',['gray',['../a00104.html#a0be6aed155bc6c4cbb695037aa4958d2',1,'LCD_Colours565']]],
+  ['green_92',['green',['../a00104.html#a6d59afcff593576d81826a944213bded',1,'LCD_Colours565']]],
+  ['grey_93',['grey',['../a00104.html#af02b25a20121a17114d1a5b402e31f2b',1,'LCD_Colours565']]],
+  ['gtext_94',['gText',['../a00108.html#af208abb906651eaf5af7e2bc41a31bda',1,'LCD_Screen_Buffer']]]
 ];

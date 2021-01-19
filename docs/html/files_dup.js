@@ -1,0 +1,25 @@
+var files_dup =
+[
+    [ "ePaper_EXT3_Basic_Library.h", "a00050.html", null ],
+    [ "ePaper_EXT3_Characters.ino", "a00005.html", "a00005" ],
+    [ "ePaper_EXT3_Fonts.ino", "a00008.html", "a00008" ],
+    [ "ePaper_EXT3_Forms.ino", "a00011.html", "a00011" ],
+    [ "ePaper_EXT3_Orientation.ino", "a00014.html", "a00014" ],
+    [ "ePaper_EXT3_Palette.ino", "a00017.html", "a00017" ],
+    [ "LCD_Colours565.cpp", "a00053.html", "a00053" ],
+    [ "LCD_Colours565.h", "a00056.html", "a00056" ],
+    [ "LCD_Configuration.h", "a00059.html", "a00059" ],
+    [ "LCD_Documentation.h", "a00062.html", null ],
+    [ "LCD_Font_Terminal.cpp", "a00065.html", null ],
+    [ "LCD_Font_Terminal.h", "a00068.html", "a00068" ],
+    [ "LCD_Screen_Buffer.cpp", "a00071.html", null ],
+    [ "LCD_Screen_Buffer.h", "a00074.html", "a00074" ],
+    [ "LCD_Utilities.cpp", "a00077.html", "a00077" ],
+    [ "LCD_Utilities.h", "a00080.html", "a00080" ],
+    [ "Screen_EPD_iTC.cpp", "a00083.html", "a00083" ],
+    [ "Screen_EPD_iTC.h", "a00086.html", "a00086" ],
+    [ "Terminal12x16e.h", "a00089.html", "a00089" ],
+    [ "Terminal16x24e.h", "a00092.html", "a00092" ],
+    [ "Terminal6x8e.h", "a00095.html", "a00095" ],
+    [ "Terminal8x12e.h", "a00098.html", "a00098" ]
+];

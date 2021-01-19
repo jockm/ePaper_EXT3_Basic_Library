@@ -1,5 +1,5 @@
 ///
-/// @file       LCD_screen_buffer.h
+/// @file       LCD_Screen_Buffer.h
 /// @brief      Class library header
 /// @details	Generic LCD with buffer class library
 /// @n
@@ -15,7 +15,7 @@
 ///
 /// @n  Dual licence:
 /// *   For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
-/// *   For professionals or organisations or for commercial usage: All rights reserved
+/// * For professionals or organisations or for commercial usage: All rights reserved. Considered the advanced edition ePaper_EXT3_Advanced_Library.
 ///
 
 // Core library - IDE-based
@@ -33,11 +33,11 @@
 ///
 #define LCD_SCREEN_BUFFER_RELEASE 501
 
-#include "LCD_configuration.h"
+#include "LCD_Configuration.h"
 
 // Other libraries
-#include "LCD_colours565.h"
-#include "LCD_utilities.h"
+#include "LCD_Colours565.h"
+#include "LCD_Utilities.h"
 
 #if (USE_FONT_MODE == USE_FONT_TERMINAL)
 #include "LCD_Font_Terminal.h"
@@ -51,13 +51,13 @@
 ///
 #warning USE_LCD_SCREEN == USE_LCD_SCREEN_SELF
 #warning USE_FONT_MODE == USE_FONT_TERMINAL
-class LCD_screen_buffer : protected LCD_font_Terminal
+class LCD_Screen_Buffer : protected LCD_Font_Terminal
 {
   public:
     ///
     /// @brief  Constructor
     ///
-    LCD_screen_buffer();
+    LCD_Screen_Buffer();
 
     /// @name	    General
     /// @{

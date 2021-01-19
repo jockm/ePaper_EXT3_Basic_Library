@@ -1,5 +1,5 @@
 //
-// LCD_utilities.cpp
+// LCD_Utilities.cpp
 // Library C++ code
 // ----------------------------------
 //
@@ -10,11 +10,11 @@
 // Copyright    © Rei Vilo, 2010-2020
 // Licence      Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 //
-// See          LCD_utilities.h for references
+// See          LCD_Utilities.h for references
 //
 
 // Library header
-#include "LCD_utilities.h"
+#include "LCD_Utilities.h"
 #include "stdarg.h"
 #include "stdio.h"
 

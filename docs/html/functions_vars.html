@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,11 +24,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="EPD.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ePaper_EXT3_Basic_Library Reference Manual
    &#160;<span id="projectnumber">501</span>
    </div>
-   <div id="projectbrief">Library for Pervasive Displays EXT3 - Basic level</div>
+   <div id="projectbrief">Library for Pervasive Displays EXT3 - Basic edition</div>
   </td>
  </tr>
  </tbody>
@@ -48,6 +53,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_vars.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,61 +86,64 @@ $(function() {
 <div class="contents">
 &#160;<ul>
 <li>black
-: <a class="el" href="a00081.html#aff4866f52bcfa6db3c493d910ad353dd">LCD_colours565</a>
+: <a class="el" href="a00104.html#a1b22ab34245d3297f935f9ea9c9d71f3">LCD_Colours565</a>
 </li>
 <li>blue
-: <a class="el" href="a00081.html#ab0a68deb51b9a950fdfdc04f15866233">LCD_colours565</a>
+: <a class="el" href="a00104.html#a6b9507453c1ae203643a052bebb30eac">LCD_Colours565</a>
 </li>
 <li>brown
-: <a class="el" href="a00081.html#aac8a821829d745f713c28c92ac73e3b3">LCD_colours565</a>
+: <a class="el" href="a00104.html#ae20fd8b8a61e167ef0f343a0c721f8c9">LCD_Colours565</a>
 </li>
 <li>cyan
-: <a class="el" href="a00081.html#a7fe834243a0704d768869d472fb842a8">LCD_colours565</a>
+: <a class="el" href="a00104.html#ae317b44adf79149456a641d475e438c8">LCD_Colours565</a>
 </li>
 <li>darkGray
-: <a class="el" href="a00081.html#a6711b6aee669374bbf9650ea13470f99">LCD_colours565</a>
+: <a class="el" href="a00104.html#a76dc3358537b2f979c3c55cc779b634c">LCD_Colours565</a>
 </li>
 <li>darkGrey
-: <a class="el" href="a00081.html#a3f557226ce011709d89457c438650f53">LCD_colours565</a>
+: <a class="el" href="a00104.html#a71ee47efdf9687f98247da594b387bd5">LCD_Colours565</a>
 </li>
 <li>darkRed
-: <a class="el" href="a00081.html#ab80be513039eca5c5d5ef48d7848c3ce">LCD_colours565</a>
+: <a class="el" href="a00104.html#a61f9bd7966388b70e17c012ecbba3c6d">LCD_Colours565</a>
 </li>
 <li>gray
-: <a class="el" href="a00081.html#a226df36e2a63aa4b24a45fff25e686a4">LCD_colours565</a>
+: <a class="el" href="a00104.html#a0be6aed155bc6c4cbb695037aa4958d2">LCD_Colours565</a>
 </li>
 <li>green
-: <a class="el" href="a00081.html#a97686fac228506801437f858b78bf143">LCD_colours565</a>
+: <a class="el" href="a00104.html#a6d59afcff593576d81826a944213bded">LCD_Colours565</a>
 </li>
 <li>grey
-: <a class="el" href="a00081.html#ad32c39998b9b6388d47182491cc31f43">LCD_colours565</a>
+: <a class="el" href="a00104.html#af02b25a20121a17114d1a5b402e31f2b">LCD_Colours565</a>
 </li>
 <li>lightRed
-: <a class="el" href="a00081.html#aee0a2ebb3e2223744b91922e82717c74">LCD_colours565</a>
+: <a class="el" href="a00104.html#aec2f1214cde0be91c8bc45dbfa51a369">LCD_Colours565</a>
 </li>
 <li>magenta
-: <a class="el" href="a00081.html#a6e742b05975f0865d9c0e1f980638e5a">LCD_colours565</a>
+: <a class="el" href="a00104.html#a3fb6f105b081a7e11c4eee13ad189884">LCD_Colours565</a>
 </li>
 <li>orange
-: <a class="el" href="a00081.html#a22674c48c90b274a09d10e479833730f">LCD_colours565</a>
+: <a class="el" href="a00104.html#abdb12f6a96fcbba87f63f7284824d513">LCD_Colours565</a>
 </li>
 <li>red
-: <a class="el" href="a00081.html#a5c4cb9e69e423437f4561672a48fff84">LCD_colours565</a>
+: <a class="el" href="a00104.html#aa765496f7931d63e23507430f8d80cc1">LCD_Colours565</a>
 </li>
 <li>violet
-: <a class="el" href="a00081.html#a6cd6fd563fe2e493556e1433ccdc404c">LCD_colours565</a>
+: <a class="el" href="a00104.html#a6d2bad8e71db544afd383042ed680645">LCD_Colours565</a>
 </li>
 <li>white
-: <a class="el" href="a00081.html#a72487bc988d475d4e5cb92e0e16a5195">LCD_colours565</a>
+: <a class="el" href="a00104.html#a6995543c8f265f3ab2e5e76c94803c29">LCD_Colours565</a>
 </li>
 <li>yellow
-: <a class="el" href="a00081.html#a68e779f4c25cc744f79ac7f91e7985bc">LCD_colours565</a>
+: <a class="el" href="a00104.html#a317e0dd4af8c81bc7096ce4736bb668c">LCD_Colours565</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
+  </ul>
+</div>
 </body>
 </html>

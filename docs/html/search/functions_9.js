@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['point_230',['point',['../a00077.html#a013908a04d994fb04ec9e01b4d573b3e',1,'Screen_iTC_BWR::point()'],['../a00085.html#ac489295662ca448ee4249f41d11dda44',1,'LCD_screen_buffer::point()']]]
+  ['point_240',['point',['../a00108.html#a6f76dc2654de88bea5f97f39d4de2872',1,'LCD_Screen_Buffer::point()'],['../a00112.html#a013908a04d994fb04ec9e01b4d573b3e',1,'Screen_iTC_BWR::point()']]]
 ];

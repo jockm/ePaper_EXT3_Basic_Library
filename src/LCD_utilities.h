@@ -1,5 +1,5 @@
 ///
-/// @file       LCD_utilities.h
+/// @file       LCD_Utilities.h
 /// @brief      Library header
 /// @details    Utilities for LCD_screen
 /// @n
@@ -15,7 +15,7 @@
 ///
 /// @n Dual licence:
 /// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
-/// * For professionals or organisations or for commercial usage: All rights reserved
+/// * For professionals or organisations or for commercial usage: All rights reserved. Considered the advanced edition ePaper_EXT3_Advanced_Library.
 ///
 
 

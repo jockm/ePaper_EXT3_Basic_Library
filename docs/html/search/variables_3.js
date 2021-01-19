@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['darkgray_265',['darkGray',['../a00081.html#a6711b6aee669374bbf9650ea13470f99',1,'LCD_colours565']]],
-  ['darkgrey_266',['darkGrey',['../a00081.html#a3f557226ce011709d89457c438650f53',1,'LCD_colours565']]],
-  ['darkred_267',['darkRed',['../a00081.html#ab80be513039eca5c5d5ef48d7848c3ce',1,'LCD_colours565']]]
+  ['darkgray_275',['darkGray',['../a00104.html#a76dc3358537b2f979c3c55cc779b634c',1,'LCD_Colours565']]],
+  ['darkgrey_276',['darkGrey',['../a00104.html#a71ee47efdf9687f98247da594b387bd5',1,'LCD_Colours565']]],
+  ['darkred_277',['darkRed',['../a00104.html#a61f9bd7966388b70e17c012ecbba3c6d',1,'LCD_Colours565']]]
 ];

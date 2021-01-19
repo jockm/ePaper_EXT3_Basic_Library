@@ -1,8 +1,14 @@
 ///
-/// @file		LCD_configuration.h
+/// @file		LCD_Configuration.h
 /// @brief		Header
 /// @details	Configuration of the options for ePaper EXT3 Basic Library
-/// @n
+/// 
+/// 1. CONFIGURATION_OPTION selects the hardware with pre-defined configurations.
+/// 2. Based on CONFIGURATION_OPTION, GPIOs are defined.
+/// 3. Large screens 9.7 and 12.2 require additional CSS24_PIN and CSS34_PIN
+/// 4. USE_FONT_MODE defines the fonts used, here Terminal for the basic edition.
+/// 5. MAX_FONT_SIZE sets the number of fonts, maximum 4 for the basic edition.
+/// 
 /// @n @b       Project LCD_screen Library Suite
 ///
 /// @author		Rei Vilo
@@ -14,7 +20,6 @@
 /// @copyright	(c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-
 
 // Core library for code-sense - IDE-based
 // !!! Help: https://bit.ly/2AdU7cu

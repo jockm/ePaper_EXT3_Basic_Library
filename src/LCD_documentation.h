@@ -1,5 +1,5 @@
 ///
-/// @file       LCD_documentation.h
+/// @file       LCD_Documentation.h
 /// @brief      Documentation for the ePaper EXT3 Basic Library
 /// @details    Additional documentation on coordinates, fonts and colours
 ///
@@ -18,8 +18,10 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  CC BY-NC-SA 4.0
 ///
-/// @n Licence:
+/// Licence:
+///
 /// * For hobbyists and for personal usage: [Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+///
 /// * For professionals or organisations or for commercial usage: All rights reserved. Consider the ePaper_EXT3_Advanced_Library
 ///
 
@@ -27,9 +29,15 @@
 /// @mainpage  EPD EXT3 BWR eScreen Basic Library
 /// @details The ePaper_EXT3_Basic_Library is a special edition of the LCD_screen Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
 ///
-/// The ePaper_EXT3_Basic_Example.ino example showcases the features the library and how to use it.
+/// The @ref Examples section showcases the features the library and how to use them: 
 ///
-/// Use LCD_configuration.h to select the configuration for GPIOs and SPI bus.
+/// * forms and shapes, 
+/// * fonts, 
+/// * orientation, 
+/// * set of characters, 
+/// * palette of colours.
+///
+/// The @ref Configuration section defines the GPIOs and SPI bus used.
 /// 
 ///
 /// @author     Rei Vilo
@@ -46,21 +54,24 @@
 /// * For professionals or organisations or for commercial usage: All rights reserved. Consider the ePaper_EXT3_Advanced_Library
 ///
 
-
 ///
 /// @page       Documentation Additional documentation
 /// @details    This section includes additional documentation on copyright and licence, structure, initialisation, coordinates, colour, SD-card and resources
 ///
+///
 /// @section    Copyright Copyright and licence
 /// @details    The LCD_screen Library Suite is shared under dual licence:
+///
 /// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the ePaper_EXT3_Advanced_Library
+///
+/// * For professionals or organisations or for commercial usage: All rights reserved. Considered the advanced edition ePaper_EXT3_Advanced_Library.
+///
 ///
 /// @section    Structure Library structure
 /// @details    The LCD_screen Library Suite contains three layers:
 /// * top level end-user libraries like GUI.h with label, button, dialog, menu or slider with, and Graphics.h with  graphics.
 /// * intermediate level screen-specific libraries, ie. ePaper_EXT3_Basic_Library.h
-/// * low level virtual classes, ie. LCD_screen_buffer or LCD_Font_Terminal.h
+/// * low level virtual classes, ie. LCD_Screen_Buffer or LCD_Font_Terminal.h
 ///
 ///
 /// @section    Version Version management
@@ -87,39 +98,6 @@
 /// @endcode
 ///
 ///
-/// @section    Screen Screens
-/// @brief      This section explains the different screen features exposed by the library.
-/// @details    Each screen is driven by a controller, and each controller provides different features.
-///
-/// @n A readable screen allows to get the colour of one specific pixel.
-/// @code {.cpp}
-///     uint16_t colour;
-///     if (myScreen.isReadable()) {
-///         colour = myScreen.readPixel(10, 10);
-///     }
-/// @endcode
-///
-/// If the screen isn't readable, LCD_screen::isReadable() is false and LCD_screen::readPixel() returns 0.
-/// @n The LCD_screen::readPixel() function is required by the LCD_screen::copyPasteArea() and LCD_screen::copyArea() functions.
-///
-///
-/// @section    Storage Storage
-/// @brief      This section explains the different kinds of storage used used by the library.
-/// @details    The GUI library saves the initial screen before displaying a dialog box, a menu or a slider, to restore it afterwards.
-///
-/// A storage can be:
-/// * external SRAM
-/// * SD-card
-///
-/// The function LCD_screen::isStorage() returns true is a storage is available.
-///
-/// The storage is required by the LCD_screen::copyArea() and LCD_screen::pasteArea() functions.
-/// * LCD_screen::copyArea() copies an area from the screen and saves it to the SRAM or SD-card
-/// * LCD_screen::pasteArea() reads an area from the SRAM or SD-card and pastes it to the screen
-///
-/// The MCU SRAM is used for the LCD_screen::copyPasteArea() function.
-///
-///
 /// @section    Coordinate Coordinates systems
 /// @brief      This section explains the rectangle and vector coordinates systems.
 /// @details    Two systems of coordinates are used, rectangle and vector coordinates.
@@ -128,11 +106,17 @@
 /// * P1 is a pixel on the top left, with (x1, y1) coordinates.
 /// * P2 is a pixel on the bottom right, with (x2, y2) coordinates.
 ///
+/// @image html P1.PDF
+/// @image latex P1.PDF width=7cm
+///
 /// @a  Example rectangle (0, 0) - (319, 239)
 ///
 /// @b Vector coordinates include one point P0 and one distance.
 /// * P0 is a pixel and the origin, with (x0, y0) coordinates.
 /// * The distance (dx, dy) is specified for the horizontal and the vertical axis.
+///
+/// @image html P2.PDF
+/// @image latex P2.PDF width=7cm
 ///
 /// @a Example vector (0, 0) - (320, 240)
 /// @n Going from pixel 0 to pixel 319 represents 320 pixels in total
@@ -140,9 +124,7 @@
 ///
 /// @section    Fonts   Fonts
 /// @brief      This section explains how to use the fonts.
-/// @details    Starting release 226, LCD_screen includes fixed and variable sized fonts.
-///
-/// The basic edition supplies four extended fonts:
+/// @details    The **basic edition** supplies four extended fonts:
 ///
 /// Font | Name | Size | Bytes | Cumulated
 /// --- | --- | --- | --- | ---
@@ -151,7 +133,9 @@
 /// 2 | Terminal12x16e | 12 x 16 | 5376 | 10304
 /// 3 | Terminal16x24e | 16 x 24 | 10752 | 21056
 ///
-/// The advanced edition brings fixed Mono and variable Serif and Sans Serif based on the DejaVu font.
+/// The **advanced edition** brings fixed Mono and variable Serif and Sans Serif based on the DejaVu font.
+///
+/// For both the basic and advanced editions,
 ///
 /// * All the fonts include the extended characters 0x80~0xff corresponding to the ISO-8859-1 fonts page.
 /// * To convert UTF-8 strings to ISO-8859-1 strings, use the utf2iso() utility.
@@ -195,18 +179,21 @@
 ///
 /// The Red-Green-Blue components are 8-bit sized and 0x00..0xff scaled.
 ///
-/// The BW e-paper screens provides 2 basic colours. Combining those 2 basic colours gives an additional shade, totaling 3 colours.
+/// The **BW e-paper screens** provides 2 basic colours. Combining those 2 basic colours gives an additional shade, totaling 3 colours.
 ///
 /// * white: basic colour
 /// * black: basic colour
 /// * grey: combined colour, one dot black, another dot white
 ///
-/// The BWR e-paper screens provides 3 basic colours. Combining those 3 basic colours gives two additional shades, totaling 6 colours.
+/// The **BWR e-paper screens** provides 3 basic colours. Combining those 3 basic colours gives two additional shades, totaling 6 colours.
 ///
 /// * white: basic colour
 /// * black: basic colour
-/// * grey: combined colour, one dot black, another dot white
 /// * red: basic colour
+///
+/// and
+///
+/// * grey: combined colour, one dot black, another dot white
 /// * light red: combined colour, one dot red, another dot white
 /// * dark red: combined colour, one dot red, another dot black
 ///
@@ -238,13 +225,45 @@
 /// @details    The LCD_screen Library Suite is supported by the dedicated Embedded Computing website at https://embeddedcomputing.weebly.com
 ///
 /// @see from Embedded Computing website:
-/// * [Main page](https://embeddedcomputing.weebly.com/serial-lcd.html)
-/// * [Download](https://embeddedcomputing.weebly.com/download.html)
-/// * Former [Tutorials](https://embeddedcomputing.weebly.com/tutorials.html)
-/// * Former [Examples](https://embeddedcomputing.weebly.com/examples.html)
-/// * Former [Tutorial 3: FAQ](https://embeddedcomputing.weebly.com/tutorial-3-faq.html)
-/// * Former [LCD_screen Library Suite](https://embeddedcomputing.weebly.com/lcd_screen-library-suite.html)
-/// * [Fonts and font generator](http://www.mikroe.com)
-/// * [DejaVu Fonts](http://dejavu-fonts.org/wiki/Main_Page)
+/// * [Main page](https://embeddedcomputing.weebly.com/lcd_screen-library-suite.html)
 ///
-
+///
+/// @section    Examples Examples
+/// @details    The examples showcase the features of the library and how to use it.
+///
+/// * Forms and shapes: ePaper_EXT3_Forms.ino
+///
+/// @image html T2_FORMS.PDF
+/// @image latex T2_FORMS.PDF width=10cm
+///
+/// * Fonts: ePaper_EXT3_Fonts.ino
+///
+/// @image html T2_FONTS.PDF
+/// @image latex T2_FONTS.PDF width=10cm
+///
+/// * Orientation: ePaper_EXT3_Orientation.ino
+///
+/// @image html T2_ORIEN.PDF
+/// @image latex T2_ORIEN.PDF width=10cm
+///
+/// * Set of characters: ePaper_EXT3_Characters.ino
+///
+/// @image html T2_CHARA.PDF
+/// @image latex T2_CHARA.PDF width=10cm
+///
+/// * Palette of colours: ePaper_EXT3_Palette.ino
+///
+/// @image html T2_PALET.PDF
+/// @image latex T2_PALET.PDF width=10cm
+///
+///
+/// @section    Configuration Configuration
+/// @brief      Use LCD_Configuration.h to select the configuration for GPIOs and SPI bus.
+/// @details	Configuration of the options for ePaper EXT3 Basic Library includes 5 steps.
+/// 
+/// 1. `CONFIGURATION_OPTION` selects the hardware with pre-defined configurations.
+/// 2. Based on `CONFIGURATION_OPTION`, GPIOs are defined.
+/// 3. Large screens 9.7 and 12.2 require additional `CSS24_PIN` and `CSS34_PIN`.
+/// 4. `USE_FONT_MODE` defines the fonts used, here Terminal for the basic edition.
+/// 5. `MAX_FONT_SIZE` sets the number of fonts, maximum 4 for the basic edition.
+/// 

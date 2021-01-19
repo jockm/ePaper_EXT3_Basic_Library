@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lcd_5fcolours565_174',['LCD_colours565',['../a00081.html',1,'']]],
-  ['lcd_5fscreen_5fbuffer_175',['LCD_screen_buffer',['../a00085.html',1,'']]]
+  ['lcd_5fcolours565_179',['LCD_Colours565',['../a00104.html',1,'']]],
+  ['lcd_5fscreen_5fbuffer_180',['LCD_Screen_Buffer',['../a00108.html',1,'']]]
 ];

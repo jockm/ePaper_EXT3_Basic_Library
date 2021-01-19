@@ -1,5 +1,5 @@
 //
-// LCD_screen_buffer.cpp
+// LCD_Screen_Buffer.cpp
 // Class library C++ code
 // ----------------------------------
 //
@@ -10,15 +10,15 @@
 // Copyright    © Rei Vilo, 2010-2020
 // Licence      Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 //
-// See          LCD_screen_buffer.h for references
+// See          LCD_Screen_Buffer.h for references
 //
 
 // Library header
-#include "LCD_screen_buffer.h"
+#include "LCD_Screen_Buffer.h"
 //#include "QuickDebug.h"
 
 // Code
-LCD_screen_buffer::LCD_screen_buffer()
+LCD_Screen_Buffer::LCD_Screen_Buffer()
 {
     _fontSize       = 0;
     _fontNumber     = 0;
@@ -27,12 +27,12 @@ LCD_screen_buffer::LCD_screen_buffer()
     _fontSpaceX     = 1;
 }
 
-void LCD_screen_buffer::begin()
+void LCD_Screen_Buffer::begin()
 {
     _f_begin(); // LCD_font_...
 }
 
-void LCD_screen_buffer::clear(uint16_t colour)
+void LCD_Screen_Buffer::clear(uint16_t colour)
 {
     uint8_t oldOrientation = _orientation;
     bool oldPenSolid = _penSolid;
@@ -43,12 +43,12 @@ void LCD_screen_buffer::clear(uint16_t colour)
     setPenSolid(oldPenSolid);
 }
 
-void LCD_screen_buffer::flush()
+void LCD_Screen_Buffer::flush()
 {
     ;
 }
 
-void LCD_screen_buffer::setOrientation(uint8_t orientation)
+void LCD_Screen_Buffer::setOrientation(uint8_t orientation)
 {
     switch (orientation)
     {
@@ -82,12 +82,12 @@ void LCD_screen_buffer::setOrientation(uint8_t orientation)
     }
 }
 
-uint8_t LCD_screen_buffer::getOrientation()
+uint8_t LCD_Screen_Buffer::getOrientation()
 {
     return _orientation;
 }
 
-uint16_t LCD_screen_buffer::screenSizeX()
+uint16_t LCD_Screen_Buffer::screenSizeX()
 {
     switch (_orientation)
     {
@@ -107,7 +107,7 @@ uint16_t LCD_screen_buffer::screenSizeX()
     return 0;
 }
 
-uint16_t LCD_screen_buffer::screenSizeY()
+uint16_t LCD_Screen_Buffer::screenSizeY()
 {
     switch (_orientation)
     {
@@ -127,17 +127,17 @@ uint16_t LCD_screen_buffer::screenSizeY()
     return 0;
 }
 
-uint16_t LCD_screen_buffer::screenDiagonal()
+uint16_t LCD_Screen_Buffer::screenDiagonal()
 {
     return _screenDiagonal;
 }
 
-uint8_t LCD_screen_buffer::screenColourBits()
+uint8_t LCD_Screen_Buffer::screenColourBits()
 {
     return _screenColourBits;
 }
 
-void LCD_screen_buffer::circle(uint16_t x0, uint16_t y0, uint16_t radius, uint16_t colour)
+void LCD_Screen_Buffer::circle(uint16_t x0, uint16_t y0, uint16_t radius, uint16_t colour)
 {
     int16_t f = 1 - radius;
     int16_t ddF_x = 1;
@@ -201,12 +201,12 @@ void LCD_screen_buffer::circle(uint16_t x0, uint16_t y0, uint16_t radius, uint16
     }
 }
 
-void LCD_screen_buffer::dLine(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t colour)
+void LCD_Screen_Buffer::dLine(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t colour)
 {
     line(x0, y0, x0 + dx - 1, y0 + dy - 1, colour);
 }
 
-void LCD_screen_buffer::line(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t colour)
+void LCD_Screen_Buffer::line(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t colour)
 {
     if ((x1 == x2) and (y1 == y2))
     {
@@ -289,17 +289,17 @@ void LCD_screen_buffer::line(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2,
     }
 }
 
-void LCD_screen_buffer::setPenSolid(bool flag)
+void LCD_Screen_Buffer::setPenSolid(bool flag)
 {
     _penSolid = flag;
 }
 
-void LCD_screen_buffer::point(uint16_t x1, uint16_t y1, uint16_t colour)
+void LCD_Screen_Buffer::point(uint16_t x1, uint16_t y1, uint16_t colour)
 {
     _setPoint(x1, y1, colour);
 }
 
-void LCD_screen_buffer::rectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t colour)
+void LCD_Screen_Buffer::rectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t colour)
 {
     if (_penSolid == false)
     {
@@ -328,12 +328,12 @@ void LCD_screen_buffer::rectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_
     }
 }
 
-void LCD_screen_buffer::dRectangle(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t colour)
+void LCD_Screen_Buffer::dRectangle(uint16_t x0, uint16_t y0, uint16_t dx, uint16_t dy, uint16_t colour)
 {
     rectangle(x0, y0, x0 + dx - 1, y0 + dy - 1, colour);
 }
 
-void LCD_screen_buffer::_triangleArea(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t x3, uint16_t y3, uint16_t colour)
+void LCD_Screen_Buffer::_triangleArea(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t x3, uint16_t y3, uint16_t colour)
 {
     int16_t wx1 = (int16_t)x1;
     int16_t wy1 = (int16_t)y1;
@@ -433,7 +433,7 @@ void LCD_screen_buffer::_triangleArea(uint16_t x1, uint16_t y1, uint16_t x2, uin
     }
 }
 
-void LCD_screen_buffer::triangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t x3, uint16_t y3, uint16_t colour)
+void LCD_Screen_Buffer::triangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t x3, uint16_t y3, uint16_t colour)
 {
     if ((x1 == x2) and (y1 == y2))
     {
@@ -507,32 +507,32 @@ void LCD_screen_buffer::triangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t
 }
 
 // Font functions
-void LCD_screen_buffer::setFontSolid(bool flag)
+void LCD_Screen_Buffer::setFontSolid(bool flag)
 {
     _f_setFontSolid(flag);
 }
 
-uint8_t LCD_screen_buffer::addFont(font_s fontName)
+uint8_t LCD_Screen_Buffer::addFont(font_s fontName)
 {
     return _f_addFont(fontName);
 }
 
-void LCD_screen_buffer::selectFont(uint8_t font)
+void LCD_Screen_Buffer::selectFont(uint8_t font)
 {
     _f_selectFont(font);
 }
 
-uint8_t LCD_screen_buffer::getFont()
+uint8_t LCD_Screen_Buffer::getFont()
 {
     return _fontSize;
 }
 
-uint8_t LCD_screen_buffer::fontMax()
+uint8_t LCD_Screen_Buffer::fontMax()
 {
     return _f_fontMax();
 }
 
-uint16_t LCD_screen_buffer::characterSizeX(uint8_t character)
+uint16_t LCD_Screen_Buffer::characterSizeX(uint8_t character)
 {
     uint16_t result = 0;
     if ((_font.kind & 0x40) == 0x40)
@@ -547,37 +547,37 @@ uint16_t LCD_screen_buffer::characterSizeX(uint8_t character)
     return result;
 }
 
-uint16_t LCD_screen_buffer::characterSizeY()
+uint16_t LCD_Screen_Buffer::characterSizeY()
 {
     return _f_characterSizeY();
 }
 
-uint16_t LCD_screen_buffer::stringSizeX(String text)
+uint16_t LCD_Screen_Buffer::stringSizeX(String text)
 {
     return _f_stringSizeX(text);
 }
 
-uint8_t LCD_screen_buffer::stringLengthToFitX(String text, uint16_t pixels)
+uint8_t LCD_Screen_Buffer::stringLengthToFitX(String text, uint16_t pixels)
 {
     return _f_stringLengthToFitX(text, pixels);
 }
 
-void LCD_screen_buffer::setFontSpaceX(uint8_t number)
+void LCD_Screen_Buffer::setFontSpaceX(uint8_t number)
 {
     _f_setFontSpaceX(number);
 }
 
-void LCD_screen_buffer::setFontSpaceY(uint8_t number)
+void LCD_Screen_Buffer::setFontSpaceY(uint8_t number)
 {
     _f_setFontSpaceY(number);
 }
 
-uint8_t LCD_screen_buffer::_getCharacter(uint8_t character, uint8_t index)
+uint8_t LCD_Screen_Buffer::_getCharacter(uint8_t character, uint8_t index)
 {
     return _f_getCharacter(character, index);
 }
 
-void LCD_screen_buffer::gText(uint16_t x0, uint16_t y0,
+void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                               String text,
                               uint16_t textColour,
                               uint16_t backColour)

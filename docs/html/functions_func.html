@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,11 +24,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="EPD.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ePaper_EXT3_Basic_Library Reference Manual
    &#160;<span id="projectnumber">501</span>
    </div>
-   <div id="projectbrief">Library for Pervasive Displays EXT3 - Basic level</div>
+   <div id="projectbrief">Library for Pervasive Displays EXT3 - Basic edition</div>
   </td>
  </tr>
  </tbody>
@@ -48,6 +53,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_func.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,174 +88,177 @@ $(function() {
 
 <h3><a id="index_a"></a>- a -</h3><ul>
 <li>addFont()
-: <a class="el" href="a00085.html#ab5458ee6dd9e99c1a718baa2ad0200ee">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a6f45b3c0bed42026f8acebda57b10060">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>begin()
-: <a class="el" href="a00085.html#a63530e3d02a2f0962155bda728b079fb">LCD_screen_buffer</a>
-, <a class="el" href="a00077.html#ab8c0a022867f5a5cfb12b0a716fab30d">Screen_iTC_BWR</a>
+: <a class="el" href="a00108.html#ad6b967e9cc6e39954cad535afc2d29ce">LCD_Screen_Buffer</a>
+, <a class="el" href="a00112.html#ab8c0a022867f5a5cfb12b0a716fab30d">Screen_iTC_BWR</a>
 </li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>characterSizeX()
-: <a class="el" href="a00085.html#a3257e2fb00f8a0ec735b8b727715c2a9">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a0640169cfb13dd2f9bdfee99bcdb9741">LCD_Screen_Buffer</a>
 </li>
 <li>characterSizeY()
-: <a class="el" href="a00085.html#a9b707db2930411b599306cd2bf0b34cc">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#abab32bdb2810294fad3579929909d54f">LCD_Screen_Buffer</a>
 </li>
 <li>circle()
-: <a class="el" href="a00085.html#a303e717151cefb598177929d8cf68097">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a1a27003485bb96aa29ba771b0d321f52">LCD_Screen_Buffer</a>
 </li>
 <li>clear()
-: <a class="el" href="a00085.html#abd9904d31547e20b47b86c0d9154fd76">LCD_screen_buffer</a>
-, <a class="el" href="a00077.html#a75e6a1dd8c462e4bc1715880b195d0bd">Screen_iTC_BWR</a>
+: <a class="el" href="a00108.html#a350d1b3fdfb0eec2f68246c5be253974">LCD_Screen_Buffer</a>
+, <a class="el" href="a00112.html#a75e6a1dd8c462e4bc1715880b195d0bd">Screen_iTC_BWR</a>
 </li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>dLine()
-: <a class="el" href="a00085.html#a69cfecbf3dc5b48acac149347070bbf5">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a229f7620037d5527f6aed6215721dbce">LCD_Screen_Buffer</a>
 </li>
 <li>dRectangle()
-: <a class="el" href="a00085.html#a7ab4616b22ce6967c44bd407885a0992">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#aa91b31ed50b6117e3a041ec050506696">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>flush()
-: <a class="el" href="a00085.html#ac1092243a03df828f743705c787a3a16">LCD_screen_buffer</a>
-, <a class="el" href="a00077.html#a02a8c5cb297753a85a580608862becda">Screen_iTC_BWR</a>
+: <a class="el" href="a00108.html#abd4c48ceee3560472e8fbb4957305c56">LCD_Screen_Buffer</a>
+, <a class="el" href="a00112.html#a02a8c5cb297753a85a580608862becda">Screen_iTC_BWR</a>
 </li>
 <li>fontMax()
-: <a class="el" href="a00085.html#a08fca3af211cde74513b6e0215b8c722">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a34c85ee6643f4ed7909b59947896602d">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>getFont()
-: <a class="el" href="a00085.html#a0f131e20e71663f7078ce6a64d6170a1">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#abc6f0d5eb3401fece2dd916d8e2f77ce">LCD_Screen_Buffer</a>
 </li>
 <li>getFontDetails()
-: <a class="el" href="a00077.html#a860b440e8cf57582f8e2c85919727309">Screen_iTC_BWR</a>
+: <a class="el" href="a00112.html#a860b440e8cf57582f8e2c85919727309">Screen_iTC_BWR</a>
 </li>
 <li>getOrientation()
-: <a class="el" href="a00085.html#a56859ffbd809ff63ee23e894fa045ff3">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#ad099ada6642de9df1d87e369f4971920">LCD_Screen_Buffer</a>
 </li>
 <li>getRefreshTime()
-: <a class="el" href="a00077.html#a1128ad51156a5268232cd3d9fcd44f24">Screen_iTC_BWR</a>
+: <a class="el" href="a00112.html#a1128ad51156a5268232cd3d9fcd44f24">Screen_iTC_BWR</a>
 </li>
 <li>gText()
-: <a class="el" href="a00085.html#afa008e8547a514ef0d228cb0e0d19ed7">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#af208abb906651eaf5af7e2bc41a31bda">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>invert()
-: <a class="el" href="a00077.html#a3fbbef921d8703e5dc9e858c19dcb874">Screen_iTC_BWR</a>
+: <a class="el" href="a00112.html#a3fbbef921d8703e5dc9e858c19dcb874">Screen_iTC_BWR</a>
 </li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
-<li>LCD_colours565()
-: <a class="el" href="a00081.html#a9df2f7bd420b64ec001d6d9813fe57f6">LCD_colours565</a>
+<li>LCD_Colours565()
+: <a class="el" href="a00104.html#aad0c16e4e3730efb2f2edcde3fb08e0b">LCD_Colours565</a>
 </li>
-<li>LCD_screen_buffer()
-: <a class="el" href="a00085.html#af68ed25983e9f8dd6df04c9515b66e4c">LCD_screen_buffer</a>
+<li>LCD_Screen_Buffer()
+: <a class="el" href="a00108.html#a2ac7d54d19bbf1e124a5fdf2e712772b">LCD_Screen_Buffer</a>
 </li>
 <li>line()
-: <a class="el" href="a00085.html#a547dfae2ff7717e7349e6f92d74f9ab5">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a3c47f39bc9b434d88fdbd627d06096a1">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>point()
-: <a class="el" href="a00085.html#ac489295662ca448ee4249f41d11dda44">LCD_screen_buffer</a>
-, <a class="el" href="a00077.html#a013908a04d994fb04ec9e01b4d573b3e">Screen_iTC_BWR</a>
+: <a class="el" href="a00108.html#a6f76dc2654de88bea5f97f39d4de2872">LCD_Screen_Buffer</a>
+, <a class="el" href="a00112.html#a013908a04d994fb04ec9e01b4d573b3e">Screen_iTC_BWR</a>
 </li>
 </ul>
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>readPixel()
-: <a class="el" href="a00077.html#a9eefead5431c2b04886b605b958a6e12">Screen_iTC_BWR</a>
+: <a class="el" href="a00112.html#a9eefead5431c2b04886b605b958a6e12">Screen_iTC_BWR</a>
 </li>
 <li>rectangle()
-: <a class="el" href="a00085.html#aa1e97cd9aaaea9dc60241ef61aa6a1c9">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#aaa5103af2689befb48e99a4b4d2d236f">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>Screen_iTC_BWR()
-: <a class="el" href="a00077.html#ae6792b7b800e2b401c152059373845c8">Screen_iTC_BWR</a>
+: <a class="el" href="a00112.html#ae6792b7b800e2b401c152059373845c8">Screen_iTC_BWR</a>
 </li>
 <li>screenColourBits()
-: <a class="el" href="a00085.html#a1dbd84bdc4118b5ff17a4d5a919026b1">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#ad4ba05f929a46a7665d2cf6860294ba4">LCD_Screen_Buffer</a>
 </li>
 <li>screenDiagonal()
-: <a class="el" href="a00085.html#a7b00a531f0e86dddb6ecb30514248648">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#aacfe2bc862070147be5a886e7f8c4dc1">LCD_Screen_Buffer</a>
 </li>
 <li>screenSizeX()
-: <a class="el" href="a00085.html#a2386f615f3d37d581addcc70d4349468">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#ad3a77515500d9caf4e7bf08524dc462e">LCD_Screen_Buffer</a>
 </li>
 <li>screenSizeY()
-: <a class="el" href="a00085.html#ac3f71546f814ec8e10069c23ccc8b928">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a46aaebc7bd5d7acc80bfffd9676eecd9">LCD_Screen_Buffer</a>
 </li>
 <li>selectFont()
-: <a class="el" href="a00085.html#a123a03e3a55eada205f65a86a2258b45">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a55889fc56bd18f66538dad0e1cf24184">LCD_Screen_Buffer</a>
 </li>
 <li>setFontSolid()
-: <a class="el" href="a00085.html#a216097f9c803f0b2805421fccc7ea43c">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a26bc99910fe1b79a2697f4d8ac155ff9">LCD_Screen_Buffer</a>
 </li>
 <li>setFontSpaceX()
-: <a class="el" href="a00085.html#af804d5935b380174ff672cadd1531205">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a03ec1652e3e3e9682679791a3c91b973">LCD_Screen_Buffer</a>
 </li>
 <li>setFontSpaceY()
-: <a class="el" href="a00085.html#a99ebdd8c1ca2a25decfc67397e5a3197">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#adb0f8227f457756b2f840bbed27b75ef">LCD_Screen_Buffer</a>
 </li>
 <li>setOrientation()
-: <a class="el" href="a00085.html#a0de16724795ecea121220252866574ea">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#ab20aad67990bd49c333c380ff3fa16f2">LCD_Screen_Buffer</a>
 </li>
 <li>setPenSolid()
-: <a class="el" href="a00085.html#ae28cd41e136fe308cacb57fc130d6f60">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#af4c9668ca0acd392d592c7c0bd262a8d">LCD_Screen_Buffer</a>
 </li>
 <li>stringLengthToFitX()
-: <a class="el" href="a00085.html#ac154a947d0d705c110776c8e5d405a9a">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#aeaea57bb1deecf70b51606a14631b088">LCD_Screen_Buffer</a>
 </li>
 <li>stringSizeX()
-: <a class="el" href="a00085.html#a2ff07f75ee5644be834616eb4b34b006">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#aff4a4eed94170f75743be44102fe2d18">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>triangle()
-: <a class="el" href="a00085.html#a9b50998f7be851750b80a83b5a9a5cc6">LCD_screen_buffer</a>
+: <a class="el" href="a00108.html#a9bf0c132642a46499d4e407c494d6626">LCD_Screen_Buffer</a>
 </li>
 </ul>
 
 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>WhoAmI()
-: <a class="el" href="a00085.html#a67ec47ba8bd4cd4a75d52b9687234ca9">LCD_screen_buffer</a>
-, <a class="el" href="a00077.html#a26f5e7ab59c2da2bc8ce9df34cf95c52">Screen_iTC_BWR</a>
+: <a class="el" href="a00108.html#abf3eaaf99193dbd785b23d061ead996f">LCD_Screen_Buffer</a>
+, <a class="el" href="a00112.html#a26f5e7ab59c2da2bc8ce9df34cf95c52">Screen_iTC_BWR</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
+  </ul>
+</div>
 </body>
 </html>

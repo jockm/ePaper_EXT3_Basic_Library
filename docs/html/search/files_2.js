@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['terminal12x16e_2eh_190',['Terminal12x16e.h',['../a00062.html',1,'']]],
-  ['terminal16x24e_2eh_191',['Terminal16x24e.h',['../a00065.html',1,'']]],
-  ['terminal6x8e_2eh_192',['Terminal6x8e.h',['../a00068.html',1,'']]],
-  ['terminal8x12e_2eh_193',['Terminal8x12e.h',['../a00071.html',1,'']]]
+  ['screen_5fepd_5fitc_2ecpp_198',['Screen_EPD_iTC.cpp',['../a00083.html',1,'']]],
+  ['screen_5fepd_5fitc_2eh_199',['Screen_EPD_iTC.h',['../a00086.html',1,'']]]
 ];

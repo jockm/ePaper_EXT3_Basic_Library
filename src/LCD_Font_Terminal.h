@@ -32,12 +32,12 @@
 ///
 #define LCD_FONT_TERMINAL_RELEASE 501
 
-#include "LCD_configuration.h"
+#include "LCD_Configuration.h"
 
 // The Arduino IDE doesn't allow to select the libraries, hence this condition.
 #if (USE_FONT_MODE == USE_FONT_TERMINAL)
 
-#include "LCD_utilities.h"
+#include "LCD_Utilities.h"
 
 ///
 /// @brief      Biggest font size
@@ -108,7 +108,7 @@ struct font_s
 ///
 /// @brief    Class for Terminal font
 ///
-class LCD_font_Terminal
+class LCD_Font_Terminal
 {
   protected:
     ///
