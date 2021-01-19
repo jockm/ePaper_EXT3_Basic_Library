@@ -64,7 +64,7 @@
 ///
 /// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// * For professionals or organisations or for commercial usage: All rights reserved. Considered the advanced edition ePaper_EXT3_Advanced_Library.
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
 ///
 ///
 /// @section    Structure Library structure
