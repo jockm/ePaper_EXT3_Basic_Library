@@ -5,7 +5,7 @@ var searchData=
   ['checkrange_14',['checkRange',['../a00077.html#a86af3529c58c3ba135667030a75a5917',1,'checkRange(uint16_t value, uint16_t valueMin, uint16_t valueMax):&#160;LCD_Utilities.cpp'],['../a00080.html#a86af3529c58c3ba135667030a75a5917',1,'checkRange(uint16_t value, uint16_t valueMin, uint16_t valueMax):&#160;LCD_Utilities.cpp']]],
   ['circle_15',['circle',['../a00108.html#a1a27003485bb96aa29ba771b0d321f52',1,'LCD_Screen_Buffer']]],
   ['clear_16',['clear',['../a00108.html#a350d1b3fdfb0eec2f68246c5be253974',1,'LCD_Screen_Buffer::clear()'],['../a00112.html#a75e6a1dd8c462e4bc1715880b195d0bd',1,'Screen_iTC_BWR::clear()']]],
-  ['configuration_5fboosterpack_5fext2_17',['CONFIGURATION_BOOSTERPACK_EXT2',['../a00059.html#a718f2d736cd93d8ebfff96dd21b11d9d',1,'LCD_Configuration.h']]],
+  ['configuration_5fboosterpack_5fext3_17',['CONFIGURATION_BOOSTERPACK_EXT3',['../a00059.html#aa50e58d5106e0b8e938f302c478ad913',1,'LCD_Configuration.h']]],
   ['configuration_5fcc1352_18',['CONFIGURATION_CC1352',['../a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb',1,'LCD_Configuration.h']]],
   ['configuration_5fmsp5430fr5994_19',['CONFIGURATION_MSP5430FR5994',['../a00059.html#a81de2fce16ab6edd7ccccae52354e850',1,'LCD_Configuration.h']]],
   ['configuration_5foption_20',['CONFIGURATION_OPTION',['../a00059.html#aed5d4006ff573ec9015562725b68a81b',1,'LCD_Configuration.h']]],

@@ -1,7 +1,7 @@
 var a00059 =
 [
     [ "BUSY_PIN", "a00059.html#a18220360fc1f5e8a8f8590ec6d237951", null ],
-    [ "CONFIGURATION_BOOSTERPACK_EXT2", "a00059.html#a718f2d736cd93d8ebfff96dd21b11d9d", null ],
+    [ "CONFIGURATION_BOOSTERPACK_EXT3", "a00059.html#aa50e58d5106e0b8e938f302c478ad913", null ],
     [ "CONFIGURATION_CC1352", "a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb", null ],
     [ "CONFIGURATION_MSP5430FR5994", "a00059.html#a81de2fce16ab6edd7ccccae52354e850", null ],
     [ "CONFIGURATION_OPTION", "a00059.html#aed5d4006ff573ec9015562725b68a81b", null ],

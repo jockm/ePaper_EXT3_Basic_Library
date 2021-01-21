@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['configuration_5fboosterpack_5fext2_314',['CONFIGURATION_BOOSTERPACK_EXT2',['../a00059.html#a718f2d736cd93d8ebfff96dd21b11d9d',1,'LCD_Configuration.h']]],
+  ['configuration_5fboosterpack_5fext3_314',['CONFIGURATION_BOOSTERPACK_EXT3',['../a00059.html#aa50e58d5106e0b8e938f302c478ad913',1,'LCD_Configuration.h']]],
   ['configuration_5fcc1352_315',['CONFIGURATION_CC1352',['../a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb',1,'LCD_Configuration.h']]],
   ['configuration_5fmsp5430fr5994_316',['CONFIGURATION_MSP5430FR5994',['../a00059.html#a81de2fce16ab6edd7ccccae52354e850',1,'LCD_Configuration.h']]],
   ['configuration_5foption_317',['CONFIGURATION_OPTION',['../a00059.html#aed5d4006ff573ec9015562725b68a81b',1,'LCD_Configuration.h']]],

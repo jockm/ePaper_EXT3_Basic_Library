@@ -37,11 +37,11 @@ _SPISettings_s _settingScreen;
 SPISettings _settingScreen;
 #endif // ENERGIA
 
-// #define BS_PIN 17 // EXT2 BOARD J5 pin 17 --- Reset on some LaunchPads
+// #define BS_PIN 17 // EXT3 BOARD J5 pin 17 --- Reset on some LaunchPads
 
 // --- Slave CSB for 9.7" and 12" screen with two sub-screens
-#define CSS24_PIN 2    // EXT2 BOARD J5 pin 2 for 24-pin flat cable
-#define CSS34_PIN 13   // EXT2 BOARD J5 pin 13 for bridge board and 34-pin flat cable
+#define CSS24_PIN 2    // EXT3 BOARD J5 pin 2 for 24-pin flat cable
+#define CSS34_PIN 13   // EXT3 BOARD J5 pin 13 for bridge board and 34-pin flat cable
 // ---
 
 #ifndef SPI_CLOCK_MAX

@@ -103,15 +103,15 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef LCD_CONFIGURATION_RELEASE</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00059.html#aba454a008f7c3c10cf5c9bbc83c10134">   39</a></span>&#160;<span class="preprocessor">#define LCD_CONFIGURATION_RELEASE 501</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00059.html#a718f2d736cd93d8ebfff96dd21b11d9d">   46</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_BOOSTERPACK_EXT2 1 </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00059.html#aa50e58d5106e0b8e938f302c478ad913">   46</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_BOOSTERPACK_EXT3 1 </span></div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00059.html#a81de2fce16ab6edd7ccccae52354e850">   47</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_MSP5430FR5994 2 </span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00059.html#a7fa9048eaa9531cadab28a166a0d4195">   48</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_RASPI 3 </span></div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00059.html#a31ac38ce383b0e1d612b0b82c17d7b96">   49</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_REDBEAR_DUO 4 </span><span class="comment">// specific REDBEAR_DUO</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb">   50</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_CC1352 5 </span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00059.html#aed5d4006ff573ec9015562725b68a81b">   52</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_OPTION CONFIGURATION_BOOSTERPACK_EXT2 </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00059.html#aed5d4006ff573ec9015562725b68a81b">   52</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_OPTION CONFIGURATION_BOOSTERPACK_EXT3 </span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if (CONFIGURATION_OPTION == CONFIGURATION_BOOSTERPACK_EXT2)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if (CONFIGURATION_OPTION == CONFIGURATION_BOOSTERPACK_EXT3)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// --- Initial configuration</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#warning Default pins for BoosterPack</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00059.html#a3aeedc5639237ea9208c7873989d3598">   61</a></span>&#160;<span class="preprocessor">#define PNLON_PIN 11 </span></div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="a00059.html#a08bca59db4b190eaaea4d47b7562869c">   64</a></span>&#160;<span class="preprocessor">#define RESET_PIN 10 </span></div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00059.html#a18220360fc1f5e8a8f8590ec6d237951">   65</a></span>&#160;<span class="preprocessor">#define BUSY_PIN 8   </span></div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00059.html#aef52395a58c8191f3d4a21a6d1d950c3">   66</a></span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// EXT2 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_CC1352)</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// --- CC1352 configuration</span></div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define RESET_PIN 10 </span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#define BUSY_PIN 8   </span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// EXT2 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_MSP5430FR5994)</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// --- MSP5430FR5994 configuration</span></div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#define RESET_PIN 30 </span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#define BUSY_PIN 28  </span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// EXT2 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_RASPI)</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">// --- Raspberry Pi configuration</span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define RESET_PIN 23 </span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define BUSY_PIN 24  </span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// EXT2 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_REDBEAR_DUO)</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// --- REDBEAR_DUO configuration</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define RESET_PIN D4 </span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define BUSY_PIN D2  </span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define PIN_EPD_FLASH_CS D14 </span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// EXT2 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#error Invalid CONFIGURATION_OPTION</span></div>

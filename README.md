@@ -1,6 +1,6 @@
 # ePaper EXT3 Basic Library
 
-Library for Pervasive Displays [EPD Extension Kit Gen 3 (EXT3)](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-3-ext3/) and iTC screens [BW](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white) or [BWR](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white-red) with basic features
+Library for Pervasive Displays [EPD Extension Kit Gen 2 (EXT2)](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-2-ext2/) and iTC screens [BW](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white) or [BWR](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white-red) with basic features
 
 ## Features
 
@@ -18,7 +18,7 @@ See
 
 Hardware
 
-* Pervasive Displays [EPD Extension Kit Gen 3 (EXT3)](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-3-ext3/)
+* Pervasive Displays [EPD Extension Kit Gen 2 (EXT2)](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-2-ext2/)
 * Pervasive Displays iTC screen [BW](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white) or [BWR](https://www.pervasivedisplays.com/products/?_sft_etc_itc=itc&_sft_product_colour=black-white-red)
 
 Software
