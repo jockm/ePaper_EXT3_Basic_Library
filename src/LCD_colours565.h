@@ -2,7 +2,7 @@
 /// @file		LCD_Colours565.h
 /// @brief  	Class library header
 /// @details	Library for 5-6-5 coded colours
-/// 
+///
 /// @n @b		Project LCD_screen Library Suite
 ///
 /// @author		Rei Vilo

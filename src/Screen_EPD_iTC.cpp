@@ -37,13 +37,6 @@ _SPISettings_s _settingScreen;
 SPISettings _settingScreen;
 #endif // ENERGIA
 
-// #define BS_PIN 17 // EXT3 BOARD J5 pin 17 --- Reset on some LaunchPads
-
-// --- Slave CSB for 9.7" and 12" screen with two sub-screens
-#define CSS24_PIN 2    // EXT3 BOARD J5 pin 2 for 24-pin flat cable
-#define CSS34_PIN 13   // EXT3 BOARD J5 pin 13 for bridge board and 34-pin flat cable
-// ---
-
 #ifndef SPI_CLOCK_MAX
 #define SPI_CLOCK_MAX 16000000
 #endif
@@ -260,6 +253,10 @@ void Screen_iTC_BWR::begin()
     pinMode(RESET_PIN, OUTPUT);
     pinMode(BUSY_PIN, INPUT);        // All Pins 0
 
+    // Flash not used, set /CS=HIGH to avoid interferences
+    pinMode(FLASH_CS_PIN, OUTPUT);
+    digitalWrite(FLASH_CS_PIN, HIGH);
+
     // Reset
     switch (_eScreen_iTC_BWR)
     {
@@ -445,6 +442,8 @@ void Screen_iTC_BWR::flush()
     }
     else if (_eScreen_iTC_BWR == eScreen_EPD_iTC_565_BWR)
     {
+        _reset(200, 20, 200, 50, 5);
+
         // Send image data
         uint8_t data1_565[] = { 0x00, 0x37, 0x00, 0x00, 0x57, 0x02 };
         _sendIndexData(0x13, data1_565, 6); // DUW
@@ -541,7 +540,6 @@ void Screen_iTC_BWR::flush()
         }
         _sendIndexData(0x09, &index09_565[3], 1);
         delay_ms(10);
-        Serial.println("3");
 
         // Display Refresh Start
         while (digitalRead(BUSY_PIN) != HIGH);
@@ -1387,7 +1385,7 @@ uint16_t Screen_iTC_BWR::_getPoint(uint16_t x1, uint16_t y1)
     {
         case 0x10:
 
-            result = myColours.white;
+            result = myColours.black;
             break;
 
         case 0x01:
@@ -1397,7 +1395,7 @@ uint16_t Screen_iTC_BWR::_getPoint(uint16_t x1, uint16_t y1)
 
         default:
 
-            result = myColours.black;
+            result = myColours.white;
             break;
     }
 

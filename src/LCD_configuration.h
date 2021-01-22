@@ -40,10 +40,10 @@
 
 ///
 /// @name       Configuration
-/// @details    Select pre-defined configurations 
+/// @details    Select pre-defined configurations
 /// @note       Edit the pins in next section
 /// @{
-#define CONFIGURATION_BOOSTERPACK_EXT3 1 ///< default BoosterPack EXT3
+#define CONFIGURATION_BOOSTERPACK_EXT2 1 ///< default BoosterPack EXT3
 #define CONFIGURATION_MSP5430FR5994 2 ///< specific MSP5430FR5994 as CGU
 #define CONFIGURATION_RASPI 3 ///< specific Raspberry Pi
 #define CONFIGURATION_REDBEAR_DUO 4 // specific REDBEAR_DUO
@@ -55,7 +55,7 @@
 ///
 /// @name       GPIOs for each configuration
 /// @{
-#if (CONFIGURATION_OPTION == CONFIGURATION_BOOSTERPACK_EXT3)
+#if (CONFIGURATION_OPTION == CONFIGURATION_BOOSTERPACK_EXT2)
 // --- Initial configuration
 #warning Default pins for BoosterPack
 #define PNLON_PIN 11 ///< EXT3 BOARD J5 pin 11

@@ -14,7 +14,7 @@
 ///
 /// @date       11 Jan 2021
 /// @version    release 501
-/// 
+///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  CC BY-NC-SA 4.0
 ///
@@ -49,9 +49,12 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @b Licence:
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the ePaper_EXT3_Advanced_Library
+/// @n Dual licence:
+///
+/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+/// 
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+///
 ///
 
 ///
