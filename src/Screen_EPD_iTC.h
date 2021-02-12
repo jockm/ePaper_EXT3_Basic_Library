@@ -12,11 +12,11 @@
 /// @version    release 501
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
-/// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
+/// @copyright  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
 /// @n Dual licence:
 ///
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 /// 
 /// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
 ///
@@ -230,24 +230,24 @@ class Screen_iTC_BWR : public LCD_Screen_Buffer
     /// @param  index register
     /// @param  data data
     /// @param  len number of bytes
-    /// @note   Valid for all screens except 12.20"
+    /// @note   Valid for all except large screens
     ///
     void _sendIndexData(uint8_t index, const uint8_t *data, uint32_t len);
 
     ///
-    /// @brief  Send data through SPI to first half of 12.2" screen
+    /// @brief  Send data through SPI to first half of large screens
     /// @param  index register
     /// @param  data data
     /// @param  len number of bytes
-    /// @note   Valid only for 12.20" screen
+    /// @note   Valid only for 9.7 and 12.20" screens
     ///
     void _sendIndexDataMaster(uint8_t index, const uint8_t *data, uint32_t len);
 
-    /// @brief  Send data through SPI to second half of 12.2" screen
+    /// @brief  Send data through SPI to second half of large screens
     /// @param  index register
     /// @param  data data
     /// @param  len number of bytes
-    /// @note   Valid only for 12.20" screen
+    /// @note   Valid only for 9.7 and 12.20" screens
     ///
     void _sendIndexDataSlave(uint8_t index, const uint8_t *data, uint32_t len);
 

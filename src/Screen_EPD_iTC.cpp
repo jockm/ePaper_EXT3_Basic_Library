@@ -1285,7 +1285,7 @@ bool Screen_iTC_BWR::_orientCoordinates(uint16_t &x, uint16_t &y)
     bool flag = false; // false=success, true=error
     switch (_orientation)
     {
-        case 1: // checked
+        case 3: // checked, previously 1
 
             if ((x < _widthScreen) and (y < _heightScreen))
             {
@@ -1313,7 +1313,7 @@ bool Screen_iTC_BWR::_orientCoordinates(uint16_t &x, uint16_t &y)
             swap(x, y);
             break;
 
-        case 3: // checked
+        case 1: // checked, previously 3
 
             if ((x < _widthScreen) and (y < _heightScreen))
             {
@@ -1458,7 +1458,7 @@ void Screen_iTC_BWR::_sendIndexData(uint8_t index, const uint8_t *data, uint32_t
     digitalWrite(CS_PIN, HIGH); // CS High
 }
 
-// Software SPI Master protocl setup
+// Software SPI Master protocol setup
 void Screen_iTC_BWR::_sendIndexDataMaster(uint8_t index, const uint8_t *data, uint32_t len)
 {
     digitalWrite(_pinCSS, HIGH); // CSS slave High
