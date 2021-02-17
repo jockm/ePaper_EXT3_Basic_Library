@@ -92,28 +92,28 @@ $(document).ready(function(){initNavTree('a00129.html',''); initResizable(); });
 <p>This section includes additional documentation on copyright and licence, structure, initialisation, coordinates, colour, SD-card and resources</p>
 <h1><a class="anchor" id="Copyright"></a>
 Copyright and licence</h1>
-<p>The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0). @ see <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></p>
+<p>The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0). @ see <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></p>
 <ul>
 <li>For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)</li>
 <li>For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.</li>
 </ul>
 <h1><a class="anchor" id="Structure"></a>
 Library structure</h1>
-<p>The LCD_screen Library Suite contains three layers:</p><ul>
+<p>The highView Library Suite contains three layers:</p><ul>
 <li>top level end-user libraries like GUI.h with label, button, dialog, menu or slider with, and Graphics.h with graphics.</li>
 <li>intermediate level screen-specific libraries, ie. <a class="el" href="a00050.html" title="Library header.">ePaper_EXT3_Basic_Library.h</a></li>
-<li>low level virtual classes, ie. <a class="el" href="a00124.html" title="Generic class for buffered LCD.">LCD_Screen_Buffer</a> or <a class="el" href="a00071.html" title="Library header.">LCD_Font_Terminal.h</a></li>
+<li>low level virtual classes, ie. <a class="el" href="a00124.html" title="Generic class for buffered LCD.">hV_Screen_Buffer</a> or <a class="el" href="a00071.html" title="Library header.">hV_Font_Terminal.h</a></li>
 </ul>
 <h1><a class="anchor" id="Version"></a>
 Version management</h1>
 <p>Each library has a release number to be checked at pre-processing.</p>
-<p>Each library has its own release number. </p><div class="fragment"><div class="line"><span class="preprocessor">#define LCD_FONT_RELEASE 105</span></div>
-</div><!-- fragment --><p>The release number is checked at pre-processing </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LCD_screen_font.h&quot;</span></div>
+<p>Each library has its own release number. </p><div class="fragment"><div class="line"><span class="preprocessor">#define hV_FONT_RELEASE 105</span></div>
+</div><!-- fragment --><p>The release number is checked at pre-processing </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;hV_screen_font.h&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#if LCD_FONT_RELEASE &lt; 106</span></div>
-<div class="line"><span class="preprocessor">#error Required LCD_FONT_RELEASE 106</span></div>
+<div class="line"><span class="preprocessor">#if hV_FONT_RELEASE &lt; 106</span></div>
+<div class="line"><span class="preprocessor">#error Required hV_FONT_RELEASE 106</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-</div><!-- fragment --><p>In this example, if the LCD_screen_font library release is 105, the pre-processor prompts an error message: </p><div class="fragment"><div class="line"><span class="preprocessor">#error Required LCD_FONT_RELEASE 106</span></div>
+</div><!-- fragment --><p>In this example, if the hV_screen_font library release is 105, the pre-processor prompts an error message: </p><div class="fragment"><div class="line"><span class="preprocessor">#error Required hV_FONT_RELEASE 106</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="Coordinate"></a>
 Coordinates systems</h1>
 <p>This section explains the rectangle and vector coordinates systems.</p>
@@ -221,14 +221,14 @@ Porting to another SDK</h1>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aa00005_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Setup.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Characters.ino:151</div></div>
-<div class="ttc" id="aa00005_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="a00005.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Loop, empty.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Characters.ino:196</div></div>
+<div class="ttc" id="aa00005_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="a00005.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Setup.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Characters.ino:153</div></div>
+<div class="ttc" id="aa00005_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="a00005.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Loop, empty.</div><div class="ttdef"><b>Definition:</b> ePaper_EXT3_Characters.ino:198</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="Resource"></a>
 Other resources</h1>
 <p>More resources are available online.</p>
-<p>The LCD_screen Library Suite is supported by the dedicated Embedded Computing website at <a href="https://embeddedcomputing.weebly.com">https://embeddedcomputing.weebly.com</a></p>
+<p>The highView Library Suite is supported by the dedicated Embedded Computing website at <a href="https://embeddedcomputing.weebly.com">https://embeddedcomputing.weebly.com</a></p>
 <dl class="section see"><dt>See also</dt><dd>from Embedded Computing website:<ul>
-<li><a href="https://embeddedcomputing.weebly.com/lcd_screen-library-suite.html">Main page</a></li>
+<li><a href="https://embeddedcomputing.weebly.com/hV_screen-library-suite.html">Main page</a></li>
 </ul>
 </dd></dl>
 <h1><a class="anchor" id="Examples"></a>
@@ -266,7 +266,7 @@ Examples</h1>
 </div>
  <h1><a class="anchor" id="Configuration"></a>
 Configuration</h1>
-<p>Use <a class="el" href="a00059.html" title="Header.">LCD_Configuration.h</a> to select the configuration for GPIOs and SPI bus.</p>
+<p>Use <a class="el" href="a00059.html" title="Header.">hV_Configuration.h</a> to select the configuration for GPIOs and SPI bus.</p>
 <p>Configuration of the options for ePaper EXT3 Basic Library includes 5 steps.</p>
 <ol type="1">
 <li>CONFIGURATION_OPTION selects the hardware with pre-defined configurations.</li>
@@ -274,7 +274,7 @@ Configuration</h1>
 <li>FONT_MODE defines the fonts used, here Terminal for the basic edition. (Advanced edition)</li>
 <li>MAX_FONT_SIZE sets the number of fonts, maximum 4 for the basic edition.</li>
 <li>SRAM_MODE sets the memory either internal MCU or external SPI. (Advanced edition)</li>
-<li>Set USE_LCD_SCREEN to virtual object, recommended. (Advanced edition) </li>
+<li>Set USE_hV_SCREEN to virtual object, recommended. (Advanced edition) </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

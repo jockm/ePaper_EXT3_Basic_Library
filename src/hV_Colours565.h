@@ -1,18 +1,18 @@
 ///
-/// @file		LCD_Colours565.h
+/// @file		hV_Colours565.h
 /// @brief  	Class library header
 /// @details	Library for 5-6-5 coded colours
 ///
-/// @n @b		Project LCD_screen Library Suite
+/// @n @b		Project highView Library Suite
 ///
 /// @author		Rei Vilo
 /// @author		https://embeddedcomputing.weebly.com
 ///
-/// @date       11 Jan 2021
-/// @version    release 501
+/// @date		11 Jan 2021
+/// @version	release 501
 ///
-/// @copyright    (c) Rei Vilo, 2010-2021
-/// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
+/// @copyright	(c) Rei Vilo, 2010-2021
+/// @copyright	Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
 
 
@@ -25,32 +25,32 @@
 #error Platform not defined
 #endif // end IDE
 
-#ifndef LCD_COLOURS_RELEASE
+#ifndef hV_COLOURS_RELEASE
 ///
 /// @brief  Library release number
 ///
-#define LCD_COLOURS_RELEASE 501
+#define hV_COLOURS_RELEASE 501
 
 
 ///
-/// @class      LCD_Colours565
+/// @class      hV_Colours565
 /// @brief      for 5-6-5 coded colours = 64K colours
 /// @details    red: 5 bits, green: 6 bits, blue: 5 bits
 ///
-class LCD_Colours565
+class hV_Colours565
 {
   public:
     ///
     /// @brief  Constructor
     ///
-    LCD_Colours565();
+    hV_Colours565();
 
     ///
     /// @name   Colours constants
     /// @note   Both syntaxes are valid
     /// * myColours.black and
-    /// * LCD_Colours565::black
-    /// with extern LCD_Colours565 myColours; declared below
+    /// * hV_Colours565::black
+    /// with extern hV_Colours565 myColours; declared below
     ///
     // Colours RGB=565                 Red  Green Blue
     //                                 4321054321043210
@@ -85,6 +85,6 @@ class LCD_Colours565
 /// @brief      Instantiated object
 /// @details    myColours
 ///
-extern LCD_Colours565 myColours;
+extern hV_Colours565 myColours;
 
-#endif // LCD_COLOURS_RELEASE
+#endif // hV_COLOURS_RELEASE

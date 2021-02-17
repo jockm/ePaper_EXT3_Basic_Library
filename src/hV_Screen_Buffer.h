@@ -1,9 +1,9 @@
 ///
-/// @file       LCD_Screen_Buffer.h
+/// @file       hV_Screen_Buffer.h
 /// @brief      Class library header
 /// @details	Generic LCD with buffer class library
 /// @n
-/// @n @b       Project LCD_screen Library Suite
+/// @n @b       Project highView Library Suite
 ///
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
@@ -13,7 +13,7 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
 /// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -30,20 +30,20 @@
 #error Platform not defined
 #endif // end IDE
 
-#ifndef LCD_SCREEN_BUFFER_RELEASE
+#ifndef hV_SCREEN_BUFFER_RELEASE
 ///
 /// @brief  Library release number
 ///
-#define LCD_SCREEN_BUFFER_RELEASE 501
+#define hV_SCREEN_BUFFER_RELEASE 501
 
-#include "LCD_Configuration.h"
+#include "hV_Configuration.h"
 
 // Other libraries
-#include "LCD_Colours565.h"
-#include "LCD_Utilities.h"
+#include "hV_Colours565.h"
+#include "hV_Utilities.h"
 
 #if (FONT_MODE == USE_FONT_TERMINAL)
-#include "LCD_Font_Terminal.h"
+#include "hV_Font_Terminal.h"
 
 #else
 #error FONT_MODE not defined
@@ -52,15 +52,15 @@
 ///
 /// @brief  Generic class for buffered LCD
 ///
-#warning USE_LCD_SCREEN == USE_LCD_SCREEN_SELF
+#warning USE_hV_SCREEN == USE_hV_SCREEN_SELF
 #warning FONT_MODE == USE_FONT_TERMINAL
-class LCD_Screen_Buffer : protected LCD_Font_Terminal
+class hV_Screen_Buffer : protected hV_Font_Terminal
 {
   public:
     ///
     /// @brief  Constructor
     ///
-    LCD_Screen_Buffer();
+    hV_Screen_Buffer();
 
     /// @name	    General
     /// @{
@@ -396,7 +396,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     ///
     uint8_t _getCharacter(uint8_t character, uint8_t index);
 
-    // Variables provided by LCD_Screen_Virtual
+    // Variables provided by hV_Screen_Virtual
     bool _penSolid;
     uint16_t _screenWidth, _screenHeigth, _screenDiagonal;
     uint8_t _orientation;
@@ -404,4 +404,4 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @endcond
 };
 
-#endif // LCD_SCREEN_BUFFER_RELEASE
+#endif // hV_SCREEN_BUFFER_RELEASE

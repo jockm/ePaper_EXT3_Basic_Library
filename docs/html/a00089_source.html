@@ -102,16 +102,16 @@ $(document).ready(function(){initNavTree('a00089_source.html',''); initResizable
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef SCREEN_EPD_EXT3_RELEASE</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00089.html#ab75eb2c0ba5e190f5c52fcddd3f64ccb">   41</a></span>&#160;<span class="preprocessor">#define SCREEN_EPD_EXT3_RELEASE 501</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">LCD_Configuration.h</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">hV_Configuration.h</a>&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// Set parameters</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// * Edit LCD_Configuration.h</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// * Edit hV_Configuration.h</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Other libraries</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00077.html">LCD_Screen_Buffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00077.html">hV_Screen_Buffer.h</a>&quot;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if LCD_SCREEN_BUFFER_RELEASE &lt; 501</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#error Required LCD_SCREEN_BUFFER_RELEASE 501</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if hV_SCREEN_BUFFER_RELEASE &lt; 501</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#error Required hV_SCREEN_BUFFER_RELEASE 501</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;SPI.h&quot;</span></div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('a00089_source.html',''); initResizable
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// Objects</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="a00128.html">  140</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00128.html">Screen_EPD_EXT3</a> final : <span class="keyword">public</span> <a class="code" href="a00124.html">LCD_Screen_Buffer</a></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="a00128.html">  140</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00128.html">Screen_EPD_EXT3</a> final : <span class="keyword">public</span> <a class="code" href="a00124.html">hV_Screen_Buffer</a></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="a00128.html#a5d767632e49d5cf962d8ed759faf0a48">Screen_EPD_EXT3</a>(<a class="code" href="a00089.html#a964206153af38ff52157d7a4e59ceb95">eScreen_EPD_EXT3_t</a> eScreen_EPD_EXT3);</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('a00089_source.html',''); initResizable
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    String <a class="code" href="a00128.html#a688a48ffaa7040e452a0bf77ac500d10">WhoAmI</a>();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00128.html#aa1dcf5c1711c153ff783ccec1f4d6fdb">clear</a>(uint16_t colour = <a class="code" href="a00053.html#a3181e04e3e4b3185e98810c9621ea891">myColours</a>.<a class="code" href="a00108.html#a6995543c8f265f3ab2e5e76c94803c29">white</a>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00128.html#aa1dcf5c1711c153ff783ccec1f4d6fdb">clear</a>(uint16_t colour = <a class="code" href="a00053.html#aa178466696f7432d6da667d514bee379">myColours</a>.<a class="code" href="a00108.html#a1b6aab7408380af0d190a2a2165a3f25">white</a>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00128.html#a6fb49e3dc7184a532d2324f923c074eb">invert</a>(<span class="keywordtype">bool</span> flag);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
@@ -222,9 +222,9 @@ $(document).ready(function(){initNavTree('a00089_source.html',''); initResizable
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;};</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCREEN_EPD_ITC_RELEASE</span></div>
-<div class="ttc" id="aa00053_html_a3181e04e3e4b3185e98810c9621ea891"><div class="ttname"><a href="a00053.html#a3181e04e3e4b3185e98810c9621ea891">myColours</a></div><div class="ttdeci">LCD_Colours565 myColours</div><div class="ttdoc">Instantiated object.</div><div class="ttdef"><b>Definition:</b> LCD_Colours565.cpp:26</div></div>
-<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">LCD_Configuration.h</a></div><div class="ttdoc">Header.</div></div>
-<div class="ttc" id="aa00077_html"><div class="ttname"><a href="a00077.html">LCD_Screen_Buffer.h</a></div><div class="ttdoc">Class library header.</div></div>
+<div class="ttc" id="aa00053_html_aa178466696f7432d6da667d514bee379"><div class="ttname"><a href="a00053.html#aa178466696f7432d6da667d514bee379">myColours</a></div><div class="ttdeci">hV_Colours565 myColours</div><div class="ttdoc">Instantiated object.</div><div class="ttdef"><b>Definition:</b> hV_Colours565.cpp:26</div></div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">hV_Configuration.h</a></div><div class="ttdoc">Header.</div></div>
+<div class="ttc" id="aa00077_html"><div class="ttname"><a href="a00077.html">hV_Screen_Buffer.h</a></div><div class="ttdoc">Class library header.</div></div>
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95">eScreen_EPD_EXT3_t</a></div><div class="ttdeci">eScreen_EPD_EXT3_t</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:61</div></div>
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95a3e4190415dd9f8d1edef581a258dc7e5"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95a3e4190415dd9f8d1edef581a258dc7e5">eScreen_EPD_EXT3_213_BWR</a></div><div class="ttdeci">@ eScreen_EPD_EXT3_213_BWR</div><div class="ttdoc">iTC 2.13 BWR 104 x 212 x 2</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:63</div></div>
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95a5bd08f5ba5b0a417937545bf89f9fcb2"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95a5bd08f5ba5b0a417937545bf89f9fcb2">eScreen_EPD_EXT3_437_BWR</a></div><div class="ttdeci">@ eScreen_EPD_EXT3_437_BWR</div><div class="ttdoc">iTC 4.37 BWR 480 x 176 x 2</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:69</div></div>
@@ -239,9 +239,9 @@ $(document).ready(function(){initNavTree('a00089_source.html',''); initResizable
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95ad4f5bbb44e03118e857287e770bbd4ab"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95ad4f5bbb44e03118e857287e770bbd4ab">eScreen_EPD_EXT3_1220_BWR</a></div><div class="ttdeci">@ eScreen_EPD_EXT3_1220_BWR</div><div class="ttdoc">iTC 12.20 BWR 960 x 768 x 2</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:74</div></div>
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95ae1d992212e905d3ebc0ad529464c3444"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95ae1d992212e905d3ebc0ad529464c3444">eScreen_EPD_EXT3_970_BWR</a></div><div class="ttdeci">@ eScreen_EPD_EXT3_970_BWR</div><div class="ttdoc">iTC 9.70 BWR 960 x 672 x 2</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:73</div></div>
 <div class="ttc" id="aa00089_html_a964206153af38ff52157d7a4e59ceb95afd8298dafd6aa4dc63053ae9b8fca65f"><div class="ttname"><a href="a00089.html#a964206153af38ff52157d7a4e59ceb95afd8298dafd6aa4dc63053ae9b8fca65f">eScreen_EPD_EXT3_154_BWR</a></div><div class="ttdeci">@ eScreen_EPD_EXT3_154_BWR</div><div class="ttdoc">iTC 1.54 BWR 152 x 152 x 2</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:62</div></div>
-<div class="ttc" id="aa00108_html_a6995543c8f265f3ab2e5e76c94803c29"><div class="ttname"><a href="a00108.html#a6995543c8f265f3ab2e5e76c94803c29">LCD_Colours565::white</a></div><div class="ttdeci">static const uint16_t white</div><div class="ttdoc">white</div><div class="ttdef"><b>Definition:</b> LCD_Colours565.h:60</div></div>
-<div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">font_s</a></div><div class="ttdoc">Structure for font.</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:76</div></div>
-<div class="ttc" id="aa00124_html"><div class="ttname"><a href="a00124.html">LCD_Screen_Buffer</a></div><div class="ttdoc">Generic class for buffered LCD.</div><div class="ttdef"><b>Definition:</b> LCD_Screen_Buffer.h:58</div></div>
+<div class="ttc" id="aa00108_html_a1b6aab7408380af0d190a2a2165a3f25"><div class="ttname"><a href="a00108.html#a1b6aab7408380af0d190a2a2165a3f25">hV_Colours565::white</a></div><div class="ttdeci">static const uint16_t white</div><div class="ttdoc">white</div><div class="ttdef"><b>Definition:</b> hV_Colours565.h:60</div></div>
+<div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">font_s</a></div><div class="ttdoc">Structure for font.</div><div class="ttdef"><b>Definition:</b> hV_Font.h:76</div></div>
+<div class="ttc" id="aa00124_html"><div class="ttname"><a href="a00124.html">hV_Screen_Buffer</a></div><div class="ttdoc">Generic class for buffered LCD.</div><div class="ttdef"><b>Definition:</b> hV_Screen_Buffer.h:58</div></div>
 <div class="ttc" id="aa00128_html"><div class="ttname"><a href="a00128.html">Screen_EPD_EXT3</a></div><div class="ttdoc">Class for Pervasive Displays iTC BWR screens.</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.h:141</div></div>
 <div class="ttc" id="aa00128_html_a44a5cff6b6fee665798deea12cc1a58e"><div class="ttname"><a href="a00128.html#a44a5cff6b6fee665798deea12cc1a58e">Screen_EPD_EXT3::getRefreshTime</a></div><div class="ttdeci">uint8_t getRefreshTime()</div><div class="ttdoc">Screen refresh time for the BWR screens.</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.cpp:1169</div></div>
 <div class="ttc" id="aa00128_html_a4fe7dd69f57d2cf40adef054ce54af34"><div class="ttname"><a href="a00128.html#a4fe7dd69f57d2cf40adef054ce54af34">Screen_EPD_EXT3::point</a></div><div class="ttdeci">void point(uint16_t x1, uint16_t y1, uint16_t colour)</div><div class="ttdoc">Draw pixel.</div><div class="ttdef"><b>Definition:</b> Screen_EPD_EXT3.cpp:1040</div></div>

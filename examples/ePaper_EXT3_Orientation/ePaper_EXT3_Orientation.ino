@@ -2,8 +2,10 @@
 /// @file		ePaper_EXT3_Orientation.ino
 /// @brief		Example of features for basic edition
 ///
+/// @image html T2_ORIEN.PDF
+/// @image latex T2_ORIEN.PDF width=10cm
+///
 /// @details    Library for Pervasive Displays EXT3 - Basic level
-/// @n @a		Developed with [embedXcode+](https://embedXcode.weebly.com)
 ///
 /// @author		Rei Vilo
 /// @author		https://embeddedcomputing.weebly.com
@@ -34,7 +36,7 @@
 
 // Include application, user and local libraries
 // !!! Help https://bit.ly/2CL22Qp
-#include "LCD_Utilities.h"
+#include "hV_Utilities.h"
 
 // Define structures and classes
 
@@ -42,19 +44,19 @@
 // Define variables and constants
 // === Pervasive Displays iTC
 #include "ePaper_EXT3_Basic_Library.h"
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_154_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_213_BWR);
-Screen_iTC_BWR myScreen(eScreen_EPD_iTC_271_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_287_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_266_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_370_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_420_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_437_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_565_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_581_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_740_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_970_BWR);
-//Screen_iTC_BWR myScreen(eScreen_EPD_iTC_1220_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_154_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_213_BWR);
+Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_271_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_287_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_266_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_370_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_420_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_437_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_565_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_581_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_740_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_970_BWR);
+//Screen_EPD_EXT3 myScreen(eScreen_EPD_EXT3_1220_BWR);
 
 
 // Prototypes

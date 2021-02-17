@@ -3,7 +3,7 @@
 // Library C++ code
 // ----------------------------------
 //
-// Project      LCD_screen Library Suite
+// Project      highView Library Suite
 //
 // Created by   Rei Vilo, 28 Jun 2016
 //
@@ -311,7 +311,7 @@ void Screen_EPD_EXT3::begin()
     _screenHeigth = _widthScreen;
 
     // Standard
-    LCD_Screen_Buffer::begin();
+    hV_Screen_Buffer::begin();
 
     setOrientation(0);
     if (_f_fontMax() > 0)

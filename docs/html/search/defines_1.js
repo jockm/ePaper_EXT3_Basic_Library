@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['flash_5fcs_5fpin_388',['FLASH_CS_PIN',['../a00059.html#aef52395a58c8191f3d4a21a6d1d950c3',1,'LCD_Configuration.h']]],
-  ['flash_5fcss_5fpin_389',['FLASH_CSS_PIN',['../a00059.html#a10ad11f72fde94a36cac4c96e17233f3',1,'LCD_Configuration.h']]],
-  ['font_5fmode_390',['FONT_MODE',['../a00059.html#ac7790c7c49429aaa3e6bfba18956447e',1,'LCD_Configuration.h']]],
+  ['flash_5fcs_5fpin_388',['FLASH_CS_PIN',['../a00059.html#aef52395a58c8191f3d4a21a6d1d950c3',1,'hV_Configuration.h']]],
+  ['flash_5fcss_5fpin_389',['FLASH_CSS_PIN',['../a00059.html#a10ad11f72fde94a36cac4c96e17233f3',1,'hV_Configuration.h']]],
+  ['font_5fmode_390',['FONT_MODE',['../a00059.html#ac7790c7c49429aaa3e6bfba18956447e',1,'hV_Configuration.h']]],
   ['framesize_5fepd_5fext3_5f1220_5fbwr_391',['frameSize_EPD_EXT3_1220_BWR',['../a00089.html#a25a9c1ed4ea3ece81d432d629cb21b4d',1,'Screen_EPD_EXT3.h']]],
   ['framesize_5fepd_5fext3_5f154_5fbwr_392',['frameSize_EPD_EXT3_154_BWR',['../a00089.html#aee708ec11857d909005fd706446c3103',1,'Screen_EPD_EXT3.h']]],
   ['framesize_5fepd_5fext3_5f213_5fbwr_393',['frameSize_EPD_EXT3_213_BWR',['../a00089.html#a56201205df4d7c8e751128bdabcac3a7',1,'Screen_EPD_EXT3.h']]],

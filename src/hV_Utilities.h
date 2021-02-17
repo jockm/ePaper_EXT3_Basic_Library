@@ -1,9 +1,9 @@
 ///
-/// @file       LCD_Utilities.h
+/// @file       hV_Utilities.h
 /// @brief      Library header
-/// @details    Utilities for LCD_screen
+/// @details    Utilities for hV_screen
 /// @n
-/// @n @b       Project LCD_screen Library Suite
+/// @n @b       Project highView Library Suite
 ///
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
@@ -13,7 +13,7 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
 /// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -31,11 +31,11 @@
 #error Platform not defined
 #endif // end IDE
 
-#ifndef LCD_UTILITIES_RELEASE
+#ifndef hV_UTILITIES_RELEASE
 ///
 /// @brief  Library release number
 ///
-#define LCD_UTILITIES_RELEASE 501
+#define hV_UTILITIES_RELEASE 501
 
 #ifndef min
 #define min(a, b) ((a) < (b) ? (a) : (b))
@@ -252,4 +252,4 @@ void wait_ms(uint32_t ms);
 
 /// @}
 
-#endif // LCD_UTILITIES_RELEASE
+#endif // hV_UTILITIES_RELEASE

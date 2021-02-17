@@ -22,7 +22,7 @@
 //  Font library
 //  ----------------------------------
 //
-// Project LCD_screen Library Suite
+// Project highView Library Suite
 //  Created by Rei Vilo on 26/05/12
 //  Copyright (c) 2012 http://embeddedcomputing.weebly.com
 //  Licence All rights reserved

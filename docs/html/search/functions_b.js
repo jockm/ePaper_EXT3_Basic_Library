@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['point_295',['point',['../a00124.html#a6f76dc2654de88bea5f97f39d4de2872',1,'LCD_Screen_Buffer::point()'],['../a00128.html#a4fe7dd69f57d2cf40adef054ce54af34',1,'Screen_EPD_EXT3::point()']]]
+  ['readpixel_295',['readPixel',['../a00128.html#ad12a31edec338a1716bb0adde31b02a8',1,'Screen_EPD_EXT3']]],
+  ['rectangle_296',['rectangle',['../a00124.html#a714b2263f8fa3d26959d7e7f86e8a8d7',1,'hV_Screen_Buffer']]],
+  ['roundup_297',['roundUp',['../a00080.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;hV_Utilities.cpp'],['../a00083.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;hV_Utilities.cpp']]]
 ];

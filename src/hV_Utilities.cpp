@@ -1,20 +1,20 @@
 //
-// LCD_Utilities.cpp
+// hV_Utilities.cpp
 // Library C++ code
 // ----------------------------------
 //
-// Project      LCD_screen Library Suite
+// Project      highView Library Suite
 //
 // Created by   Rei Vilo, 01 Jun 2013
 //
 // Copyright    © Rei Vilo, 2010-2020
 // Licence      Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 //
-// See          LCD_Utilities.h for references
+// See          hV_Utilities.h for references
 //
 
 // Library header
-#include "LCD_Utilities.h"
+#include "hV_Utilities.h"
 #include "stdarg.h"
 #include "stdio.h"
 

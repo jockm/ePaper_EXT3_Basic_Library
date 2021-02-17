@@ -1,5 +1,5 @@
 ///
-/// @file		LCD_Configuration.h
+/// @file		hV_Configuration.h
 /// @brief		Header
 /// @details	Configuration of the options for ePaper EXT3 Basic Library
 ///
@@ -8,9 +8,9 @@
 /// 3. FONT_MODE defines the fonts used, here Terminal for the basic edition. (Advanced edition)
 /// 4. MAX_FONT_SIZE sets the number of fonts, maximum 4 for the basic edition.
 /// 5. SRAM_MODE sets the memory either internal MCU or external SPI. (Advanced edition)
-/// 6. Set USE_LCD_SCREEN to virtual object, recommended. (Advanced edition)
+/// 6. Set USE_hV_SCREEN to virtual object, recommended. (Advanced edition)
 ///
-/// @n @b       Project LCD_screen Library Suite
+/// @n @b       Project highView Library Suite
 ///
 /// @author		Rei Vilo
 /// @author		https://embeddedcomputing.weebly.com
@@ -21,7 +21,7 @@
 /// @copyright	(c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
 /// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -40,11 +40,11 @@
 #endif // end IDE
 
 
-#ifndef LCD_CONFIGURATION_RELEASE
+#ifndef hV_CONFIGURATION_RELEASE
 ///
 /// @brief	Release
 ///
-#define LCD_CONFIGURATION_RELEASE 501
+#define hV_CONFIGURATION_RELEASE 501
 
 ///
 /// @name       1- Configuration
@@ -185,11 +185,11 @@
 
 ///
 /// @name       6. Use virtual object
-/// @details    From LCD_Screen_Virtual.h for extended compability
-/// @note       If USE_LCD_SCREEN_SELF, declare additional variables
+/// @details    From hV_Screen_Virtual.h for extended compability
+/// @note       If USE_hV_SCREEN_SELF, declare additional variables
 /// @n Virtual object requires ~1 kB bytes.
 /// * Basic edition: self option
 /// * Advanced edition: self and virtual options
 ///
 
-#endif // LCD_CONFIGURATION_RELEASE
+#endif // hV_CONFIGURATION_RELEASE

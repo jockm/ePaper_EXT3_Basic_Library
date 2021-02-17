@@ -1,11 +1,11 @@
 ///
-/// @file       LCD_Documentation.h
+/// @file       hV_Documentation.h
 /// @brief      Documentation for the ePaper EXT3 Basic Library
 /// @details    Additional documentation on coordinates, fonts and colours
 ///
-/// @n The ePaper_EXT3_Basic_Library is a special edition of the LCD_screen Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
+/// @n The ePaper_EXT3_Basic_Library is a special edition of the highView Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
 ///
-/// @n @a   Member of LCD_screen Library Suite
+/// @n @a   Member of highView Library Suite
 /// @n      For Arduino and Energia
 ///
 ///
@@ -18,16 +18,17 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  CC BY-NC-SA 4.0
 ///
-/// Licence:
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
-/// * For hobbyists and for personal usage: [Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the ePaper_EXT3_Advanced_Library
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
-
+///
 ///
 /// @mainpage  EPD EXT3 BWR eScreen Basic Library
-/// @details The ePaper_EXT3_Basic_Library is a special edition of the LCD_screen Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
+/// @details The ePaper_EXT3_Basic_Library is a special edition of the highView Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
 ///
 /// The @ref Examples section showcases the features the library and how to use them:
 ///
@@ -49,12 +50,12 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @n Dual licence:
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-/// 
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
 
 ///
@@ -63,7 +64,7 @@
 ///
 ///
 /// @section    Copyright Copyright and licence
-/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
 /// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -72,10 +73,10 @@
 ///
 ///
 /// @section    Structure Library structure
-/// @details    The LCD_screen Library Suite contains three layers:
+/// @details    The highView Library Suite contains three layers:
 /// * top level end-user libraries like GUI.h with label, button, dialog, menu or slider with, and Graphics.h with  graphics.
 /// * intermediate level screen-specific libraries, ie. ePaper_EXT3_Basic_Library.h
-/// * low level virtual classes, ie. LCD_Screen_Buffer or LCD_Font_Terminal.h
+/// * low level virtual classes, ie. hV_Screen_Buffer or hV_Font_Terminal.h
 ///
 ///
 /// @section    Version Version management
@@ -84,21 +85,21 @@
 ///
 /// Each library has its own release number.
 /// @code {.cpp}
-///  #define LCD_FONT_RELEASE 105
+///  #define hV_FONT_RELEASE 105
 /// @endcode
 ///
 /// The release number is checked at pre-processing
 /// @code {.cpp}
-///  #include "LCD_screen_font.h"
+///  #include "hV_screen_font.h"
 ///
-///  #if LCD_FONT_RELEASE < 106
-///  #error Required LCD_FONT_RELEASE 106
+///  #if hV_FONT_RELEASE < 106
+///  #error Required hV_FONT_RELEASE 106
 ///  #endif
 /// @endcode
 ///
-/// In this example, if the LCD_screen_font library release  is 105, the pre-processor prompts an error message:
+/// In this example, if the hV_screen_font library release  is 105, the pre-processor prompts an error message:
 /// @code {.cpp}
-///  #error Required LCD_FONT_RELEASE 106
+///  #error Required hV_FONT_RELEASE 106
 /// @endcode
 ///
 ///
@@ -226,10 +227,10 @@
 ///
 /// @section    Resource Other resources
 /// @brief      More resources are available online.
-/// @details    The LCD_screen Library Suite is supported by the dedicated Embedded Computing website at https://embeddedcomputing.weebly.com
+/// @details    The highView Library Suite is supported by the dedicated Embedded Computing website at https://embeddedcomputing.weebly.com
 ///
 /// @see from Embedded Computing website:
-/// * [Main page](https://embeddedcomputing.weebly.com/lcd_screen-library-suite.html)
+/// * [Main page](https://embeddedcomputing.weebly.com/hV_screen-library-suite.html)
 ///
 ///
 /// @section    Examples Examples
@@ -262,7 +263,7 @@
 ///
 ///
 /// @section    Configuration Configuration
-/// @brief      Use LCD_Configuration.h to select the configuration for GPIOs and SPI bus.
+/// @brief      Use hV_Configuration.h to select the configuration for GPIOs and SPI bus.
 /// @details	Configuration of the options for ePaper EXT3 Basic Library includes 5 steps.
 ///
 /// 1. CONFIGURATION_OPTION selects the hardware with pre-defined configurations.
@@ -270,5 +271,5 @@
 /// 3. FONT_MODE defines the fonts used, here Terminal for the basic edition. (Advanced edition)
 /// 4. MAX_FONT_SIZE sets the number of fonts, maximum 4 for the basic edition.
 /// 5. SRAM_MODE sets the memory either internal MCU or external SPI. (Advanced edition)
-/// 6. Set USE_LCD_SCREEN to virtual object, recommended. (Advanced edition)
+/// 6. Set USE_hV_SCREEN to virtual object, recommended. (Advanced edition)
 ///

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ePaper_EXT3_Basic_Library Reference Manual: LCD_Font.h Source File</title>
+<title>ePaper_EXT3_Basic_Library Reference Manual: hV_Font.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('a00065_source.html',''); initResizable
 
 <div class="header">
   <div class="headertitle">
-<div class="title">LCD_Font.h</div>  </div>
+<div class="title">hV_Font.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00065.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('a00065_source.html',''); initResizable
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#error Platform not defined</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// end IDE</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef LCD_FONT_HEADER_STRUCTURE_RELEASE</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00065.html#af446c99bf94974234dda3a64c5025de9">   35</a></span>&#160;<span class="preprocessor">#define LCD_FONT_HEADER_STRUCTURE_RELEASE 401</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef hV_FONT_HEADER_STRUCTURE_RELEASE</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00065.html#a7a0568c346f7cb957cd4c3f56454673e">   35</a></span>&#160;<span class="preprocessor">#define hV_FONT_HEADER_STRUCTURE_RELEASE 401</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">LCD_Configuration.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">hV_Configuration.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// The Arduino IDE doesn&#39;t allow to select the libraries, hence this condition.</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if (FONT_MODE == USE_FONT_TERMINAL)</span></div>
@@ -124,23 +124,23 @@ $(document).ready(function(){initNavTree('a00065_source.html',''); initResizable
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// USE_FONT_TERMINAL</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LCD_FONT_HEADER_STRUCTURE_RELEASE</span></div>
-<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">LCD_Configuration.h</a></div><div class="ttdoc">Header.</div></div>
-<div class="ttc" id="aa00112_html"><div class="ttname"><a href="a00112.html">width_s</a></div><div class="ttdoc">Structure for character width.</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:46</div></div>
-<div class="ttc" id="aa00112_html_a68591191be4ff122ee2a26f8b977f2e7"><div class="ttname"><a href="a00112.html#a68591191be4ff122ee2a26f8b977f2e7">width_s::pixel</a></div><div class="ttdeci">uint16_t pixel</div><div class="ttdoc">width in pixel</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:47</div></div>
-<div class="ttc" id="aa00112_html_a7ad7fe2d62cc875ebf7a14389541e66a"><div class="ttname"><a href="a00112.html#a7ad7fe2d62cc875ebf7a14389541e66a">width_s::index</a></div><div class="ttdeci">uint16_t index</div><div class="ttdoc">relative address</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:48</div></div>
-<div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">font_s</a></div><div class="ttdoc">Structure for font.</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:76</div></div>
-<div class="ttc" id="aa00116_html_a17f5e4b07589c6fedf9c10719a3ccad0"><div class="ttname"><a href="a00116.html#a17f5e4b07589c6fedf9c10719a3ccad0">font_s::first</a></div><div class="ttdeci">uint8_t first</div><div class="ttdoc">number of first character, usually 32</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:80</div></div>
-<div class="ttc" id="aa00116_html_a63f8837d47ae05b6ae7f446cf379824c"><div class="ttname"><a href="a00116.html#a63f8837d47ae05b6ae7f446cf379824c">font_s::height</a></div><div class="ttdeci">uint8_t height</div><div class="ttdoc">general height in pixels</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:78</div></div>
-<div class="ttc" id="aa00116_html_a83b66eec3d0f585fcba2521812d8e669"><div class="ttname"><a href="a00116.html#a83b66eec3d0f585fcba2521812d8e669">font_s::number</a></div><div class="ttdeci">uint8_t number</div><div class="ttdoc">number of characters, usually 96 or 224</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:81</div></div>
-<div class="ttc" id="aa00116_html_ac4b2baeedd0e11a46ed1bc48b2ba672b"><div class="ttname"><a href="a00116.html#ac4b2baeedd0e11a46ed1bc48b2ba672b">font_s::maxWidth</a></div><div class="ttdeci">uint8_t maxWidth</div><div class="ttdoc">maximum width in pixels from *width array</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:79</div></div>
-<div class="ttc" id="aa00116_html_acbe14f6295f4d4f0e92df32d54a2c105"><div class="ttname"><a href="a00116.html#acbe14f6295f4d4f0e92df32d54a2c105">font_s::kind</a></div><div class="ttdeci">uint8_t kind</div><div class="ttdoc">font description</div><div class="ttdef"><b>Definition:</b> LCD_Font.h:77</div></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// hV_FONT_HEADER_STRUCTURE_RELEASE</span></div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">hV_Configuration.h</a></div><div class="ttdoc">Header.</div></div>
+<div class="ttc" id="aa00112_html"><div class="ttname"><a href="a00112.html">width_s</a></div><div class="ttdoc">Structure for character width.</div><div class="ttdef"><b>Definition:</b> hV_Font.h:46</div></div>
+<div class="ttc" id="aa00112_html_a68591191be4ff122ee2a26f8b977f2e7"><div class="ttname"><a href="a00112.html#a68591191be4ff122ee2a26f8b977f2e7">width_s::pixel</a></div><div class="ttdeci">uint16_t pixel</div><div class="ttdoc">width in pixel</div><div class="ttdef"><b>Definition:</b> hV_Font.h:47</div></div>
+<div class="ttc" id="aa00112_html_a7ad7fe2d62cc875ebf7a14389541e66a"><div class="ttname"><a href="a00112.html#a7ad7fe2d62cc875ebf7a14389541e66a">width_s::index</a></div><div class="ttdeci">uint16_t index</div><div class="ttdoc">relative address</div><div class="ttdef"><b>Definition:</b> hV_Font.h:48</div></div>
+<div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">font_s</a></div><div class="ttdoc">Structure for font.</div><div class="ttdef"><b>Definition:</b> hV_Font.h:76</div></div>
+<div class="ttc" id="aa00116_html_a17f5e4b07589c6fedf9c10719a3ccad0"><div class="ttname"><a href="a00116.html#a17f5e4b07589c6fedf9c10719a3ccad0">font_s::first</a></div><div class="ttdeci">uint8_t first</div><div class="ttdoc">number of first character, usually 32</div><div class="ttdef"><b>Definition:</b> hV_Font.h:80</div></div>
+<div class="ttc" id="aa00116_html_a63f8837d47ae05b6ae7f446cf379824c"><div class="ttname"><a href="a00116.html#a63f8837d47ae05b6ae7f446cf379824c">font_s::height</a></div><div class="ttdeci">uint8_t height</div><div class="ttdoc">general height in pixels</div><div class="ttdef"><b>Definition:</b> hV_Font.h:78</div></div>
+<div class="ttc" id="aa00116_html_a83b66eec3d0f585fcba2521812d8e669"><div class="ttname"><a href="a00116.html#a83b66eec3d0f585fcba2521812d8e669">font_s::number</a></div><div class="ttdeci">uint8_t number</div><div class="ttdoc">number of characters, usually 96 or 224</div><div class="ttdef"><b>Definition:</b> hV_Font.h:81</div></div>
+<div class="ttc" id="aa00116_html_ac4b2baeedd0e11a46ed1bc48b2ba672b"><div class="ttname"><a href="a00116.html#ac4b2baeedd0e11a46ed1bc48b2ba672b">font_s::maxWidth</a></div><div class="ttdeci">uint8_t maxWidth</div><div class="ttdoc">maximum width in pixels from *width array</div><div class="ttdef"><b>Definition:</b> hV_Font.h:79</div></div>
+<div class="ttc" id="aa00116_html_acbe14f6295f4d4f0e92df32d54a2c105"><div class="ttname"><a href="a00116.html#acbe14f6295f4d4f0e92df32d54a2c105">font_s::kind</a></div><div class="ttdeci">uint8_t kind</div><div class="ttdoc">font description</div><div class="ttdef"><b>Definition:</b> hV_Font.h:77</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="a00065.html">LCD_Font.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="a00065.html">hV_Font.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['myscreen_294',['myScreen',['../a00005.html#aec5928ababf49f5e283922167d65ca62',1,'myScreen(eScreen_EPD_iTC_271_BWR):&#160;ePaper_EXT3_Characters.ino'],['../a00008.html#aec5928ababf49f5e283922167d65ca62',1,'myScreen(eScreen_EPD_iTC_271_BWR):&#160;ePaper_EXT3_Fonts.ino'],['../a00011.html#aec5928ababf49f5e283922167d65ca62',1,'myScreen(eScreen_EPD_iTC_271_BWR):&#160;ePaper_EXT3_Forms.ino'],['../a00014.html#aec5928ababf49f5e283922167d65ca62',1,'myScreen(eScreen_EPD_iTC_271_BWR):&#160;ePaper_EXT3_Orientation.ino'],['../a00017.html#aec5928ababf49f5e283922167d65ca62',1,'myScreen(eScreen_EPD_iTC_271_BWR):&#160;ePaper_EXT3_Palette.ino']]]
+  ['point_294',['point',['../a00124.html#af56437354e69149a2da933a458b05f04',1,'hV_Screen_Buffer::point()'],['../a00128.html#a4fe7dd69f57d2cf40adef054ce54af34',1,'Screen_EPD_EXT3::point()']]]
 ];

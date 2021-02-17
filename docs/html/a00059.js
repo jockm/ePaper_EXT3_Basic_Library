@@ -10,7 +10,7 @@ var a00059 =
     [ "FLASH_CS_PIN", "a00059.html#aef52395a58c8191f3d4a21a6d1d950c3", null ],
     [ "FLASH_CSS_PIN", "a00059.html#a10ad11f72fde94a36cac4c96e17233f3", null ],
     [ "FONT_MODE", "a00059.html#ac7790c7c49429aaa3e6bfba18956447e", null ],
-    [ "LCD_CONFIGURATION_RELEASE", "a00059.html#aba454a008f7c3c10cf5c9bbc83c10134", null ],
+    [ "hV_CONFIGURATION_RELEASE", "a00059.html#a3bcfa67129cf269c0672a66e4705cc21", null ],
     [ "MAX_FONT_SIZE", "a00059.html#a66b2ce216c9fb1c332b3f3a4dbc0882b", null ],
     [ "PANEL_BUSY_PIN", "a00059.html#a5d0b7ebeb5a1ecfffae6adb0caaabe02", null ],
     [ "PANEL_CS_PIN", "a00059.html#a367c64219c5abd86721be450a9ebcf90", null ],

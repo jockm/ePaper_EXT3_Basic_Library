@@ -1,9 +1,9 @@
 ///
-/// @file       LCD_Font.h
+/// @file       hV_Font.h
 /// @brief      Header
 /// @details    Font structure
 /// @n
-/// @n @b       Project LCD_screen Library Suite
+/// @n @b       Project highView Library Suite
 /// @n @a       Developed with [embedXcode+](http://embedXcode.weebly.com)
 ///
 /// @author     Rei Vilo
@@ -28,13 +28,13 @@
 #error Platform not defined
 #endif // end IDE
 
-#ifndef LCD_FONT_HEADER_STRUCTURE_RELEASE
+#ifndef hV_FONT_HEADER_STRUCTURE_RELEASE
 ///
-/// @brief    LCD_Font release number
+/// @brief    hV_Font release number
 ///
-#define LCD_FONT_HEADER_STRUCTURE_RELEASE 401
+#define hV_FONT_HEADER_STRUCTURE_RELEASE 401
 
-#include "LCD_Configuration.h"
+#include "hV_Configuration.h"
 
 // The Arduino IDE doesn't allow to select the libraries, hence this condition.
 #if (FONT_MODE == USE_FONT_TERMINAL)
@@ -83,4 +83,4 @@ struct font_s
 
 #endif // USE_FONT_TERMINAL
 
-#endif // LCD_FONT_HEADER_STRUCTURE_RELEASE
+#endif // hV_FONT_HEADER_STRUCTURE_RELEASE

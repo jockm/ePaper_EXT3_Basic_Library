@@ -3,7 +3,7 @@
 /// @brief      Library header
 /// @details    Driver for Pervasive Displays iTC BWR screens
 /// @n
-/// @n @b       Project LCD_screen Library Suite
+/// @n @b       Project highView Library Suite
 ///
 /// @author     Rei Vilo
 /// @author     http://embeddedcomputing.weebly.com
@@ -14,7 +14,7 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
 /// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -40,16 +40,16 @@
 ///
 #define SCREEN_EPD_EXT3_RELEASE 501
 
-#include "LCD_Configuration.h"
+#include "hV_Configuration.h"
 
 // Set parameters
-// * Edit LCD_Configuration.h
+// * Edit hV_Configuration.h
 
 // Other libraries
-#include "LCD_Screen_Buffer.h"
+#include "hV_Screen_Buffer.h"
 
-#if LCD_SCREEN_BUFFER_RELEASE < 501
-#error Required LCD_SCREEN_BUFFER_RELEASE 501
+#if hV_SCREEN_BUFFER_RELEASE < 501
+#error Required hV_SCREEN_BUFFER_RELEASE 501
 #endif
 
 #include "SPI.h"
@@ -137,7 +137,7 @@ enum eScreen_EPD_EXT3_t
 /// @n  All commands work on the frame-buffer,
 ///     to be displayed on screen with flush()
 ///
-class Screen_EPD_EXT3 final : public LCD_Screen_Buffer
+class Screen_EPD_EXT3 final : public hV_Screen_Buffer
 {
   public:
     ///

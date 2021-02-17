@@ -1,6 +1,6 @@
 var a00056 =
 [
-    [ "LCD_Colours565", "a00108.html", "a00108" ],
-    [ "LCD_COLOURS_RELEASE", "a00056.html#a9ec176d4ce856a3d387857e1bd919bca", null ],
-    [ "myColours", "a00056.html#a3181e04e3e4b3185e98810c9621ea891", null ]
+    [ "hV_Colours565", "a00108.html", "a00108" ],
+    [ "hV_COLOURS_RELEASE", "a00056.html#ad04b95af5737630651211d49cf779995", null ],
+    [ "myColours", "a00056.html#aa178466696f7432d6da667d514bee379", null ]
 ];

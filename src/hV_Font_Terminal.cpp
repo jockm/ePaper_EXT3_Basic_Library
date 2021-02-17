@@ -1,29 +1,29 @@
 //
-// LCD_Font_Terminal.cpp
+// hV_Font_Terminal.cpp
 // C++ code
 // ----------------------------------
 //
-// Project      LCD_screen Library Suite
+// Project      highView Library Suite
 //
 // Created by   Rei Vilo, 31 Dec 2013
 //
 // Copyright    © Rei Vilo, 2010-2020
 // Licence      Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 //
-// See          LCD_Font_Terminal.h for references
+// See          hV_Font_Terminal.h for references
 //
 
 
-#include "LCD_Font_Terminal.h"
-//#include "LCD_Utilities.h"
+#include "hV_Font_Terminal.h"
+//#include "hV_Utilities.h"
 
 // The Arduino IDE doesn't allow to select the libraries, hence this condition.
 #if (FONT_MODE == USE_FONT_TERMINAL)
 
 // Code
 // Font functions
-//LCD_Font_Terminal::LCD_Font_Terminal()
-void LCD_Font_Terminal::_f_begin()
+//hV_Font_Terminal::hV_Font_Terminal()
+void hV_Font_Terminal::_f_begin()
 {
     _f_fontSize       = 0;
     _f_fontNumber     = MAX_FONT_SIZE;
@@ -34,17 +34,17 @@ void LCD_Font_Terminal::_f_begin()
     _f_selectFont(0);
 }
 
-uint8_t LCD_Font_Terminal::_f_addFont(font_s fontName)
+uint8_t hV_Font_Terminal::_f_addFont(font_s fontName)
 {
     return _f_fontNumber;
 }
 
-void LCD_Font_Terminal::_f_setFontSolid(bool flag)
+void hV_Font_Terminal::_f_setFontSolid(bool flag)
 {
     _f_fontSolid = flag;
 }
 
-void LCD_Font_Terminal::_f_selectFont(uint8_t size)
+void hV_Font_Terminal::_f_selectFont(uint8_t size)
 {
     if (size < MAX_FONT_SIZE)
     {
@@ -79,22 +79,22 @@ void LCD_Font_Terminal::_f_selectFont(uint8_t size)
     }
 }
 
-uint8_t LCD_Font_Terminal::_f_fontMax()
+uint8_t hV_Font_Terminal::_f_fontMax()
 {
     return MAX_FONT_SIZE;
 }
 
-void LCD_Font_Terminal::_f_setFontSpaceX(uint8_t number)
+void hV_Font_Terminal::_f_setFontSpaceX(uint8_t number)
 {
     _f_fontSpaceX = number;
 }
 
-void LCD_Font_Terminal::_f_setFontSpaceY(uint8_t number)
+void hV_Font_Terminal::_f_setFontSpaceY(uint8_t number)
 {
     _f_fontSpaceY = number;
 }
 
-uint8_t LCD_Font_Terminal::_f_getCharacter(uint8_t character, uint16_t index)
+uint8_t hV_Font_Terminal::_f_getCharacter(uint8_t character, uint16_t index)
 {
 #if (MAX_FONT_SIZE > 0)
     if (_f_fontSize == 0)
@@ -126,22 +126,22 @@ uint8_t LCD_Font_Terminal::_f_getCharacter(uint8_t character, uint16_t index)
 #endif // end MAX_FONT_SIZE > 0
 }
 
-uint16_t LCD_Font_Terminal::_f_characterSizeX(uint8_t character)
+uint16_t hV_Font_Terminal::_f_characterSizeX(uint8_t character)
 {
     return _f_font.maxWidth;
 }
 
-uint16_t LCD_Font_Terminal::_f_characterSizeY()
+uint16_t hV_Font_Terminal::_f_characterSizeY()
 {
     return _f_font.height;
 }
 
-uint16_t LCD_Font_Terminal::_f_stringSizeX(String text)
+uint16_t hV_Font_Terminal::_f_stringSizeX(String text)
 {
     return (uint16_t) text.length() * _f_font.maxWidth;
 }
 
-uint8_t LCD_Font_Terminal::_f_stringLengthToFitX(String text, uint16_t pixels)
+uint8_t hV_Font_Terminal::_f_stringLengthToFitX(String text, uint16_t pixels)
 {
     uint8_t index = 0;
 
@@ -154,11 +154,11 @@ uint8_t LCD_Font_Terminal::_f_stringLengthToFitX(String text, uint16_t pixels)
     return index;
 }
 
-uint8_t LCD_Font_Terminal::_f_getFontKind()
+uint8_t hV_Font_Terminal::_f_getFontKind()
 {
     return _f_font.kind; // monospaced
 }
-uint8_t LCD_Font_Terminal::_f_getFontMaxWidth()
+uint8_t hV_Font_Terminal::_f_getFontMaxWidth()
 {
     return _f_font.maxWidth;
 }
