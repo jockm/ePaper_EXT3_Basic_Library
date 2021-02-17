@@ -7,7 +7,7 @@
 /// @author     http://embeddedcomputing.weebly.com
 ///
 /// @date       11 Jan 2021
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -27,7 +27,7 @@
 ///
 /// @brief    Release
 ///
-#define TERMINAL12E_FONT_RELEASE 501
+#define TERMINAL12E_FONT_RELEASE 503
 
 
 ///

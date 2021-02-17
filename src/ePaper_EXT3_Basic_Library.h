@@ -9,7 +9,7 @@
 /// @author     http://embeddedcomputing.weebly.com
 ///
 /// @date       11 Jan 2021
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -35,4 +35,7 @@
 #error Platform not defined
 #endif // end IDE
 
+#ifndef EPAPER_EXT3_BASIC_LIBRARY
+#define EPAPER_EXT3_BASIC_LIBRARY 503
 #include "Screen_EPD_EXT3.h"
+#endif // EPAPER_EXT3_BASIC_LIBRARY

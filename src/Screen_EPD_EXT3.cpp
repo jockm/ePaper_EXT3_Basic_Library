@@ -14,6 +14,7 @@
 
 
 // Library header
+#include "SPI.h"
 #include "Screen_EPD_EXT3.h"
 
 #if defined(ENERGIA)

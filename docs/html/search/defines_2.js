@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['hv_5fcolours_5frelease_404',['hV_COLOURS_RELEASE',['../a00056.html#ad04b95af5737630651211d49cf779995',1,'hV_Colours565.h']]],
-  ['hv_5fconfiguration_5frelease_405',['hV_CONFIGURATION_RELEASE',['../a00059.html#a3bcfa67129cf269c0672a66e4705cc21',1,'hV_Configuration.h']]],
-  ['hv_5ffont_5fheader_5fstructure_5frelease_406',['hV_FONT_HEADER_STRUCTURE_RELEASE',['../a00065.html#a7a0568c346f7cb957cd4c3f56454673e',1,'hV_Font.h']]],
-  ['hv_5ffont_5fterminal_5frelease_407',['hV_FONT_TERMINAL_RELEASE',['../a00071.html#a2c1b31917210e8dd59e9d780d3285e12',1,'hV_Font_Terminal.h']]],
-  ['hv_5fscreen_5fbuffer_5frelease_408',['hV_SCREEN_BUFFER_RELEASE',['../a00077.html#a851c703d9610377daa95f386e7505bfb',1,'hV_Screen_Buffer.h']]],
-  ['hv_5futilities_5frelease_409',['hV_UTILITIES_RELEASE',['../a00083.html#a9181b73f355c545c61257008ed6515c1',1,'hV_Utilities.h']]]
+  ['flash_5fcs_5fpin_390',['FLASH_CS_PIN',['../a00059.html#aef52395a58c8191f3d4a21a6d1d950c3',1,'hV_Configuration.h']]],
+  ['flash_5fcss_5fpin_391',['FLASH_CSS_PIN',['../a00059.html#a10ad11f72fde94a36cac4c96e17233f3',1,'hV_Configuration.h']]],
+  ['font_5fmode_392',['FONT_MODE',['../a00059.html#ac7790c7c49429aaa3e6bfba18956447e',1,'hV_Configuration.h']]],
+  ['framesize_5fepd_5fext3_5f1220_5fbwr_393',['frameSize_EPD_EXT3_1220_BWR',['../a00089.html#a25a9c1ed4ea3ece81d432d629cb21b4d',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f154_5fbwr_394',['frameSize_EPD_EXT3_154_BWR',['../a00089.html#aee708ec11857d909005fd706446c3103',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f213_5fbwr_395',['frameSize_EPD_EXT3_213_BWR',['../a00089.html#a56201205df4d7c8e751128bdabcac3a7',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f266_5fbwr_396',['frameSize_EPD_EXT3_266_BWR',['../a00089.html#ae4edf0aa3efa33b93d76b0b1ba80ea87',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f271_5fbwr_397',['frameSize_EPD_EXT3_271_BWR',['../a00089.html#a9d48beab65b87a942a7db73552d32616',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f287_5fbwr_398',['frameSize_EPD_EXT3_287_BWR',['../a00089.html#ae26c7ca662702b588b22e96e778e3473',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f370_5fbwr_399',['frameSize_EPD_EXT3_370_BWR',['../a00089.html#a8d8a224acdd6ce439784e06f786f071e',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f420_5fbwr_400',['frameSize_EPD_EXT3_420_BWR',['../a00089.html#ae2ae72dd75480b7bb3cbddc7abb56970',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f437_5fbwr_401',['frameSize_EPD_EXT3_437_BWR',['../a00089.html#aade6bd11f42ee811b370b006945ace6d',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f565_5fbwr_402',['frameSize_EPD_EXT3_565_BWR',['../a00089.html#a0eafb093816655b11222cc9fa1b812bf',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f581_5fbwr_403',['frameSize_EPD_EXT3_581_BWR',['../a00089.html#ad586f9592a28b798f9e35e1869b78c20',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f740_5fbwr_404',['frameSize_EPD_EXT3_740_BWR',['../a00089.html#a2349654b43477fd7590d4fe0aad26561',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f970_5fbwr_405',['frameSize_EPD_EXT3_970_BWR',['../a00089.html#ab7a9bbcc8eed2ccb94961a534adaba20',1,'Screen_EPD_EXT3.h']]]
 ];

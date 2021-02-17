@@ -8,7 +8,7 @@
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
 /// @date       11 Jan 2021
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -34,7 +34,7 @@
 ///
 /// @brief  Library release number
 ///
-#define hV_SCREEN_BUFFER_RELEASE 501
+#define hV_SCREEN_BUFFER_RELEASE 503
 
 #include "hV_Configuration.h"
 

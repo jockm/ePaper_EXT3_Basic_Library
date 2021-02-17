@@ -16,7 +16,7 @@
 /// @author		https://embeddedcomputing.weebly.com
 ///
 /// @date       11 Jan 2021
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright	(c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -44,7 +44,7 @@
 ///
 /// @brief	Release
 ///
-#define hV_CONFIGURATION_RELEASE 501
+#define hV_CONFIGURATION_RELEASE 503
 
 ///
 /// @name       1- Configuration

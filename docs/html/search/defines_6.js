@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['screen_5fepd_5fext3_5frelease_420',['SCREEN_EPD_EXT3_RELEASE',['../a00089.html#ab75eb2c0ba5e190f5c52fcddd3f64ccb',1,'Screen_EPD_EXT3.h']]],
-  ['spi_5fclock_5fmax_421',['SPI_CLOCK_MAX',['../a00086.html#a8f20746a58681c13eaf198e2b380a758',1,'Screen_EPD_EXT3.cpp']]]
+  ['panel_5fbusy_5fpin_417',['PANEL_BUSY_PIN',['../a00059.html#a5d0b7ebeb5a1ecfffae6adb0caaabe02',1,'hV_Configuration.h']]],
+  ['panel_5fcs_5fpin_418',['PANEL_CS_PIN',['../a00059.html#a367c64219c5abd86721be450a9ebcf90',1,'hV_Configuration.h']]],
+  ['panel_5fcss_5fpin_419',['PANEL_CSS_PIN',['../a00059.html#ae1106d443258a3f37832f61bd83aa75b',1,'hV_Configuration.h']]],
+  ['panel_5fdc_5fpin_420',['PANEL_DC_PIN',['../a00059.html#adf4b645cd0a49bfd02dfbc5f13692899',1,'hV_Configuration.h']]],
+  ['panel_5freset_5fpin_421',['PANEL_RESET_PIN',['../a00059.html#affaebdf0d48423fb0672f3e8bcb09b0a',1,'hV_Configuration.h']]]
 ];

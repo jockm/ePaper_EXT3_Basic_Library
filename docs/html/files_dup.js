@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "ePaper_EXT3_Basic_Library.h", "a00050.html", null ],
+    [ "ePaper_EXT3_Basic_Library.h", "a00050.html", "a00050" ],
     [ "ePaper_EXT3_Characters.ino", "a00005.html", "a00005" ],
     [ "ePaper_EXT3_Fonts.ino", "a00008.html", "a00008" ],
     [ "ePaper_EXT3_Forms.ino", "a00011.html", "a00011" ],

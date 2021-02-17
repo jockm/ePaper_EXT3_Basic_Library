@@ -10,7 +10,7 @@
 /// @author		Rei Vilo
 /// @author		https://embeddedcomputing.weebly.com
 /// @date       31 Dec 2020
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright	(c) Rei Vilo, 2020
 /// @copyright	CC = BY SA NC
@@ -36,6 +36,9 @@
 
 // Include application, user and local libraries
 // !!! Help https://bit.ly/2CL22Qp
+#include "SPI.h"
+#include "hV_Configuration.h"
+#include "hV_Colours565.h"
 #include "hV_Utilities.h"
 
 // Define structures and classes

@@ -9,7 +9,7 @@
 /// @author     http://embeddedcomputing.weebly.com
 ///
 /// @date       11 Jan 2021
-/// @version    release 501
+/// @version    release 503
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
@@ -36,9 +36,9 @@
 
 #ifndef SCREEN_EPD_EXT3_RELEASE
 ///
-/// @brief	Library release number
+/// @brief  Library release number
 ///
-#define SCREEN_EPD_EXT3_RELEASE 501
+#define SCREEN_EPD_EXT3_RELEASE 503
 
 #include "hV_Configuration.h"
 
@@ -48,8 +48,8 @@
 // Other libraries
 #include "hV_Screen_Buffer.h"
 
-#if hV_SCREEN_BUFFER_RELEASE < 501
-#error Required hV_SCREEN_BUFFER_RELEASE 501
+#if hV_SCREEN_BUFFER_RELEASE < 503
+#error Required hV_SCREEN_BUFFER_RELEASE 503
 #endif
 
 #include "SPI.h"
