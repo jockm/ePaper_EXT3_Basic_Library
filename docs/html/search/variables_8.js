@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['red_286',['red',['../a00104.html#aa765496f7931d63e23507430f8d80cc1',1,'LCD_Colours565']]]
+  ['kind_346',['kind',['../a00116.html#acbe14f6295f4d4f0e92df32d54a2c105',1,'font_s']]]
 ];

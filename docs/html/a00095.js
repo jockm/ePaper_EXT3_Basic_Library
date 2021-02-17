@@ -1,5 +1,5 @@
 var a00095 =
 [
-    [ "TERMINAL6E_FONT_RELEASE", "a00095.html#ae334fa4c1c475b47ca1f6e86589b5510", null ],
-    [ "Terminal6x8e", "a00095.html#a7fff0fa0d8f1491fd83d8f45d7483dd8", null ]
+    [ "TERMINAL16E_FONT_RELEASE", "a00095.html#aeb3695041f15eb5b1e45bcebe5026e18", null ],
+    [ "Terminal16x24e", "a00095.html#a2856765063628099d9fb680246a82b9f", null ]
 ];

@@ -13,9 +13,12 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @n Dual licence:
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+///
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
+///
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
 
 
@@ -40,6 +43,16 @@
 #ifndef max
 #define max(a, b) ((a) > (b) ? (a) : (b))
 #endif
+
+///
+/// @name   Orientation constants
+///
+/// @{
+///
+#define ORIENTATION_PORTRAIT 6///< portrait or vertical
+#define ORIENTATION_LANDSCAPE 7 ///< landscape or horizontal
+/// @}
+///
 
 ///
 /// @name   Utilities
@@ -120,6 +133,15 @@ char * formatChar(const char * format, ...);
 /// @see    http://www.cplusplus.com/reference/cstdio/printf/?kw=printf for codes
 ///
 String formatString(const char * format, ...);
+
+
+///
+/// @brief  Remove leading and ending characters
+/// @param  text input text
+/// @return trimmed text
+/// @note   Removed characters are LF CR TAB SPACE '
+///
+String trimString(String text);
 
 /// @}
 

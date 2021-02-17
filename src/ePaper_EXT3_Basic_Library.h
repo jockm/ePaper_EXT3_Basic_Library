@@ -17,7 +17,7 @@
 /// @n Dual licence:
 ///
 /// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-/// 
+///
 /// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
 ///
 /// @see Sections based on https://github.com/PervasiveDisplays/ePaper_PervasiveDisplays
@@ -33,4 +33,4 @@
 #error Platform not defined
 #endif // end IDE
 
-#include "Screen_EPD_iTC.h"
+#include "Screen_EPD_EXT3.h"

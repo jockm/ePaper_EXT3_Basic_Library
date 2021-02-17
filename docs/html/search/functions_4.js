@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['flush_223',['flush',['../a00108.html#abd4c48ceee3560472e8fbb4957305c56',1,'LCD_Screen_Buffer::flush()'],['../a00112.html#a02a8c5cb297753a85a580608862becda',1,'Screen_iTC_BWR::flush()']]],
-  ['flush_5fms_224',['flush_ms',['../a00005.html#a3bec8a8883209b74549c344fa2a4375c',1,'flush_ms():&#160;ePaper_EXT3_Characters.ino'],['../a00008.html#a3bec8a8883209b74549c344fa2a4375c',1,'flush_ms():&#160;ePaper_EXT3_Fonts.ino'],['../a00011.html#a3bec8a8883209b74549c344fa2a4375c',1,'flush_ms():&#160;ePaper_EXT3_Forms.ino'],['../a00014.html#a3bec8a8883209b74549c344fa2a4375c',1,'flush_ms():&#160;ePaper_EXT3_Orientation.ino'],['../a00017.html#a3bec8a8883209b74549c344fa2a4375c',1,'flush_ms():&#160;ePaper_EXT3_Palette.ino']]],
-  ['fontmax_225',['fontMax',['../a00108.html#a34c85ee6643f4ed7909b59947896602d',1,'LCD_Screen_Buffer']]],
-  ['formatchar_226',['formatChar',['../a00077.html#a5cb49d6e189f4565715988928cd86be7',1,'formatChar(const char *format,...):&#160;LCD_Utilities.cpp'],['../a00080.html#a5cb49d6e189f4565715988928cd86be7',1,'formatChar(const char *format,...):&#160;LCD_Utilities.cpp']]],
-  ['formatstring_227',['formatString',['../a00077.html#aa405c9a5b808e428554e540028085dd3',1,'formatString(const char *format,...):&#160;LCD_Utilities.cpp'],['../a00080.html#aa405c9a5b808e428554e540028085dd3',1,'formatString(const char *format,...):&#160;LCD_Utilities.cpp']]]
+  ['delay_5fms_269',['delay_ms',['../a00080.html#ab7cce8122024d7ba47bf10f434956de4',1,'delay_ms(uint32_t ms):&#160;LCD_Utilities.cpp'],['../a00083.html#ab7cce8122024d7ba47bf10f434956de4',1,'delay_ms(uint32_t ms):&#160;LCD_Utilities.cpp']]],
+  ['displaycharacters_270',['displayCharacters',['../a00005.html#a05b4a53fae2c90c1c61b9cba27ab7e5f',1,'ePaper_EXT3_Characters.ino']]],
+  ['displayfonts_271',['displayFonts',['../a00008.html#a264683b43036a589246ec5194f5cc0a8',1,'ePaper_EXT3_Fonts.ino']]],
+  ['displayforms_272',['displayForms',['../a00011.html#a41f1c3c646c420d8c86573413f8b4da3',1,'ePaper_EXT3_Forms.ino']]],
+  ['displayorientation_273',['displayOrientation',['../a00014.html#afdf14accdbf8b30b70c7497cbcdeb4ee',1,'ePaper_EXT3_Orientation.ino']]],
+  ['displaypalette_274',['displayPalette',['../a00017.html#a76959ba07cbc5acffa1bd59ee599edf4',1,'ePaper_EXT3_Palette.ino']]],
+  ['dline_275',['dLine',['../a00124.html#a229f7620037d5527f6aed6215721dbce',1,'LCD_Screen_Buffer']]],
+  ['drectangle_276',['dRectangle',['../a00124.html#aa91b31ed50b6117e3a041ec050506696',1,'LCD_Screen_Buffer']]]
 ];

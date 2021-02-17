@@ -1,12 +1,10 @@
-<map id="LCD_Screen_Buffer.cpp" name="LCD_Screen_Buffer.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" id="node2" href="$a00074.html" title="Class library header." alt="" coords="217,80,367,107"/>
-<area shape="rect" id="node3" href="$a00059.html" title="Header." alt="" coords="5,229,149,256"/>
-<area shape="rect" id="node4" href="$a00056.html" title="Class library header." alt="" coords="461,155,595,181"/>
-<area shape="rect" id="node5" href="$a00080.html" title="Library header." alt="" coords="174,229,285,256"/>
-<area shape="rect" id="node6" href="$a00068.html" title="Library header." alt="" coords="288,155,437,181"/>
-<area shape="rect" id="node7" href="$a00095.html" title="Extended font library." alt="" coords="605,229,715,256"/>
-<area shape="rect" id="node8" href="$a00098.html" title="Extended font library." alt="" coords="740,229,857,256"/>
-<area shape="rect" id="node9" href="$a00089.html" title="Extended font library." alt="" coords="309,229,433,256"/>
-<area shape="rect" id="node10" href="$a00092.html" title="Extended font library." alt="" coords="457,229,581,256"/>
+<map id="LCD_Font_Terminal.h" name="LCD_Font_Terminal.h">
+<area shape="rect" id="node1" title="Library header." alt="" coords="258,5,408,32"/>
+<area shape="rect" id="node2" href="$a00059.html" title="Header." alt="" coords="24,155,168,181"/>
+<area shape="rect" id="node3" href="$a00083.html" title="Library header." alt="" coords="24,80,135,107"/>
+<area shape="rect" id="node4" href="$a00065.html" title="Header." alt="" coords="160,80,253,107"/>
+<area shape="rect" id="node5" href="$a00098.html" title="Extended font library." alt="" coords="278,80,388,107"/>
+<area shape="rect" id="node6" href="$a00101.html" title="Extended font library." alt="" coords="413,80,530,107"/>
+<area shape="rect" id="node7" href="$a00092.html" title="Extended font library." alt="" coords="555,80,679,107"/>
+<area shape="rect" id="node8" href="$a00095.html" title="Extended font library." alt="" coords="703,80,827,107"/>
 </map>

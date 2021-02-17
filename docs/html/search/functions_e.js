@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait_264',['wait',['../a00005.html#a92d9142cd31b37b7b3944dc8d9c9f454',1,'wait(uint8_t second):&#160;ePaper_EXT3_Characters.ino'],['../a00008.html#a92d9142cd31b37b7b3944dc8d9c9f454',1,'wait(uint8_t second):&#160;ePaper_EXT3_Fonts.ino'],['../a00011.html#a92d9142cd31b37b7b3944dc8d9c9f454',1,'wait(uint8_t second):&#160;ePaper_EXT3_Forms.ino'],['../a00014.html#a92d9142cd31b37b7b3944dc8d9c9f454',1,'wait(uint8_t second):&#160;ePaper_EXT3_Orientation.ino'],['../a00017.html#a92d9142cd31b37b7b3944dc8d9c9f454',1,'wait(uint8_t second):&#160;ePaper_EXT3_Palette.ino']]],
-  ['wait_5fms_265',['wait_ms',['../a00077.html#ac857cf12370962e9f329daa1781f99fe',1,'wait_ms(uint32_t ms):&#160;LCD_Utilities.cpp'],['../a00080.html#ac857cf12370962e9f329daa1781f99fe',1,'wait_ms(uint32_t ms):&#160;LCD_Utilities.cpp']]],
-  ['whoami_266',['WhoAmI',['../a00108.html#abf3eaaf99193dbd785b23d061ead996f',1,'LCD_Screen_Buffer::WhoAmI()'],['../a00112.html#a26f5e7ab59c2da2bc8ce9df34cf95c52',1,'Screen_iTC_BWR::WhoAmI()']]]
+  ['triangle_316',['triangle',['../a00124.html#a9bf0c132642a46499d4e407c494d6626',1,'LCD_Screen_Buffer']]],
+  ['trimstring_317',['trimString',['../a00080.html#a311c694a8a5722683dd6739c55323036',1,'trimString(String text):&#160;LCD_Utilities.cpp'],['../a00083.html#a311c694a8a5722683dd6739c55323036',1,'trimString(String text):&#160;LCD_Utilities.cpp']]],
+  ['ttoa_318',['ttoa',['../a00080.html#a4b90fb4e3244421d7f119f32fde4d719',1,'ttoa(uint32_t number, uint8_t size):&#160;LCD_Utilities.cpp'],['../a00083.html#abbd2f8903c7737617f955b1b5f26c029',1,'ttoa(uint32_t number, uint8_t size=0):&#160;LCD_Utilities.cpp']]]
 ];

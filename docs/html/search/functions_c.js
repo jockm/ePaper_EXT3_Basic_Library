@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['triangle_261',['triangle',['../a00108.html#a9bf0c132642a46499d4e407c494d6626',1,'LCD_Screen_Buffer']]],
-  ['ttoa_262',['ttoa',['../a00077.html#a4b90fb4e3244421d7f119f32fde4d719',1,'ttoa(uint32_t number, uint8_t size):&#160;LCD_Utilities.cpp'],['../a00080.html#abbd2f8903c7737617f955b1b5f26c029',1,'ttoa(uint32_t number, uint8_t size=0):&#160;LCD_Utilities.cpp']]]
+  ['readpixel_296',['readPixel',['../a00128.html#ad12a31edec338a1716bb0adde31b02a8',1,'Screen_EPD_EXT3']]],
+  ['rectangle_297',['rectangle',['../a00124.html#aaa5103af2689befb48e99a4b4d2d236f',1,'LCD_Screen_Buffer']]],
+  ['roundup_298',['roundUp',['../a00080.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;LCD_Utilities.cpp'],['../a00083.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;LCD_Utilities.cpp']]]
 ];

@@ -26,19 +26,20 @@ var NAVTREE =
 [
   [ "ePaper_EXT3_Basic_Library Reference Manual", "index.html", [
     [ "EPD EXT3 BWR eScreen Basic Library", "index.html", null ],
-    [ "Additional documentation", "a00117.html", [
-      [ "Copyright and licence", "a00117.html#Copyright", null ],
-      [ "Library structure", "a00117.html#Structure", null ],
-      [ "Version management", "a00117.html#Version", null ],
-      [ "Coordinates systems", "a00117.html#Coordinate", null ],
-      [ "Fonts", "a00117.html#Fonts", null ],
-      [ "Values using integer numbers", "a00117.html#Value", null ],
-      [ "Colours", "a00117.html#Colour", null ],
-      [ "Porting to another SDK", "a00117.html#Port", null ],
-      [ "Other resources", "a00117.html#Resource", null ],
-      [ "Examples", "a00117.html#Examples", null ],
-      [ "Configuration", "a00117.html#Configuration", null ]
+    [ "Additional documentation", "a00129.html", [
+      [ "Copyright and licence", "a00129.html#Copyright", null ],
+      [ "Library structure", "a00129.html#Structure", null ],
+      [ "Version management", "a00129.html#Version", null ],
+      [ "Coordinates systems", "a00129.html#Coordinate", null ],
+      [ "Fonts", "a00129.html#Fonts", null ],
+      [ "Values using integer numbers", "a00129.html#Value", null ],
+      [ "Colours", "a00129.html#Colour", null ],
+      [ "Porting to another SDK", "a00129.html#Port", null ],
+      [ "Other resources", "a00129.html#Resource", null ],
+      [ "Examples", "a00129.html#Examples", null ],
+      [ "Configuration", "a00129.html#Configuration", null ]
     ] ],
+    [ "Bug List", "a00104.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -66,7 +67,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00005.html",
-"a00117.html#Structure"
+"a00124.html#aaa5103af2689befb48e99a4b4d2d236f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

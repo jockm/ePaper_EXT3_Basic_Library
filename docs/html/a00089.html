@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ePaper_EXT3_Basic_Library Reference Manual: Terminal12x16e.h File Reference</title>
+<title>ePaper_EXT3_Basic_Library Reference Manual: Screen_EPD_EXT3.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,55 +85,130 @@ $(document).ready(function(){initNavTree('a00089.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Terminal12x16e.h File Reference</div>  </div>
+<div class="title">Screen_EPD_EXT3.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Extended font library.  
+<p>Library header.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &quot;<a class="el" href="a00059_source.html">LCD_Configuration.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00077_source.html">LCD_Screen_Buffer.h</a>&quot;</code><br />
+<code>#include &quot;SPI.h&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Screen_EPD_EXT3.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="a00091.png" border="0" usemap="#a_terminal12x16e_8hdep" alt=""/></div>
-<map name="a_terminal12x16e_8hdep" id="a_terminal12x16e_8hdep">
-<area shape="rect" title="Extended font library." alt="" coords="355,5,479,32"/>
-<area shape="rect" href="a00068.html" title="Library header." alt="" coords="343,80,492,107"/>
-<area shape="rect" href="a00065.html" title=" " alt="" coords="247,155,409,181"/>
-<area shape="rect" href="a00074.html" title="Class library header." alt="" coords="433,155,583,181"/>
-<area shape="rect" href="a00071.html" title=" " alt="" coords="340,229,503,256"/>
-<area shape="rect" href="a00086.html" title="Library header." alt="" coords="527,229,665,256"/>
-<area shape="rect" href="a00050.html" title="Library header." alt="" coords="398,304,597,331"/>
-<area shape="rect" href="a00083.html" title=" " alt="" coords="621,304,771,331"/>
-<area shape="rect" href="a00005.html" title="Example of features for basic edition." alt="" coords="5,379,200,405"/>
-<area shape="rect" href="a00008.html" title="Example of features for basic edition." alt="" coords="225,379,389,405"/>
-<area shape="rect" href="a00011.html" title="Example of features for basic edition." alt="" coords="413,379,581,405"/>
-<area shape="rect" href="a00014.html" title="Example of features for basic edition." alt="" coords="605,379,800,405"/>
-<area shape="rect" href="a00017.html" title="Example of features for basic edition." alt="" coords="825,379,997,405"/>
+<div class="center"><img src="a00090.png" border="0" usemap="#a_screen___e_p_d___e_x_t3_8h" alt=""/></div>
+<map name="a_screen___e_p_d___e_x_t3_8h" id="a_screen___e_p_d___e_x_t3_8h">
+<area shape="rect" title="Library header." alt="" coords="27,5,177,32"/>
+<area shape="rect" href="a00059.html" title="Header." alt="" coords="19,304,163,331"/>
+<area shape="rect" href="a00077.html" title="Class library header." alt="" coords="27,80,177,107"/>
+<area shape="rect" title=" " alt="" coords="201,80,256,107"/>
+<area shape="rect" href="a00056.html" title="Class library header." alt="" coords="35,155,169,181"/>
+<area shape="rect" href="a00083.html" title="Library header." alt="" coords="36,229,147,256"/>
+<area shape="rect" href="a00071.html" title="Library header." alt="" coords="282,155,431,181"/>
+<area shape="rect" href="a00065.html" title="Header." alt="" coords="222,229,315,256"/>
+<area shape="rect" href="a00098.html" title="Extended font library." alt="" coords="340,229,451,256"/>
+<area shape="rect" href="a00101.html" title="Extended font library." alt="" coords="475,229,593,256"/>
+<area shape="rect" href="a00092.html" title="Extended font library." alt="" coords="617,229,741,256"/>
+<area shape="rect" href="a00095.html" title="Extended font library." alt="" coords="765,229,889,256"/>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="a00091.png" border="0" usemap="#a_screen___e_p_d___e_x_t3_8hdep" alt=""/></div>
+<map name="a_screen___e_p_d___e_x_t3_8hdep" id="a_screen___e_p_d___e_x_t3_8hdep">
+<area shape="rect" title="Library header." alt="" coords="525,5,675,32"/>
+<area shape="rect" href="a00050.html" title="Library header." alt="" coords="398,80,597,107"/>
+<area shape="rect" href="a00086.html" title=" " alt="" coords="621,80,784,107"/>
+<area shape="rect" href="a00005.html" title="Example of features for basic edition." alt="" coords="5,155,200,181"/>
+<area shape="rect" href="a00008.html" title="Example of features for basic edition." alt="" coords="225,155,389,181"/>
+<area shape="rect" href="a00011.html" title="Example of features for basic edition." alt="" coords="413,155,581,181"/>
+<area shape="rect" href="a00014.html" title="Example of features for basic edition." alt="" coords="605,155,800,181"/>
+<area shape="rect" href="a00017.html" title="Example of features for basic edition." alt="" coords="825,155,997,181"/>
 </map>
 </div>
 </div>
 <p><a href="a00089_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00128.html">Screen_EPD_EXT3</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Pervasive Displays iTC BWR screens.  <a href="a00128.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a37a4e331a66a7c2283c3a82cbb5e8459"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a37a4e331a66a7c2283c3a82cbb5e8459">TERMINAL12E_FONT_RELEASE</a>&#160;&#160;&#160;501</td></tr>
-<tr class="memdesc:a37a4e331a66a7c2283c3a82cbb5e8459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release.  <a href="a00089.html#a37a4e331a66a7c2283c3a82cbb5e8459">More...</a><br /></td></tr>
-<tr class="separator:a37a4e331a66a7c2283c3a82cbb5e8459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75eb2c0ba5e190f5c52fcddd3f64ccb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ab75eb2c0ba5e190f5c52fcddd3f64ccb">SCREEN_EPD_EXT3_RELEASE</a>&#160;&#160;&#160;501</td></tr>
+<tr class="memdesc:ab75eb2c0ba5e190f5c52fcddd3f64ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library release number.  <a href="a00089.html#ab75eb2c0ba5e190f5c52fcddd3f64ccb">More...</a><br /></td></tr>
+<tr class="separator:ab75eb2c0ba5e190f5c52fcddd3f64ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Frame buffer sizes</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Frame buffer size = width * height / 8 * depth, uint32_t </p><dl class="section note"><dt>Note</dt><dd>Only one frame buffer is required. <br  />
+ Depth = 2 for black-white-red screen </dd></dl>
+</div></td></tr>
+<tr class="memitem:aee708ec11857d909005fd706446c3103"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aee708ec11857d909005fd706446c3103">frameSize_EPD_EXT3_154_BWR</a>&#160;&#160;&#160;(uint32_t)(5776)</td></tr>
+<tr class="separator:aee708ec11857d909005fd706446c3103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56201205df4d7c8e751128bdabcac3a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a56201205df4d7c8e751128bdabcac3a7">frameSize_EPD_EXT3_213_BWR</a>&#160;&#160;&#160;(uint32_t)(5512)</td></tr>
+<tr class="separator:a56201205df4d7c8e751128bdabcac3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4edf0aa3efa33b93d76b0b1ba80ea87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ae4edf0aa3efa33b93d76b0b1ba80ea87">frameSize_EPD_EXT3_266_BWR</a>&#160;&#160;&#160;(uint32_t)(11248)</td></tr>
+<tr class="separator:ae4edf0aa3efa33b93d76b0b1ba80ea87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d48beab65b87a942a7db73552d32616"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a9d48beab65b87a942a7db73552d32616">frameSize_EPD_EXT3_271_BWR</a>&#160;&#160;&#160;(uint32_t)(11616)</td></tr>
+<tr class="separator:a9d48beab65b87a942a7db73552d32616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26c7ca662702b588b22e96e778e3473"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ae26c7ca662702b588b22e96e778e3473">frameSize_EPD_EXT3_287_BWR</a>&#160;&#160;&#160;(uint32_t)(9472)</td></tr>
+<tr class="separator:ae26c7ca662702b588b22e96e778e3473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8a224acdd6ce439784e06f786f071e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a8d8a224acdd6ce439784e06f786f071e">frameSize_EPD_EXT3_370_BWR</a>&#160;&#160;&#160;(uint32_t)(24960)</td></tr>
+<tr class="separator:a8d8a224acdd6ce439784e06f786f071e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ae72dd75480b7bb3cbddc7abb56970"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ae2ae72dd75480b7bb3cbddc7abb56970">frameSize_EPD_EXT3_420_BWR</a>&#160;&#160;&#160;(uint32_t)(30000)</td></tr>
+<tr class="separator:ae2ae72dd75480b7bb3cbddc7abb56970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade6bd11f42ee811b370b006945ace6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aade6bd11f42ee811b370b006945ace6d">frameSize_EPD_EXT3_437_BWR</a>&#160;&#160;&#160;(uint32_t)(21120)</td></tr>
+<tr class="separator:aade6bd11f42ee811b370b006945ace6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eafb093816655b11222cc9fa1b812bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a0eafb093816655b11222cc9fa1b812bf">frameSize_EPD_EXT3_565_BWR</a>&#160;&#160;&#160;(uint32_t)(33600)</td></tr>
+<tr class="separator:a0eafb093816655b11222cc9fa1b812bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad586f9592a28b798f9e35e1869b78c20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ad586f9592a28b798f9e35e1869b78c20">frameSize_EPD_EXT3_581_BWR</a>&#160;&#160;&#160;(uint32_t)(46080)</td></tr>
+<tr class="separator:ad586f9592a28b798f9e35e1869b78c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2349654b43477fd7590d4fe0aad26561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a2349654b43477fd7590d4fe0aad26561">frameSize_EPD_EXT3_740_BWR</a>&#160;&#160;&#160;(uint32_t)(96000)</td></tr>
+<tr class="separator:a2349654b43477fd7590d4fe0aad26561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a9bbcc8eed2ccb94961a534adaba20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ab7a9bbcc8eed2ccb94961a534adaba20">frameSize_EPD_EXT3_970_BWR</a>&#160;&#160;&#160;(uint32_t)(161280)</td></tr>
+<tr class="separator:ab7a9bbcc8eed2ccb94961a534adaba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a9c1ed4ea3ece81d432d629cb21b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a25a9c1ed4ea3ece81d432d629cb21b4d">frameSize_EPD_EXT3_1220_BWR</a>&#160;&#160;&#160;(uint32_t)(184320)</td></tr>
+<tr class="separator:a25a9c1ed4ea3ece81d432d629cb21b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ae506d130d28c3ceb8132ef9704dcddd2"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ae506d130d28c3ceb8132ef9704dcddd2">Terminal12x16e</a> [224][24]</td></tr>
-<tr class="memdesc:ae506d130d28c3ceb8132ef9704dcddd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Font Terminal12x16e.  <a href="a00089.html#ae506d130d28c3ceb8132ef9704dcddd2">More...</a><br /></td></tr>
-<tr class="separator:ae506d130d28c3ceb8132ef9704dcddd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">List of supported Pervasive Displays screens</div></td></tr>
+<tr class="memitem:a964206153af38ff52157d7a4e59ceb95"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95">eScreen_EPD_EXT3_t</a> { <br />
+&#160;&#160;<a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95afd8298dafd6aa4dc63053ae9b8fca65f">eScreen_EPD_EXT3_154_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a3e4190415dd9f8d1edef581a258dc7e5">eScreen_EPD_EXT3_213_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a99801ada1b626f4a726d4e012a7fa377">eScreen_EPD_EXT3_266_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a9c92ee7f9316f1481c08784e29bb2e3a">eScreen_EPD_EXT3_271_BWR</a>
+, <br />
+&#160;&#160;<a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a98ce77095a5e83a04122078d637dd7d5">eScreen_EPD_EXT3_287_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95acad799a15c8f055d0d99add41a0a18b9">eScreen_EPD_EXT3_370_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95ac020e1e6d51f55d3c5abb54918c4ccd3">eScreen_EPD_EXT3_420_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a5bd08f5ba5b0a417937545bf89f9fcb2">eScreen_EPD_EXT3_437_BWR</a>
+, <br />
+&#160;&#160;<a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a78dc8418e7eaae55289fee7f9d867939">eScreen_EPD_EXT3_565_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95aa22701313856834701d7e2f9b174bb2f">eScreen_EPD_EXT3_581_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95a6d4b9391fd61f6d7dfe81251115f06e4">eScreen_EPD_EXT3_740_BWR</a>
+, <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95ae1d992212e905d3ebc0ad529464c3444">eScreen_EPD_EXT3_970_BWR</a>
+, <br />
+&#160;&#160;<a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95ad4f5bbb44e03118e857287e770bbd4ab">eScreen_EPD_EXT3_1220_BWR</a>
+<br />
+ }</td></tr>
+<tr class="separator:a964206153af38ff52157d7a4e59ceb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extended font library. </p>
-<p>Font Terminal 6 x 8</p>
+<div class="textblock"><p>Library header. </p>
+<p>Driver for Pervasive Displays iTC BWR screens <br  />
+<br  />
+ <b>Project</b> LCD_screen Library Suite</p>
 <dl class="section author"><dt>Author</dt><dd>Rei Vilo </dd>
 <dd>
 <a href="http://embeddedcomputing.weebly.com">http://embeddedcomputing.weebly.com</a></dd></dl>
@@ -141,50 +216,252 @@ Variables</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>release 501</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>(c) Rei Vilo, 2010-2021 </dd>
 <dd>
-Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Font generated with MikroElektronika GLCD Font Creator 1.2.0.0 and edited manually MikroeElektronika 2011 <a href="http://www.mikroe.com">http://www.mikroe.com</a> </dd></dl>
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)</dd></dl>
+<p>The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0). @ see <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></p>
+<ul>
+<li>For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)</li>
+<li>For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd>Sections based on <a href="https://github.com/PervasiveDisplays/ePaper_PervasiveDisplays">https://github.com/PervasiveDisplays/ePaper_PervasiveDisplays</a> </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a37a4e331a66a7c2283c3a82cbb5e8459"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37a4e331a66a7c2283c3a82cbb5e8459">&#9670;&nbsp;</a></span>TERMINAL12E_FONT_RELEASE</h2>
+<a id="a25a9c1ed4ea3ece81d432d629cb21b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a9c1ed4ea3ece81d432d629cb21b4d">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_1220_BWR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TERMINAL12E_FONT_RELEASE&#160;&#160;&#160;501</td>
+          <td class="memname">#define frameSize_EPD_EXT3_1220_BWR&#160;&#160;&#160;(uint32_t)(184320)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Release. </p>
-
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ae506d130d28c3ceb8132ef9704dcddd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae506d130d28c3ceb8132ef9704dcddd2">&#9670;&nbsp;</a></span>Terminal12x16e</h2>
+<a id="aee708ec11857d909005fd706446c3103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee708ec11857d909005fd706446c3103">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_154_BWR</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned char Terminal12x16e[224][24]</td>
+          <td class="memname">#define frameSize_EPD_EXT3_154_BWR&#160;&#160;&#160;(uint32_t)(5776)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56201205df4d7c8e751128bdabcac3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56201205df4d7c8e751128bdabcac3a7">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_213_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_213_BWR&#160;&#160;&#160;(uint32_t)(5512)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4edf0aa3efa33b93d76b0b1ba80ea87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4edf0aa3efa33b93d76b0b1ba80ea87">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_266_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_266_BWR&#160;&#160;&#160;(uint32_t)(11248)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d48beab65b87a942a7db73552d32616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d48beab65b87a942a7db73552d32616">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_271_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_271_BWR&#160;&#160;&#160;(uint32_t)(11616)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae26c7ca662702b588b22e96e778e3473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26c7ca662702b588b22e96e778e3473">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_287_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_287_BWR&#160;&#160;&#160;(uint32_t)(9472)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d8a224acdd6ce439784e06f786f071e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8a224acdd6ce439784e06f786f071e">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_370_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_370_BWR&#160;&#160;&#160;(uint32_t)(24960)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2ae72dd75480b7bb3cbddc7abb56970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ae72dd75480b7bb3cbddc7abb56970">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_420_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_420_BWR&#160;&#160;&#160;(uint32_t)(30000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aade6bd11f42ee811b370b006945ace6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade6bd11f42ee811b370b006945ace6d">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_437_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_437_BWR&#160;&#160;&#160;(uint32_t)(21120)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0eafb093816655b11222cc9fa1b812bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eafb093816655b11222cc9fa1b812bf">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_565_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_565_BWR&#160;&#160;&#160;(uint32_t)(33600)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad586f9592a28b798f9e35e1869b78c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad586f9592a28b798f9e35e1869b78c20">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_581_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_581_BWR&#160;&#160;&#160;(uint32_t)(46080)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2349654b43477fd7590d4fe0aad26561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2349654b43477fd7590d4fe0aad26561">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_740_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_740_BWR&#160;&#160;&#160;(uint32_t)(96000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7a9bbcc8eed2ccb94961a534adaba20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a9bbcc8eed2ccb94961a534adaba20">&#9670;&nbsp;</a></span>frameSize_EPD_EXT3_970_BWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define frameSize_EPD_EXT3_970_BWR&#160;&#160;&#160;(uint32_t)(161280)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab75eb2c0ba5e190f5c52fcddd3f64ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75eb2c0ba5e190f5c52fcddd3f64ccb">&#9670;&nbsp;</a></span>SCREEN_EPD_EXT3_RELEASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCREEN_EPD_EXT3_RELEASE&#160;&#160;&#160;501</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Library release number. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a964206153af38ff52157d7a4e59ceb95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964206153af38ff52157d7a4e59ceb95">&#9670;&nbsp;</a></span>eScreen_EPD_EXT3_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00089.html#a964206153af38ff52157d7a4e59ceb95">eScreen_EPD_EXT3_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95afd8298dafd6aa4dc63053ae9b8fca65f"></a>eScreen_EPD_EXT3_154_BWR&#160;</td><td class="fielddoc"><p>iTC 1.54 BWR 152 x 152 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a3e4190415dd9f8d1edef581a258dc7e5"></a>eScreen_EPD_EXT3_213_BWR&#160;</td><td class="fielddoc"><p>iTC 2.13 BWR 104 x 212 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a99801ada1b626f4a726d4e012a7fa377"></a>eScreen_EPD_EXT3_266_BWR&#160;</td><td class="fielddoc"><p>iTC 2.66 BWR 152 x 296 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a9c92ee7f9316f1481c08784e29bb2e3a"></a>eScreen_EPD_EXT3_271_BWR&#160;</td><td class="fielddoc"><p>iTC 2.71 BWR 176 x 264 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a98ce77095a5e83a04122078d637dd7d5"></a>eScreen_EPD_EXT3_287_BWR&#160;</td><td class="fielddoc"><p>iTC 2.87 BWR 296 x 128 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95acad799a15c8f055d0d99add41a0a18b9"></a>eScreen_EPD_EXT3_370_BWR&#160;</td><td class="fielddoc"><p>iTC 3.70 BWR 416 x 240 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95ac020e1e6d51f55d3c5abb54918c4ccd3"></a>eScreen_EPD_EXT3_420_BWR&#160;</td><td class="fielddoc"><p>iTC 4.20 BWR 300 x 400 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a5bd08f5ba5b0a417937545bf89f9fcb2"></a>eScreen_EPD_EXT3_437_BWR&#160;</td><td class="fielddoc"><p>iTC 4.37 BWR 480 x 176 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a78dc8418e7eaae55289fee7f9d867939"></a>eScreen_EPD_EXT3_565_BWR&#160;</td><td class="fielddoc"><p>iTC 5.65 BWR 600 x 448 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95aa22701313856834701d7e2f9b174bb2f"></a>eScreen_EPD_EXT3_581_BWR&#160;</td><td class="fielddoc"><p>iTC 5.81 BWR 720 x 256 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95a6d4b9391fd61f6d7dfe81251115f06e4"></a>eScreen_EPD_EXT3_740_BWR&#160;</td><td class="fielddoc"><p>iTC 7.40 BWR 480 x 800 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95ae1d992212e905d3ebc0ad529464c3444"></a>eScreen_EPD_EXT3_970_BWR&#160;</td><td class="fielddoc"><p>iTC 9.70 BWR 960 x 672 x 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a964206153af38ff52157d7a4e59ceb95ad4f5bbb44e03118e857287e770bbd4ab"></a>eScreen_EPD_EXT3_1220_BWR&#160;</td><td class="fielddoc"><p>iTC 12.20 BWR 960 x 768 x 2 </p>
+</td></tr>
 </table>
-</div><div class="memdoc">
-
-<p>Font Terminal12x16e. </p>
-<p>GLCD FontName : Terminal12x16e <br  />
- GLCD FontSize : 12 x 26</p>
-<dl class="section copyright"><dt>Copyright</dt><dd>Font generated manually </dd></dl>
 
 </div>
 </div>
@@ -193,7 +470,7 @@ Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)</dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="a00089.html">Terminal12x16e.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="a00089.html">Screen_EPD_EXT3.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
   </ul>
 </div>

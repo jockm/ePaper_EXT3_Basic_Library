@@ -1,25 +1,5 @@
 var a00077 =
 [
-    [ "btoa", "a00077.html#ac615a2d85fe4285418a5bfb167ddbdce", null ],
-    [ "checkRange", "a00077.html#a86af3529c58c3ba135667030a75a5917", null ],
-    [ "convertPolar2Rectangle", "a00077.html#adfcce25f5bed41e2c35b238837f0b30c", null ],
-    [ "convertRectangle2Polar", "a00077.html#aeb10091247b3ba79b8ccf1f103b3caf5", null ],
-    [ "cos32x100", "a00077.html#ae5fee0ae2d4737a35b38f31aa48ece9f", null ],
-    [ "delay_ms", "a00077.html#ab7cce8122024d7ba47bf10f434956de4", null ],
-    [ "formatChar", "a00077.html#a5cb49d6e189f4565715988928cd86be7", null ],
-    [ "formatString", "a00077.html#aa405c9a5b808e428554e540028085dd3", null ],
-    [ "htoa", "a00077.html#a50033d757da851b711b9a9a3dc92e15b", null ],
-    [ "i32toa", "a00077.html#a5ac51cd7403867beeb75ec80e4bbd5fe", null ],
-    [ "roundUp", "a00077.html#a9e10a8bc35f3b1ae121655e335de4513", null ],
-    [ "setMinMax", "a00077.html#ac8a17fff09aa92a8b27434044c138bc0", null ],
-    [ "sin32x100", "a00077.html#a6843a856b41ae0c0fbe919efb535aa9f", null ],
-    [ "swap", "a00077.html#a149f55c1d6b6336ef751e247856198ce", null ],
-    [ "swap", "a00077.html#a7989671d14dda7f19b8d289e359404e9", null ],
-    [ "swap", "a00077.html#a46562f812c731ac4a846ee4bb29b0397", null ],
-    [ "ttoa", "a00077.html#a4b90fb4e3244421d7f119f32fde4d719", null ],
-    [ "utf2iso", "a00077.html#a3051dd153db86ba3b56a69e93f1ca22a", null ],
-    [ "wait_ms", "a00077.html#ac857cf12370962e9f329daa1781f99fe", null ],
-    [ "bufferFormat", "a00077.html#a2e23e619faa0b2bfe96745b08b53fdef", null ],
-    [ "bufferIn", "a00077.html#a0263b49e6250db8b119a671365cf5117", null ],
-    [ "bufferOut", "a00077.html#a280229feb12a627240397cbe92b9517c", null ]
+    [ "LCD_Screen_Buffer", "a00124.html", "a00124" ],
+    [ "LCD_SCREEN_BUFFER_RELEASE", "a00077.html#aea086c73e8987f5855ec3e1f03a11636", null ]
 ];

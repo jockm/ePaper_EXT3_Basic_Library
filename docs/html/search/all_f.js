@@ -1,24 +1,10 @@
 var searchData=
 [
-  ['screen_5fepd_5fitc_2ecpp_132',['Screen_EPD_iTC.cpp',['../a00083.html',1,'']]],
-  ['screen_5fepd_5fitc_2eh_133',['Screen_EPD_iTC.h',['../a00086.html',1,'']]],
-  ['screen_5fepd_5fitc_5frelease_134',['SCREEN_EPD_ITC_RELEASE',['../a00086.html#a95830956157c1aa193cd02ddb417a67a',1,'Screen_EPD_iTC.h']]],
-  ['screen_5fitc_5fbwr_135',['Screen_iTC_BWR',['../a00112.html',1,'Screen_iTC_BWR'],['../a00112.html#ae6792b7b800e2b401c152059373845c8',1,'Screen_iTC_BWR::Screen_iTC_BWR()']]],
-  ['screencolourbits_136',['screenColourBits',['../a00108.html#ad4ba05f929a46a7665d2cf6860294ba4',1,'LCD_Screen_Buffer']]],
-  ['screendiagonal_137',['screenDiagonal',['../a00108.html#aacfe2bc862070147be5a886e7f8c4dc1',1,'LCD_Screen_Buffer']]],
-  ['screensizex_138',['screenSizeX',['../a00108.html#ad3a77515500d9caf4e7bf08524dc462e',1,'LCD_Screen_Buffer']]],
-  ['screensizey_139',['screenSizeY',['../a00108.html#a46aaebc7bd5d7acc80bfffd9676eecd9',1,'LCD_Screen_Buffer']]],
-  ['selectfont_140',['selectFont',['../a00108.html#a55889fc56bd18f66538dad0e1cf24184',1,'LCD_Screen_Buffer']]],
-  ['setfontsolid_141',['setFontSolid',['../a00108.html#a26bc99910fe1b79a2697f4d8ac155ff9',1,'LCD_Screen_Buffer']]],
-  ['setfontspacex_142',['setFontSpaceX',['../a00108.html#a03ec1652e3e3e9682679791a3c91b973',1,'LCD_Screen_Buffer']]],
-  ['setfontspacey_143',['setFontSpaceY',['../a00108.html#adb0f8227f457756b2f840bbed27b75ef',1,'LCD_Screen_Buffer']]],
-  ['setminmax_144',['setMinMax',['../a00077.html#ac8a17fff09aa92a8b27434044c138bc0',1,'setMinMax(uint16_t value, uint16_t &amp;valueMin, uint16_t &amp;valueMax):&#160;LCD_Utilities.cpp'],['../a00080.html#ac8a17fff09aa92a8b27434044c138bc0',1,'setMinMax(uint16_t value, uint16_t &amp;valueMin, uint16_t &amp;valueMax):&#160;LCD_Utilities.cpp']]],
-  ['setorientation_145',['setOrientation',['../a00108.html#ab20aad67990bd49c333c380ff3fa16f2',1,'LCD_Screen_Buffer']]],
-  ['setpensolid_146',['setPenSolid',['../a00108.html#af4c9668ca0acd392d592c7c0bd262a8d',1,'LCD_Screen_Buffer']]],
-  ['setup_147',['setup',['../a00005.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;ePaper_EXT3_Characters.ino'],['../a00008.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;ePaper_EXT3_Fonts.ino'],['../a00011.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;ePaper_EXT3_Forms.ino'],['../a00014.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;ePaper_EXT3_Orientation.ino'],['../a00017.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;ePaper_EXT3_Palette.ino']]],
-  ['sin32x100_148',['sin32x100',['../a00077.html#a6843a856b41ae0c0fbe919efb535aa9f',1,'sin32x100(int32_t degreesX100):&#160;LCD_Utilities.cpp'],['../a00080.html#a6843a856b41ae0c0fbe919efb535aa9f',1,'sin32x100(int32_t degreesX100):&#160;LCD_Utilities.cpp']]],
-  ['spi_5fclock_5fmax_149',['SPI_CLOCK_MAX',['../a00083.html#a8f20746a58681c13eaf198e2b380a758',1,'Screen_EPD_iTC.cpp']]],
-  ['stringlengthtofitx_150',['stringLengthToFitX',['../a00108.html#aeaea57bb1deecf70b51606a14631b088',1,'LCD_Screen_Buffer']]],
-  ['stringsizex_151',['stringSizeX',['../a00108.html#aff4a4eed94170f75743be44102fe2d18',1,'LCD_Screen_Buffer']]],
-  ['swap_152',['swap',['../a00077.html#a7989671d14dda7f19b8d289e359404e9',1,'swap(uint16_t &amp;a, uint16_t &amp;b):&#160;LCD_Utilities.cpp'],['../a00077.html#a149f55c1d6b6336ef751e247856198ce',1,'swap(int16_t &amp;a, int16_t &amp;b):&#160;LCD_Utilities.cpp'],['../a00077.html#a46562f812c731ac4a846ee4bb29b0397',1,'swap(uint8_t &amp;a, uint8_t &amp;b):&#160;LCD_Utilities.cpp'],['../a00080.html#a149f55c1d6b6336ef751e247856198ce',1,'swap(int16_t &amp;a, int16_t &amp;b):&#160;LCD_Utilities.cpp'],['../a00080.html#a7989671d14dda7f19b8d289e359404e9',1,'swap(uint16_t &amp;a, uint16_t &amp;b):&#160;LCD_Utilities.cpp'],['../a00080.html#a46562f812c731ac4a846ee4bb29b0397',1,'swap(uint8_t &amp;a, uint8_t &amp;b):&#160;LCD_Utilities.cpp']]]
+  ['panel_5fbusy_5fpin_156',['PANEL_BUSY_PIN',['../a00059.html#a5d0b7ebeb5a1ecfffae6adb0caaabe02',1,'LCD_Configuration.h']]],
+  ['panel_5fcs_5fpin_157',['PANEL_CS_PIN',['../a00059.html#a367c64219c5abd86721be450a9ebcf90',1,'LCD_Configuration.h']]],
+  ['panel_5fcss_5fpin_158',['PANEL_CSS_PIN',['../a00059.html#ae1106d443258a3f37832f61bd83aa75b',1,'LCD_Configuration.h']]],
+  ['panel_5fdc_5fpin_159',['PANEL_DC_PIN',['../a00059.html#adf4b645cd0a49bfd02dfbc5f13692899',1,'LCD_Configuration.h']]],
+  ['panel_5freset_5fpin_160',['PANEL_RESET_PIN',['../a00059.html#affaebdf0d48423fb0672f3e8bcb09b0a',1,'LCD_Configuration.h']]],
+  ['pixel_161',['pixel',['../a00112.html#a68591191be4ff122ee2a26f8b977f2e7',1,'width_s']]],
+  ['point_162',['point',['../a00124.html#a6f76dc2654de88bea5f97f39d4de2872',1,'LCD_Screen_Buffer::point()'],['../a00128.html#a4fe7dd69f57d2cf40adef054ce54af34',1,'Screen_EPD_EXT3::point()']]]
 ];

@@ -52,6 +52,45 @@ String formatString(const char * format, ...)
     return String(bufferOut);
 }
 
+String trimString(String text)
+{
+    String work = "";
+    bool flag = true;
+    char c;
+
+    uint8_t index;
+    uint8_t start, end;
+
+    // Upwards from start
+    index = 0;
+    flag = true;
+    while ((index < text.length()) and flag)
+    {
+        if ((text.charAt(index) != '\n') and (text.charAt(index) != '\r') and (text.charAt(index) != ' ') and (text.charAt(index) != '\t'))
+        {
+            flag = false;
+            start = index;
+        }
+        index++;
+    }
+
+    // Downwards from end
+    index = text.length();
+    flag = true;
+    while ((index > 0) and flag)
+    {
+        if ((text.charAt(index) != '\n') and (text.charAt(index) != '\r') and (text.charAt(index) != ' ') and (text.charAt(index) != '\t'))
+        {
+            flag = false;
+            end = index - 1;
+        }
+        index--;
+    }
+
+    return text.substring(start, end);
+}
+
+
 int32_t cos32x100(int32_t degreesX100)
 {
     int32_t i = 1;

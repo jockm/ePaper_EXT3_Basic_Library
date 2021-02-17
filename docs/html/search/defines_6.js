@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pnlon_5fpin_346',['PNLON_PIN',['../a00059.html#a3aeedc5639237ea9208c7873989d3598',1,'LCD_Configuration.h']]]
+  ['screen_5fepd_5fext3_5frelease_420',['SCREEN_EPD_EXT3_RELEASE',['../a00089.html#ab75eb2c0ba5e190f5c52fcddd3f64ccb',1,'Screen_EPD_EXT3.h']]],
+  ['spi_5fclock_5fmax_421',['SPI_CLOCK_MAX',['../a00086.html#a8f20746a58681c13eaf198e2b380a758',1,'Screen_EPD_EXT3.cpp']]]
 ];

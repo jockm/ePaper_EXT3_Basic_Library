@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['screen_5fepd_5fitc_5frelease_348',['SCREEN_EPD_ITC_RELEASE',['../a00086.html#a95830956157c1aa193cd02ddb417a67a',1,'Screen_EPD_iTC.h']]],
-  ['spi_5fclock_5fmax_349',['SPI_CLOCK_MAX',['../a00083.html#a8f20746a58681c13eaf198e2b380a758',1,'Screen_EPD_iTC.cpp']]]
+  ['use_5ffont_5fflash_426',['USE_FONT_FLASH',['../a00059.html#aaa859a5ba966373ad3dc368d0609601a',1,'LCD_Configuration.h']]],
+  ['use_5ffont_5fheader_427',['USE_FONT_HEADER',['../a00059.html#a5a2e198999b4407a60ff6f17f76361f7',1,'LCD_Configuration.h']]],
+  ['use_5ffont_5finternal_428',['USE_FONT_INTERNAL',['../a00059.html#a4db1449465ca51c16fa4cd9ee7a45655',1,'LCD_Configuration.h']]],
+  ['use_5ffont_5fterminal_429',['USE_FONT_TERMINAL',['../a00059.html#a8957d8cdb41ab8149747bc778762044e',1,'LCD_Configuration.h']]]
 ];

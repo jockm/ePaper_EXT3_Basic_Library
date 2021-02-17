@@ -89,99 +89,122 @@ $(document).ready(function(){initNavTree('a00059_source.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <a href="a00059.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Core library for code-sense - IDE-based</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// !!! Help: https://bit.ly/2AdU7cu</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(ENERGIA) </span><span class="comment">// LaunchPad specific</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;Energia.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#elif defined(ARDUINO) </span><span class="comment">// Arduino general</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#else </span><span class="comment">// error</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#error Platform not defined</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// end IDE</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef LCD_CONFIGURATION_RELEASE</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00059.html#aba454a008f7c3c10cf5c9bbc83c10134">   39</a></span>&#160;<span class="preprocessor">#define LCD_CONFIGURATION_RELEASE 501</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00059.html#aa50e58d5106e0b8e938f302c478ad913">   46</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_BOOSTERPACK_EXT3 1 </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00059.html#a81de2fce16ab6edd7ccccae52354e850">   47</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_MSP5430FR5994 2 </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00059.html#a7fa9048eaa9531cadab28a166a0d4195">   48</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_RASPI 3 </span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00059.html#a31ac38ce383b0e1d612b0b82c17d7b96">   49</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_REDBEAR_DUO 4 </span><span class="comment">// specific REDBEAR_DUO</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb">   50</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_CC1352 5 </span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00059.html#aed5d4006ff573ec9015562725b68a81b">   52</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_OPTION CONFIGURATION_BOOSTERPACK_EXT3 </span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if (CONFIGURATION_OPTION == CONFIGURATION_BOOSTERPACK_EXT3)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// --- Initial configuration</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#warning Default pins for BoosterPack</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00059.html#a3aeedc5639237ea9208c7873989d3598">   61</a></span>&#160;<span class="preprocessor">#define PNLON_PIN 11 </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00059.html#abfcf05153ddbd63d5aff5d018867cc19">   62</a></span>&#160;<span class="preprocessor">#define CS_PIN 19    </span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00059.html#a4131edec89d3efa5af72db14ee3119c2">   63</a></span>&#160;<span class="preprocessor">#define DC_PIN 9     </span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="a00059.html#a08bca59db4b190eaaea4d47b7562869c">   64</a></span>&#160;<span class="preprocessor">#define RESET_PIN 10 </span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00059.html#a18220360fc1f5e8a8f8590ec6d237951">   65</a></span>&#160;<span class="preprocessor">#define BUSY_PIN 8   </span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00059.html#aef52395a58c8191f3d4a21a6d1d950c3">   66</a></span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_CC1352)</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// --- CC1352 configuration</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#warning Default pins for CC1352</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define PNLON_PIN 2  </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define CS_PIN 19    </span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#define DC_PIN 9     </span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define RESET_PIN 10 </span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#define BUSY_PIN 8   </span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Core library for code-sense - IDE-based</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// !!! Help: https://bit.ly/2AdU7cu</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if defined(ENERGIA) </span><span class="comment">// LaunchPad specific</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;Energia.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#elif defined(ARDUINO) </span><span class="comment">// Arduino general</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#else </span><span class="comment">// error</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#error Platform not defined</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// end IDE</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef LCD_CONFIGURATION_RELEASE</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00059.html#aba454a008f7c3c10cf5c9bbc83c10134">   47</a></span>&#160;<span class="preprocessor">#define LCD_CONFIGURATION_RELEASE 501</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00059.html#ae4d29b76864058d646f8238f6c8ab20e">   54</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_LAUNCHPAD 1 </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00059.html#a39a1e66823b75a1d793c0188e6d79392">   55</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_MSP5430FR5994 2 </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00059.html#a73e4a03c94817517f278dae805181925">   56</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_RASPI 3 </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00059.html#afa03344379727b0896a37733b24a1e5e">   57</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_REDBEAR_DUO 4 </span><span class="comment">// specific Particle Photon or ReadBear Duo</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00059.html#a3107324c62cfa39e4b1106ccc0e3267e">   58</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_CC1352 5 </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00059.html#a8eb3745cb8ec8e18399b1e81d6f02cbc">   59</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_EXT3_ARDUINO_ZERO 6 </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00059.html#aed5d4006ff573ec9015562725b68a81b">   61</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_OPTION CONFIGURATION_EXT3_RASPI </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#if (CONFIGURATION_OPTION == CONFIGURATION_EXT3_LAUNCHPAD)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// --- Initial configuration, tested</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// Valid for MSP430 and MSP432 LaunchPad boards</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#warning Default pins for EXT3_MSP432</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN 11   </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define PANEL_DC_PIN 12     </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN 13  </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18     </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define PANEL_CS_PIN 19     </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// If not used, comment out</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define PANEL_CSS_PIN 39    </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN 38    </span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_MSP5430FR5994)</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// --- MSP5430FR5994 configuration</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#warning Modified pins for MSP5430FR5994 as CGU</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define PNLON_PIN 11 </span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#define CS_PIN 19    </span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#define DC_PIN 29    </span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#define RESET_PIN 30 </span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#define BUSY_PIN 28  </span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_RASPI)</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">// --- Raspberry Pi configuration</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#warning Modified pins for Raspberry Pi</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#define PNLON_PIN 22 </span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define CS_PIN 8     </span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#define DC_PIN 25    </span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define RESET_PIN 23 </span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define BUSY_PIN 24  </span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18 </span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_REDBEAR_DUO)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// --- REDBEAR_DUO configuration</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#warning Modified pins for RedBear Duo</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define PNLON_PIN D5 </span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define CS_PIN D6    </span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define DC_PIN D3    </span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define RESET_PIN D4 </span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define BUSY_PIN D2  </span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define PIN_EPD_FLASH_CS D14 </span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// EXT3 BOARD 17 -&gt; GROUND</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#error Invalid CONFIGURATION_OPTION</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="a00059.html#aa98b8b8c9e4ff5198abff205ee2d267b">  123</a></span>&#160;<span class="preprocessor">#define CSS24_PIN 2    </span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="a00059.html#a94758104a7b755feb15b62ff4189dd90">  124</a></span>&#160;<span class="preprocessor">#define CSS34_PIN 13   </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_CC1352)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// --- CC1352 configuration, tested</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#warning Default pins for CC1352</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN 5    </span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#define PANEL_DC_PIN 6      </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN 19  </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 24     </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#define PANEL_CS_PIN 26     </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// If not used, comment out</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//#define PANEL_CSS_PIN 27    ///&lt; EXT3 pin 12 -&gt; NC</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN 27    </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_MSP5430FR5994)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// --- MSP5430FR5994 configuration, tested</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#warning Modified pins for MSP5430FR5994 as CGU</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN 28   </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#define PANEL_DC_PIN 19     </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN 30  </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 18     </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define PANEL_CS_PIN 19     </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define PANEL_CSS_PIN 39    </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN 38    </span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_RASPI)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">// --- Raspberry Pi configuration, tested</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#warning Modified pins for Raspberry Pi</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00059.html#a5d0b7ebeb5a1ecfffae6adb0caaabe02">  106</a></span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN 7    </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="a00059.html#adf4b645cd0a49bfd02dfbc5f13692899">  107</a></span>&#160;<span class="preprocessor">#define PANEL_DC_PIN 8      </span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00059.html#affaebdf0d48423fb0672f3e8bcb09b0a">  108</a></span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN 25  </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00059.html#aef52395a58c8191f3d4a21a6d1d950c3">  109</a></span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 22     </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00059.html#a367c64219c5abd86721be450a9ebcf90">  110</a></span>&#160;<span class="preprocessor">#define PANEL_CS_PIN 27     </span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// If not used, comment out</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="a00059.html#ae1106d443258a3f37832f61bd83aa75b">  112</a></span>&#160;<span class="preprocessor">#define PANEL_CSS_PIN 23    </span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="a00059.html#a10ad11f72fde94a36cac4c96e17233f3">  113</a></span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN 24    </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_REDBEAR_DUO)</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// --- REDBEAR_DUO configuration, tested</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#warning Modified pins for Particle Photon or ReadBear Duo</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN D5   </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#define PANEL_DC_PIN D4     </span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN D3  </span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN D2     </span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#define PANEL_CS_PIN D1     </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// If not used, comment out</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define PANEL_CSS_PIN D6    </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN D0    </span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="a00059.html#a8957d8cdb41ab8149747bc778762044e">  135</a></span>&#160;<span class="preprocessor">#define USE_FONT_TERMINAL 0 </span></div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="a00059.html#a5a2e198999b4407a60ff6f17f76361f7">  136</a></span>&#160;<span class="preprocessor">#define USE_FONT_HEADER 1 </span></div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="a00059.html#aaa859a5ba966373ad3dc368d0609601a">  137</a></span>&#160;<span class="preprocessor">#define USE_FONT_FLASH 2 </span></div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00059.html#a4db1449465ca51c16fa4cd9ee7a45655">  138</a></span>&#160;<span class="preprocessor">#define USE_FONT_INTERNAL 3 </span></div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00059.html#af8bf566e7b9b23e349b5139c7edc00a4">  139</a></span>&#160;<span class="preprocessor">#define USE_FONT_MODE USE_FONT_TERMINAL </span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="a00059.html#a66b2ce216c9fb1c332b3f3a4dbc0882b">  153</a></span>&#160;<span class="preprocessor">#define MAX_FONT_SIZE 4</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LCD_CONFIGURATION_RELEASE</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_ARDUINO_ZERO)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">// --- ARDUINO_ZERO configuration, tested</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#warning Default pins for ARDUINO_ZERO</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#define PANEL_BUSY_PIN 4    </span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">// On Arduino Zero, pins D4 and D2 are reversed</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#define PANEL_DC_PIN 5      </span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#define PANEL_RESET_PIN 6   </span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#define FLASH_CS_PIN 7      </span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#define PANEL_CS_PIN 8      </span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">// If not used, comment out</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#define PANEL_CSS_PIN 9     </span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#define FLASH_CSS_PIN 10    </span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">// In case of use of SERCOM</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define SPI_CLOCK_PIN 13    </span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#define SPI_CLOCK_MISO 11   </span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#define SPI_CLOCK_MOSI 12   </span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#error Invalid CONFIGURATION_OPTION</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="a00059.html#a8957d8cdb41ab8149747bc778762044e">  158</a></span>&#160;<span class="preprocessor">#define USE_FONT_TERMINAL 0 </span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="a00059.html#a5a2e198999b4407a60ff6f17f76361f7">  159</a></span>&#160;<span class="preprocessor">#define USE_FONT_HEADER 1 </span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="a00059.html#aaa859a5ba966373ad3dc368d0609601a">  160</a></span>&#160;<span class="preprocessor">#define USE_FONT_FLASH 2 </span></div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="a00059.html#a4db1449465ca51c16fa4cd9ee7a45655">  161</a></span>&#160;<span class="preprocessor">#define USE_FONT_INTERNAL 3 </span></div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00059.html#ac7790c7c49429aaa3e6bfba18956447e">  162</a></span>&#160;<span class="preprocessor">#define FONT_MODE USE_FONT_TERMINAL </span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="a00059.html#a66b2ce216c9fb1c332b3f3a4dbc0882b">  177</a></span>&#160;<span class="preprocessor">#define MAX_FONT_SIZE 4</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LCD_CONFIGURATION_RELEASE</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

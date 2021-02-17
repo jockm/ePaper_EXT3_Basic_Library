@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['delay_5fms_215',['delay_ms',['../a00077.html#ab7cce8122024d7ba47bf10f434956de4',1,'delay_ms(uint32_t ms):&#160;LCD_Utilities.cpp'],['../a00080.html#ab7cce8122024d7ba47bf10f434956de4',1,'delay_ms(uint32_t ms):&#160;LCD_Utilities.cpp']]],
-  ['displaycharacters_216',['displayCharacters',['../a00005.html#a05b4a53fae2c90c1c61b9cba27ab7e5f',1,'ePaper_EXT3_Characters.ino']]],
-  ['displayfonts_217',['displayFonts',['../a00008.html#a264683b43036a589246ec5194f5cc0a8',1,'ePaper_EXT3_Fonts.ino']]],
-  ['displayforms_218',['displayForms',['../a00011.html#a41f1c3c646c420d8c86573413f8b4da3',1,'ePaper_EXT3_Forms.ino']]],
-  ['displayorientation_219',['displayOrientation',['../a00014.html#afdf14accdbf8b30b70c7497cbcdeb4ee',1,'ePaper_EXT3_Orientation.ino']]],
-  ['displaypalette_220',['displayPalette',['../a00017.html#a76959ba07cbc5acffa1bd59ee599edf4',1,'ePaper_EXT3_Palette.ino']]],
-  ['dline_221',['dLine',['../a00108.html#a229f7620037d5527f6aed6215721dbce',1,'LCD_Screen_Buffer']]],
-  ['drectangle_222',['dRectangle',['../a00108.html#aa91b31ed50b6117e3a041ec050506696',1,'LCD_Screen_Buffer']]]
+  ['charactersizex_261',['characterSizeX',['../a00124.html#a0640169cfb13dd2f9bdfee99bcdb9741',1,'LCD_Screen_Buffer']]],
+  ['charactersizey_262',['characterSizeY',['../a00124.html#abab32bdb2810294fad3579929909d54f',1,'LCD_Screen_Buffer']]],
+  ['checkrange_263',['checkRange',['../a00080.html#a86af3529c58c3ba135667030a75a5917',1,'checkRange(uint16_t value, uint16_t valueMin, uint16_t valueMax):&#160;LCD_Utilities.cpp'],['../a00083.html#a86af3529c58c3ba135667030a75a5917',1,'checkRange(uint16_t value, uint16_t valueMin, uint16_t valueMax):&#160;LCD_Utilities.cpp']]],
+  ['circle_264',['circle',['../a00124.html#a1a27003485bb96aa29ba771b0d321f52',1,'LCD_Screen_Buffer']]],
+  ['clear_265',['clear',['../a00124.html#a350d1b3fdfb0eec2f68246c5be253974',1,'LCD_Screen_Buffer::clear()'],['../a00128.html#aa1dcf5c1711c153ff783ccec1f4d6fdb',1,'Screen_EPD_EXT3::clear()']]],
+  ['convertpolar2rectangle_266',['convertPolar2Rectangle',['../a00080.html#adfcce25f5bed41e2c35b238837f0b30c',1,'convertPolar2Rectangle(uint16_t centerX, uint16_t centerY, uint16_t angle, uint16_t radius, uint16_t &amp;rectangularX, uint16_t &amp;rectangularY):&#160;LCD_Utilities.cpp'],['../a00083.html#adfcce25f5bed41e2c35b238837f0b30c',1,'convertPolar2Rectangle(uint16_t centerX, uint16_t centerY, uint16_t angle, uint16_t radius, uint16_t &amp;rectangularX, uint16_t &amp;rectangularY):&#160;LCD_Utilities.cpp']]],
+  ['convertrectangle2polar_267',['convertRectangle2Polar',['../a00080.html#aeb10091247b3ba79b8ccf1f103b3caf5',1,'convertRectangle2Polar(uint16_t centerX, uint16_t centerY, uint16_t rectangularX, uint16_t rectangularY, uint16_t &amp;angle, uint16_t &amp;radius):&#160;LCD_Utilities.cpp'],['../a00083.html#aeb10091247b3ba79b8ccf1f103b3caf5',1,'convertRectangle2Polar(uint16_t centerX, uint16_t centerY, uint16_t rectangularX, uint16_t rectangularY, uint16_t &amp;angle, uint16_t &amp;radius):&#160;LCD_Utilities.cpp']]],
+  ['cos32x100_268',['cos32x100',['../a00080.html#ae5fee0ae2d4737a35b38f31aa48ece9f',1,'cos32x100(int32_t degreesX100):&#160;LCD_Utilities.cpp'],['../a00083.html#ae5fee0ae2d4737a35b38f31aa48ece9f',1,'cos32x100(int32_t degreesX100):&#160;LCD_Utilities.cpp']]]
 ];

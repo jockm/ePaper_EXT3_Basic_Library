@@ -13,12 +13,12 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @n Dual licence:
+/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-/// 
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
 
 // Core library - IDE-based
@@ -42,18 +42,18 @@
 #include "LCD_Colours565.h"
 #include "LCD_Utilities.h"
 
-#if (USE_FONT_MODE == USE_FONT_TERMINAL)
+#if (FONT_MODE == USE_FONT_TERMINAL)
 #include "LCD_Font_Terminal.h"
 
 #else
-#error USE_FONT_MODE not defined
-#endif // USE_FONT_MODE
+#error FONT_MODE not defined
+#endif // FONT_MODE
 
 ///
 /// @brief  Generic class for buffered LCD
 ///
 #warning USE_LCD_SCREEN == USE_LCD_SCREEN_SELF
-#warning USE_FONT_MODE == USE_FONT_TERMINAL
+#warning FONT_MODE == USE_FONT_TERMINAL
 class LCD_Screen_Buffer : protected LCD_Font_Terminal
 {
   public:
@@ -89,13 +89,13 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
 
     ///
     /// @brief      Set orientation
-    /// @param      orientation orientation:
-    /// * 0 = portrait
-    /// * 1 = right rotated landscape
-    /// * 2 = reverse portrait
-    /// * 3 = left rotated landscape
-    /// * 6 = check portrait
-    /// * 7 = check landscape
+    /// @param      orientation orientation,
+    /// * 0 = default
+    /// * 1 = right rotated
+    /// * 2 = reverse default
+    /// * 3 = left rotated
+    /// * ORIENTATION_PORTRAIT = 6 = check portrait
+    /// * ORIENTATION_LANDSCAPE = 7 = check landscape
     ///
     virtual void setOrientation(uint8_t orientation);
 
@@ -232,7 +232,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @param      y1 point coordinate, y-axis
     /// @param      colour 16-bit colour
     ///
-    /// @n @b More: @ref Coordinate, @ref Colour
+    /// @n @b	    More: @ref Coordinate, @ref Colour
     ///
     virtual void point(uint16_t x1, uint16_t y1, uint16_t colour);
 
@@ -288,7 +288,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @note       In variable font, each character has a specific size.
     ///             The general size is indicative.
     /// @note       Previously fontSizeX()
-    /// @n @b More: @ref Fonts
+    /// @n @b	    More: @ref Fonts
     ///
     virtual uint16_t characterSizeX(uint8_t character = 0x00);
 
@@ -296,7 +296,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @brief      Character size, y-axis
     /// @return	    vertical size for current font, in pixels
     /// @note       Previously fontSizeY()
-    /// @n @b More: @ref Fonts
+    /// @n @b	    More: @ref Fonts
     ///
     virtual uint16_t characterSizeY();
 
@@ -304,7 +304,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @brief	    String size, x-axis
     /// @param	    text string to evaluate
     /// @return     horizontal size of the string for current font, in pixels
-    /// @n @b More: @ref Fonts
+    /// @n @b	    More: @ref Fonts
     ///
     virtual uint16_t stringSizeX(String text);
 
@@ -313,7 +313,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     /// @param	    text string to evaluate
     /// @param	    pixels number of pixels to fit in
     /// @return     number of characters to be displayed inside the pixels
-    /// @n @b More: @ref Fonts
+    /// @n @b	    More: @ref Fonts
     ///
     virtual uint8_t stringLengthToFitX(String text, uint16_t pixels);
 
@@ -396,7 +396,7 @@ class LCD_Screen_Buffer : protected LCD_Font_Terminal
     ///
     uint8_t _getCharacter(uint8_t character, uint8_t index);
 
-    // Variables provided by LCD_screen_virtual
+    // Variables provided by LCD_Screen_Virtual
     bool _penSolid;
     uint16_t _screenWidth, _screenHeigth, _screenDiagonal;
     uint8_t _orientation;

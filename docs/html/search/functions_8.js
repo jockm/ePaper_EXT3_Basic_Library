@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['lcd_5fcolours565_236',['LCD_Colours565',['../a00104.html#aad0c16e4e3730efb2f2edcde3fb08e0b',1,'LCD_Colours565']]],
-  ['lcd_5fscreen_5fbuffer_237',['LCD_Screen_Buffer',['../a00108.html#a2ac7d54d19bbf1e124a5fdf2e712772b',1,'LCD_Screen_Buffer']]],
-  ['line_238',['line',['../a00108.html#a3c47f39bc9b434d88fdbd627d06096a1',1,'LCD_Screen_Buffer']]],
-  ['loop_239',['loop',['../a00005.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;ePaper_EXT3_Characters.ino'],['../a00008.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;ePaper_EXT3_Fonts.ino'],['../a00011.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;ePaper_EXT3_Forms.ino'],['../a00014.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;ePaper_EXT3_Orientation.ino'],['../a00017.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;ePaper_EXT3_Palette.ino']]]
+  ['i32toa_288',['i32toa',['../a00080.html#a5ac51cd7403867beeb75ec80e4bbd5fe',1,'i32toa(int32_t number, int32_t unit, uint8_t decimal, uint8_t size):&#160;LCD_Utilities.cpp'],['../a00083.html#a91deca93e099609e0f6ecb70be79ec7c',1,'i32toa(int32_t number, int32_t unit=1, uint8_t decimal=0, uint8_t size=0):&#160;LCD_Utilities.cpp']]],
+  ['invert_289',['invert',['../a00128.html#a6fb49e3dc7184a532d2324f923c074eb',1,'Screen_EPD_EXT3']]]
 ];

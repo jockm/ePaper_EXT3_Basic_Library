@@ -1,5 +1,5 @@
 ///
-/// @file       Screen_EPD_iTC.h
+/// @file       Screen_EPD_EXT3.h
 /// @brief      Library header
 /// @details    Driver for Pervasive Displays iTC BWR screens
 /// @n
@@ -14,11 +14,12 @@
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// @n Dual licence:
+/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
-/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-/// 
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
+///
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
 /// @see Sections based on https://github.com/PervasiveDisplays/ePaper_PervasiveDisplays
 ///
@@ -33,11 +34,11 @@
 #error Platform not defined
 #endif // end IDE
 
-#ifndef SCREEN_EPD_ITC_RELEASE
+#ifndef SCREEN_EPD_EXT3_RELEASE
 ///
 /// @brief	Library release number
 ///
-#define SCREEN_EPD_ITC_RELEASE 501
+#define SCREEN_EPD_EXT3_RELEASE 501
 
 #include "LCD_Configuration.h"
 
@@ -55,24 +56,24 @@
 
 ///
 /// @name	List of supported Pervasive Displays screens
-/// 
-enum eScreen_iTC_BWR_t
+///
+enum eScreen_EPD_EXT3_t
 {
-    eScreen_EPD_iTC_154_BWR, ///< iTC 1.54 BWR 152 x 152 x 2
-    eScreen_EPD_iTC_213_BWR, ///< iTC 2.13 BWR 104 x 212 x 2
-    eScreen_EPD_iTC_266_BWR, ///< iTC 2.66 BWR 152 x 296 x 2
-    eScreen_EPD_iTC_271_BWR, ///< iTC 2.71 BWR 176 x 264 x 2
-    eScreen_EPD_iTC_287_BWR, ///< iTC 2.87 BWR 296 x 128 x 2
-    eScreen_EPD_iTC_370_BWR, ///< iTC 3.70 BWR 416 x 240 x 2
-    eScreen_EPD_iTC_420_BWR, ///< iTC 4.20 BWR 300 x 400 x 2
-    eScreen_EPD_iTC_437_BWR, ///< iTC 4.37 BWR 480 x 176 x 2
-    eScreen_EPD_iTC_565_BWR, ///< iTC 5.65 BWR 600 x 448 x 2
-    eScreen_EPD_iTC_581_BWR, ///< iTC 5.81 BWR 720 x 256 x 2
-    eScreen_EPD_iTC_740_BWR, ///< iTC 7.40 BWR 480 x 800 x 2
-    eScreen_EPD_iTC_970_BWR, ///< iTC 9.70 BWR 960 x 672 x 2
-    eScreen_EPD_iTC_1220_BWR, ///< iTC 12.20 BWR 960 x 768 x 2
+    eScreen_EPD_EXT3_154_BWR, ///< iTC 1.54 BWR 152 x 152 x 2
+    eScreen_EPD_EXT3_213_BWR, ///< iTC 2.13 BWR 104 x 212 x 2
+    eScreen_EPD_EXT3_266_BWR, ///< iTC 2.66 BWR 152 x 296 x 2
+    eScreen_EPD_EXT3_271_BWR, ///< iTC 2.71 BWR 176 x 264 x 2
+    eScreen_EPD_EXT3_287_BWR, ///< iTC 2.87 BWR 296 x 128 x 2
+    eScreen_EPD_EXT3_370_BWR, ///< iTC 3.70 BWR 416 x 240 x 2
+    eScreen_EPD_EXT3_420_BWR, ///< iTC 4.20 BWR 300 x 400 x 2
+    eScreen_EPD_EXT3_437_BWR, ///< iTC 4.37 BWR 480 x 176 x 2
+    eScreen_EPD_EXT3_565_BWR, ///< iTC 5.65 BWR 600 x 448 x 2
+    eScreen_EPD_EXT3_581_BWR, ///< iTC 5.81 BWR 720 x 256 x 2
+    eScreen_EPD_EXT3_740_BWR, ///< iTC 7.40 BWR 480 x 800 x 2
+    eScreen_EPD_EXT3_970_BWR, ///< iTC 9.70 BWR 960 x 672 x 2
+    eScreen_EPD_EXT3_1220_BWR, ///< iTC 12.20 BWR 960 x 768 x 2
 };
-/// 
+///
 
 ///
 /// @name      Frame buffer sizes
@@ -80,19 +81,19 @@ enum eScreen_iTC_BWR_t
 /// @note       Only one frame buffer is required.
 /// @n          Depth = 2 for black-white-red screen
 ///
-#define frameSize_EPD_iTC_154_BWR (uint32_t)(5776)
-#define frameSize_EPD_iTC_213_BWR (uint32_t)(5512)
-#define frameSize_EPD_iTC_266_BWR (uint32_t)(11248)
-#define frameSize_EPD_iTC_271_BWR (uint32_t)(11616)
-#define frameSize_EPD_iTC_287_BWR (uint32_t)(9472)
-#define frameSize_EPD_iTC_370_BWR (uint32_t)(24960)
-#define frameSize_EPD_iTC_420_BWR (uint32_t)(30000)
-#define frameSize_EPD_iTC_437_BWR (uint32_t)(21120)
-#define frameSize_EPD_iTC_565_BWR (uint32_t)(33600)
-#define frameSize_EPD_iTC_581_BWR (uint32_t)(46080)
-#define frameSize_EPD_iTC_740_BWR (uint32_t)(96000)
-#define frameSize_EPD_iTC_970_BWR (uint32_t)(161280)
-#define frameSize_EPD_iTC_1220_BWR (uint32_t)(184320)
+#define frameSize_EPD_EXT3_154_BWR (uint32_t)(5776)
+#define frameSize_EPD_EXT3_213_BWR (uint32_t)(5512)
+#define frameSize_EPD_EXT3_266_BWR (uint32_t)(11248)
+#define frameSize_EPD_EXT3_271_BWR (uint32_t)(11616)
+#define frameSize_EPD_EXT3_287_BWR (uint32_t)(9472)
+#define frameSize_EPD_EXT3_370_BWR (uint32_t)(24960)
+#define frameSize_EPD_EXT3_420_BWR (uint32_t)(30000)
+#define frameSize_EPD_EXT3_437_BWR (uint32_t)(21120)
+#define frameSize_EPD_EXT3_565_BWR (uint32_t)(33600)
+#define frameSize_EPD_EXT3_581_BWR (uint32_t)(46080)
+#define frameSize_EPD_EXT3_740_BWR (uint32_t)(96000)
+#define frameSize_EPD_EXT3_970_BWR (uint32_t)(161280)
+#define frameSize_EPD_EXT3_1220_BWR (uint32_t)(184320)
 
 // Objects
 //
@@ -136,15 +137,15 @@ enum eScreen_iTC_BWR_t
 /// @n  All commands work on the frame-buffer,
 ///     to be displayed on screen with flush()
 ///
-class Screen_iTC_BWR : public LCD_Screen_Buffer
+class Screen_EPD_EXT3 final : public LCD_Screen_Buffer
 {
   public:
     ///
     /// @brief  Constructor with default pins
-    /// @param  eScreen_iTC_BWR size and model of the e-screen
+    /// @param  eScreen_EPD_EXT3 size and model of the e-screen
     /// @note   To be used with begin() with no parameter
     ///
-    Screen_iTC_BWR(eScreen_iTC_BWR_t eScreen_iTC_BWR);
+    Screen_EPD_EXT3(eScreen_EPD_EXT3_t eScreen_EPD_EXT3);
 
     ///
     /// @brief  Initialisation
@@ -309,7 +310,7 @@ class Screen_iTC_BWR : public LCD_Screen_Buffer
     // Screen dependent variables
     bool _flagBeginDone;
     uint8_t _pinCSS;
-    eScreen_iTC_BWR_t _eScreen_iTC_BWR;
+    eScreen_EPD_EXT3_t _eScreen_EPD_EXT3;
     uint16_t _widthBuffer, _heightBuffer, _depthBuffer, _numberBuffer;
     uint32_t _sizePageColour, _sizeFrame;
     uint8_t _refreshTime;

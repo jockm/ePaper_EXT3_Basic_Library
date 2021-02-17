@@ -1,12 +1,19 @@
 var searchData=
 [
-  ['configuration_5fboosterpack_5fext3_314',['CONFIGURATION_BOOSTERPACK_EXT3',['../a00059.html#aa50e58d5106e0b8e938f302c478ad913',1,'LCD_Configuration.h']]],
-  ['configuration_5fcc1352_315',['CONFIGURATION_CC1352',['../a00059.html#ac0087f082ed4eb72b4fb97caa18f87bb',1,'LCD_Configuration.h']]],
-  ['configuration_5fmsp5430fr5994_316',['CONFIGURATION_MSP5430FR5994',['../a00059.html#a81de2fce16ab6edd7ccccae52354e850',1,'LCD_Configuration.h']]],
-  ['configuration_5foption_317',['CONFIGURATION_OPTION',['../a00059.html#aed5d4006ff573ec9015562725b68a81b',1,'LCD_Configuration.h']]],
-  ['configuration_5fraspi_318',['CONFIGURATION_RASPI',['../a00059.html#a7fa9048eaa9531cadab28a166a0d4195',1,'LCD_Configuration.h']]],
-  ['configuration_5fredbear_5fduo_319',['CONFIGURATION_REDBEAR_DUO',['../a00059.html#a31ac38ce383b0e1d612b0b82c17d7b96',1,'LCD_Configuration.h']]],
-  ['cs_5fpin_320',['CS_PIN',['../a00059.html#abfcf05153ddbd63d5aff5d018867cc19',1,'LCD_Configuration.h']]],
-  ['css24_5fpin_321',['CSS24_PIN',['../a00059.html#aa98b8b8c9e4ff5198abff205ee2d267b',1,'CSS24_PIN():&#160;LCD_Configuration.h'],['../a00083.html#aa98b8b8c9e4ff5198abff205ee2d267b',1,'CSS24_PIN():&#160;Screen_EPD_iTC.cpp']]],
-  ['css34_5fpin_322',['CSS34_PIN',['../a00059.html#a94758104a7b755feb15b62ff4189dd90',1,'CSS34_PIN():&#160;LCD_Configuration.h'],['../a00083.html#a94758104a7b755feb15b62ff4189dd90',1,'CSS34_PIN():&#160;Screen_EPD_iTC.cpp']]]
+  ['flash_5fcs_5fpin_388',['FLASH_CS_PIN',['../a00059.html#aef52395a58c8191f3d4a21a6d1d950c3',1,'LCD_Configuration.h']]],
+  ['flash_5fcss_5fpin_389',['FLASH_CSS_PIN',['../a00059.html#a10ad11f72fde94a36cac4c96e17233f3',1,'LCD_Configuration.h']]],
+  ['font_5fmode_390',['FONT_MODE',['../a00059.html#ac7790c7c49429aaa3e6bfba18956447e',1,'LCD_Configuration.h']]],
+  ['framesize_5fepd_5fext3_5f1220_5fbwr_391',['frameSize_EPD_EXT3_1220_BWR',['../a00089.html#a25a9c1ed4ea3ece81d432d629cb21b4d',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f154_5fbwr_392',['frameSize_EPD_EXT3_154_BWR',['../a00089.html#aee708ec11857d909005fd706446c3103',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f213_5fbwr_393',['frameSize_EPD_EXT3_213_BWR',['../a00089.html#a56201205df4d7c8e751128bdabcac3a7',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f266_5fbwr_394',['frameSize_EPD_EXT3_266_BWR',['../a00089.html#ae4edf0aa3efa33b93d76b0b1ba80ea87',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f271_5fbwr_395',['frameSize_EPD_EXT3_271_BWR',['../a00089.html#a9d48beab65b87a942a7db73552d32616',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f287_5fbwr_396',['frameSize_EPD_EXT3_287_BWR',['../a00089.html#ae26c7ca662702b588b22e96e778e3473',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f370_5fbwr_397',['frameSize_EPD_EXT3_370_BWR',['../a00089.html#a8d8a224acdd6ce439784e06f786f071e',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f420_5fbwr_398',['frameSize_EPD_EXT3_420_BWR',['../a00089.html#ae2ae72dd75480b7bb3cbddc7abb56970',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f437_5fbwr_399',['frameSize_EPD_EXT3_437_BWR',['../a00089.html#aade6bd11f42ee811b370b006945ace6d',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f565_5fbwr_400',['frameSize_EPD_EXT3_565_BWR',['../a00089.html#a0eafb093816655b11222cc9fa1b812bf',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f581_5fbwr_401',['frameSize_EPD_EXT3_581_BWR',['../a00089.html#ad586f9592a28b798f9e35e1869b78c20',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f740_5fbwr_402',['frameSize_EPD_EXT3_740_BWR',['../a00089.html#a2349654b43477fd7590d4fe0aad26561',1,'Screen_EPD_EXT3.h']]],
+  ['framesize_5fepd_5fext3_5f970_5fbwr_403',['frameSize_EPD_EXT3_970_BWR',['../a00089.html#ab7a9bbcc8eed2ccb94961a534adaba20',1,'Screen_EPD_EXT3.h']]]
 ];

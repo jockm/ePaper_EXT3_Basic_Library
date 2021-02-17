@@ -20,11 +20,11 @@
 // Code
 LCD_Screen_Buffer::LCD_Screen_Buffer()
 {
-    _fontSize       = 0;
-    _fontNumber     = 0;
-    _fontSolid      = true;
+    _f_fontSize       = 0;
+    _f_fontNumber     = 0;
+    _f_fontSolid      = true;
     _penSolid       = false;
-    _fontSpaceX     = 1;
+    _f_fontSpaceX     = 1;
 }
 
 void LCD_Screen_Buffer::begin()
@@ -524,7 +524,7 @@ void LCD_Screen_Buffer::selectFont(uint8_t font)
 
 uint8_t LCD_Screen_Buffer::getFont()
 {
-    return _fontSize;
+    return _f_fontSize;
 }
 
 uint8_t LCD_Screen_Buffer::fontMax()
@@ -535,9 +535,9 @@ uint8_t LCD_Screen_Buffer::fontMax()
 uint16_t LCD_Screen_Buffer::characterSizeX(uint8_t character)
 {
     uint16_t result = 0;
-    if ((_font.kind & 0x40) == 0x40)
+    if ((_f_font.kind & 0x40) == 0x40)
     {
-        result = _font.maxWidth + _fontSpaceX;
+        result = _f_font.maxWidth + _f_fontSpaceX;
     }
     else
     {
@@ -581,14 +581,14 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                               String text,
                               uint16_t textColour,
                               uint16_t backColour)
-#if (USE_FONT_MODE == USE_FONT_TERMINAL)
+#if (FONT_MODE == USE_FONT_TERMINAL)
 {
     uint8_t c;
     uint8_t line, line1, line2, line3;
     uint16_t x, y;
     uint8_t i, j, k;
 #if (MAX_FONT_SIZE > 0)
-    if (_fontSize == 0)
+    if (_f_fontSize == 0)
     {
         for (k = 0; k < text.length(); k++)
         {
@@ -603,7 +603,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 6 * k + i, y0 + j, textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 6 * k + i, y0 + j, backColour);
                     }
@@ -611,7 +611,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
         }
     }
 #if (MAX_FONT_SIZE > 1)
-    else if (_fontSize == 1)
+    else if (_f_fontSize == 1)
     {
         for (k = 0; k < text.length(); k++)
         {
@@ -628,7 +628,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 8 * k + i, y0 + j, textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 8 * k + i, y0 + j, backColour);
                     }
@@ -636,7 +636,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 8 * k + i, y0 + 8 + j, textColour);
                     }
-                    else if ((_fontSolid) and (j < 4))
+                    else if ((_f_fontSolid) and (j < 4))
                     {
                         point(x0 + 8 * k + i, y0 + 8 + j, backColour);
                     }
@@ -645,7 +645,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
         }
     }
 #if (MAX_FONT_SIZE > 2)
-    else if (_fontSize == 2)
+    else if (_f_fontSize == 2)
     {
 
         for (k = 0; k < text.length(); k++)
@@ -663,7 +663,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 12 * k + i, y0 + j,    textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 12 * k + i, y0 + j,    backColour);
                     }
@@ -671,7 +671,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 12 * k + i, y0 + 8 + j, textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 12 * k + i, y0 + 8 + j, backColour);
                     }
@@ -680,7 +680,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
         }
     }
 #if (MAX_FONT_SIZE > 3)
-    else if (_fontSize == 3)
+    else if (_f_fontSize == 3)
     {
         for (k = 0; k < text.length(); k++)
         {
@@ -696,7 +696,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 16 * k + i, y0 + j,     textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 16 * k + i, y0 + j,     backColour);
                     }
@@ -704,7 +704,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 16 * k + i, y0 + 8 + j,  textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 16 * k + i, y0 + 8 + j,  backColour);
                     }
@@ -712,7 +712,7 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
                     {
                         point(x0 + 16 * k + i, y0 + 16 + j, textColour);
                     }
-                    else if (_fontSolid)
+                    else if (_f_fontSolid)
                     {
                         point(x0 + 16 * k + i, y0 + 16 + j, backColour);
                     }
@@ -725,4 +725,4 @@ void LCD_Screen_Buffer::gText(uint16_t x0, uint16_t y0,
 #endif // end MAX_FONT_SIZE > 1
 #endif // end MAX_FONT_SIZE > 0
 }
-#endif // USE_FONT_MODE
+#endif // FONT_MODE

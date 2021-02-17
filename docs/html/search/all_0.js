@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['_5fsettingscreen_0',['_settingScreen',['../a00083.html#abf8c1d032dd732456b8ac1daaf36a67c',1,'Screen_EPD_iTC.cpp']]]
+  ['_5ff_5faddfont_0',['_f_addFont',['../a00120.html#a7e0f152d26ff0e21c6cf25da56fafc4c',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fbegin_1',['_f_begin',['../a00120.html#ad24e9d2663ed9a4231c7eb4e4a395c72',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fcharactersizex_2',['_f_characterSizeX',['../a00120.html#a3335351effc239b64a9f1cb23a53b670',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fcharactersizey_3',['_f_characterSizeY',['../a00120.html#a704c883a53df08640fd0d317e40b8697',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffont_4',['_f_font',['../a00120.html#aca317a612ff396e13b50c78bd92b81ff',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontmax_5',['_f_fontMax',['../a00120.html#a5768320b2703555c4d823ffad3b0c739',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontnumber_6',['_f_fontNumber',['../a00120.html#a34ab5c460042c40b2341b91b42904f2e',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontsize_7',['_f_fontSize',['../a00120.html#a3814a6f8ef07ba7f247894937c2cdb0a',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontsolid_8',['_f_fontSolid',['../a00120.html#a4e4b2091d422276b3cd066b6d094bdff',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontspacex_9',['_f_fontSpaceX',['../a00120.html#a996e16abf3abce1ac5b2c1e9442b595d',1,'LCD_Font_Terminal']]],
+  ['_5ff_5ffontspacey_10',['_f_fontSpaceY',['../a00120.html#a4396b0fa3590ee4e5aa2cdf51f4b9e48',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fgetcharacter_11',['_f_getCharacter',['../a00120.html#a76e2dee46bf76227165996dce585007f',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fgetfontkind_12',['_f_getFontKind',['../a00120.html#a272930d2b271963086b52d377641a02c',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fgetfontmaxwidth_13',['_f_getFontMaxWidth',['../a00120.html#a5dfadf7a2b3f6ff6030c0e117581633c',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fselectfont_14',['_f_selectFont',['../a00120.html#a89dfb02961c452e85c99ef21cc4e1ddc',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fsetfontsolid_15',['_f_setFontSolid',['../a00120.html#a48fcbd3bff76d4dd226eea8e859f3121',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fsetfontspacex_16',['_f_setFontSpaceX',['../a00120.html#a757c3e04404ef00d9face128ee515509',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fsetfontspacey_17',['_f_setFontSpaceY',['../a00120.html#aa1c0e0a6c86f01639d8e11708afa82d2',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fstringlengthtofitx_18',['_f_stringLengthToFitX',['../a00120.html#af8f1b9967b9fa8baacb4dd936a9a4524',1,'LCD_Font_Terminal']]],
+  ['_5ff_5fstringsizex_19',['_f_stringSizeX',['../a00120.html#ae1e7d1d1c9d73642fb62e2823b884f2e',1,'LCD_Font_Terminal']]],
+  ['_5fsettingscreen_20',['_settingScreen',['../a00086.html#abf8c1d032dd732456b8ac1daaf36a67c',1,'Screen_EPD_EXT3.cpp']]]
 ];

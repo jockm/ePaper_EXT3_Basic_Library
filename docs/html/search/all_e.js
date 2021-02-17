@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readpixel_127',['readPixel',['../a00112.html#a9eefead5431c2b04886b605b958a6e12',1,'Screen_iTC_BWR']]],
-  ['rectangle_128',['rectangle',['../a00108.html#aaa5103af2689befb48e99a4b4d2d236f',1,'LCD_Screen_Buffer']]],
-  ['red_129',['red',['../a00104.html#aa765496f7931d63e23507430f8d80cc1',1,'LCD_Colours565']]],
-  ['reset_5fpin_130',['RESET_PIN',['../a00059.html#a08bca59db4b190eaaea4d47b7562869c',1,'LCD_Configuration.h']]],
-  ['roundup_131',['roundUp',['../a00077.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;LCD_Utilities.cpp'],['../a00080.html#a9e10a8bc35f3b1ae121655e335de4513',1,'roundUp(uint32_t value, uint16_t modulo):&#160;LCD_Utilities.cpp']]]
+  ['orange_153',['orange',['../a00108.html#abdb12f6a96fcbba87f63f7284824d513',1,'LCD_Colours565']]],
+  ['orientation_5flandscape_154',['ORIENTATION_LANDSCAPE',['../a00083.html#accc06995e9834c793d2cc9e96ded0560',1,'LCD_Utilities.h']]],
+  ['orientation_5fportrait_155',['ORIENTATION_PORTRAIT',['../a00083.html#a0f166aa542c69097847cfc189cd48057',1,'LCD_Utilities.h']]]
 ];

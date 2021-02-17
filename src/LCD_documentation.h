@@ -29,16 +29,16 @@
 /// @mainpage  EPD EXT3 BWR eScreen Basic Library
 /// @details The ePaper_EXT3_Basic_Library is a special edition of the LCD_screen Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
 ///
-/// The @ref Examples section showcases the features the library and how to use them: 
+/// The @ref Examples section showcases the features the library and how to use them:
 ///
-/// * forms and shapes, 
-/// * fonts, 
-/// * orientation, 
-/// * set of characters, 
+/// * forms and shapes,
+/// * fonts,
+/// * orientation,
+/// * set of characters,
 /// * palette of colours.
 ///
 /// The @ref Configuration section defines the GPIOs and SPI bus used.
-/// 
+///
 ///
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
@@ -63,11 +63,12 @@
 ///
 ///
 /// @section    Copyright Copyright and licence
-/// @details    The LCD_screen Library Suite is shared under dual licence:
+/// @details    The LCD_screen Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
+/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
-/// * For hobbyists and for personal usage: Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
+/// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
-/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library.
+/// * For professionals or organisations or for commercial usage: All rights reserved. Consider the advanced edition ePaper_EXT3_Advanced_Library which brings waivers for the NonCommercial ShareAlike clauses.
 ///
 ///
 /// @section    Structure Library structure
@@ -263,10 +264,11 @@
 /// @section    Configuration Configuration
 /// @brief      Use LCD_Configuration.h to select the configuration for GPIOs and SPI bus.
 /// @details	Configuration of the options for ePaper EXT3 Basic Library includes 5 steps.
-/// 
-/// 1. `CONFIGURATION_OPTION` selects the hardware with pre-defined configurations.
-/// 2. Based on `CONFIGURATION_OPTION`, GPIOs are defined.
-/// 3. Large screens 9.7 and 12.2 require additional `CSS24_PIN` and `CSS34_PIN`.
-/// 4. `USE_FONT_MODE` defines the fonts used, here Terminal for the basic edition.
-/// 5. `MAX_FONT_SIZE` sets the number of fonts, maximum 4 for the basic edition.
-/// 
+///
+/// 1. CONFIGURATION_OPTION selects the hardware with pre-defined configurations.
+/// 2. Based on CONFIGURATION_OPTION, GPIOs are defined.
+/// 3. FONT_MODE defines the fonts used, here Terminal for the basic edition. (Advanced edition)
+/// 4. MAX_FONT_SIZE sets the number of fonts, maximum 4 for the basic edition.
+/// 5. SRAM_MODE sets the memory either internal MCU or external SPI. (Advanced edition)
+/// 6. Set USE_LCD_SCREEN to virtual object, recommended. (Advanced edition)
+///

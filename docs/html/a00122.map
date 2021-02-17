@@ -1,0 +1,5 @@
+<map id="LCD_Screen_Buffer" name="LCD_Screen_Buffer">
+<area shape="rect" id="node1" title="Generic class for buffered LCD." alt="" coords="5,171,144,197"/>
+<area shape="rect" id="node2" href="$a00120.html" title="Class for font from Flash memory." alt="" coords="5,95,144,121"/>
+<area shape="rect" id="node3" href="$a00116.html" title="Structure for font." alt="" coords="45,5,104,32"/>
+</map>

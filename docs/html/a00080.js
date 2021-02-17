@@ -1,9 +1,6 @@
 var a00080 =
 [
-    [ "LCD_UTILITIES_RELEASE", "a00080.html#a042f0cee78b99590872fadd9b840f55c", null ],
-    [ "max", "a00080.html#affe776513b24d84b39af8ab0930fef7f", null ],
-    [ "min", "a00080.html#ac6afabdc09a49a433ee19d8a9486056d", null ],
-    [ "btoa", "a00080.html#a1b93260a872fc5c6e935d12005d74c84", null ],
+    [ "btoa", "a00080.html#ac615a2d85fe4285418a5bfb167ddbdce", null ],
     [ "checkRange", "a00080.html#a86af3529c58c3ba135667030a75a5917", null ],
     [ "convertPolar2Rectangle", "a00080.html#adfcce25f5bed41e2c35b238837f0b30c", null ],
     [ "convertRectangle2Polar", "a00080.html#aeb10091247b3ba79b8ccf1f103b3caf5", null ],
@@ -11,15 +8,19 @@ var a00080 =
     [ "delay_ms", "a00080.html#ab7cce8122024d7ba47bf10f434956de4", null ],
     [ "formatChar", "a00080.html#a5cb49d6e189f4565715988928cd86be7", null ],
     [ "formatString", "a00080.html#aa405c9a5b808e428554e540028085dd3", null ],
-    [ "htoa", "a00080.html#af2f01edcced90e4c300bb33eba20aea5", null ],
-    [ "i32toa", "a00080.html#a91deca93e099609e0f6ecb70be79ec7c", null ],
+    [ "htoa", "a00080.html#a50033d757da851b711b9a9a3dc92e15b", null ],
+    [ "i32toa", "a00080.html#a5ac51cd7403867beeb75ec80e4bbd5fe", null ],
     [ "roundUp", "a00080.html#a9e10a8bc35f3b1ae121655e335de4513", null ],
     [ "setMinMax", "a00080.html#ac8a17fff09aa92a8b27434044c138bc0", null ],
     [ "sin32x100", "a00080.html#a6843a856b41ae0c0fbe919efb535aa9f", null ],
     [ "swap", "a00080.html#a149f55c1d6b6336ef751e247856198ce", null ],
     [ "swap", "a00080.html#a7989671d14dda7f19b8d289e359404e9", null ],
     [ "swap", "a00080.html#a46562f812c731ac4a846ee4bb29b0397", null ],
-    [ "ttoa", "a00080.html#abbd2f8903c7737617f955b1b5f26c029", null ],
+    [ "trimString", "a00080.html#a311c694a8a5722683dd6739c55323036", null ],
+    [ "ttoa", "a00080.html#a4b90fb4e3244421d7f119f32fde4d719", null ],
     [ "utf2iso", "a00080.html#a3051dd153db86ba3b56a69e93f1ca22a", null ],
-    [ "wait_ms", "a00080.html#ac857cf12370962e9f329daa1781f99fe", null ]
+    [ "wait_ms", "a00080.html#ac857cf12370962e9f329daa1781f99fe", null ],
+    [ "bufferFormat", "a00080.html#a2e23e619faa0b2bfe96745b08b53fdef", null ],
+    [ "bufferIn", "a00080.html#a0263b49e6250db8b119a671365cf5117", null ],
+    [ "bufferOut", "a00080.html#a280229feb12a627240397cbe92b9517c", null ]
 ];
