@@ -1,15 +1,4 @@
-<map id="ePaper_EXT3_Basic_Library.h" name="ePaper_EXT3_Basic_Library.h">
-<area shape="rect" id="node1" title="Library header." alt="" coords="5,5,204,32"/>
-<area shape="rect" id="node2" href="$a00089.html" title="Library header." alt="" coords="30,80,179,107"/>
-<area shape="rect" id="node3" href="$a00059.html" title="Header." alt="" coords="27,379,161,405"/>
-<area shape="rect" id="node4" href="$a00077.html" title="Class library header." alt="" coords="35,155,174,181"/>
-<area shape="rect" id="node13" title=" " alt="" coords="199,155,253,181"/>
-<area shape="rect" id="node5" href="$a00056.html" title="Class library header." alt="" coords="43,229,166,256"/>
-<area shape="rect" id="node6" href="$a00083.html" title="Library header." alt="" coords="44,304,144,331"/>
-<area shape="rect" id="node7" href="$a00071.html" title="Library header." alt="" coords="277,229,415,256"/>
-<area shape="rect" id="node8" href="$a00065.html" title="Header." alt="" coords="219,304,302,331"/>
-<area shape="rect" id="node9" href="$a00098.html" title="Extended font library." alt="" coords="327,304,437,331"/>
-<area shape="rect" id="node10" href="$a00101.html" title="Extended font library." alt="" coords="462,304,579,331"/>
-<area shape="rect" id="node11" href="$a00092.html" title="Extended font library." alt="" coords="604,304,728,331"/>
-<area shape="rect" id="node12" href="$a00095.html" title="Extended font library." alt="" coords="752,304,876,331"/>
+<map id="hV_Utilities.h" name="hV_Utilities.h">
+<area shape="rect" id="node1" title="Library header." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,80,94,107"/>
 </map>

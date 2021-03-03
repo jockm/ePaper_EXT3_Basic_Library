@@ -26,20 +26,20 @@ var NAVTREE =
 [
   [ "ePaper_EXT3_Basic_Library Reference Manual", "index.html", [
     [ "EPD EXT3 BWR eScreen Basic Library", "index.html", null ],
-    [ "Additional documentation", "a00129.html", [
-      [ "Copyright and licence", "a00129.html#Copyright", null ],
-      [ "Library structure", "a00129.html#Structure", null ],
-      [ "Version management", "a00129.html#Version", null ],
-      [ "Coordinates systems", "a00129.html#Coordinate", null ],
-      [ "Fonts", "a00129.html#Fonts", null ],
-      [ "Values using integer numbers", "a00129.html#Value", null ],
-      [ "Colours", "a00129.html#Colour", null ],
-      [ "Porting to another SDK", "a00129.html#Port", null ],
-      [ "Other resources", "a00129.html#Resource", null ],
-      [ "Examples", "a00129.html#Examples", null ],
-      [ "Configuration", "a00129.html#Configuration", null ]
+    [ "Additional documentation", "a00096.html", [
+      [ "Copyright and licence", "a00096.html#Copyright", null ],
+      [ "Library structure", "a00096.html#Structure", null ],
+      [ "Version management", "a00096.html#Version", null ],
+      [ "Coordinates systems", "a00096.html#Coordinate", null ],
+      [ "Fonts", "a00096.html#Fonts", null ],
+      [ "Values using integer numbers", "a00096.html#Value", null ],
+      [ "Colours", "a00096.html#Colour", null ],
+      [ "Porting to another SDK", "a00096.html#Port", null ],
+      [ "Other resources", "a00096.html#Resource", null ],
+      [ "Examples", "a00096.html#Examples", null ],
+      [ "Configuration", "a00096.html#Configuration", null ]
     ] ],
-    [ "Bug List", "a00104.html", null ],
+    [ "Bug List", "a00071.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -66,8 +66,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"a00005.html",
-"a00124.html#a8112921e076ca85c2c8408dffee3c825"
+"a00002.html",
+"a00091.html#a81e8f6810b95cb69f7464d0ca48a299a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

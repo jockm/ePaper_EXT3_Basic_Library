@@ -20,11 +20,10 @@
 // !!! Help: https://bit.ly/2AdU7cu
 #if defined(ENERGIA) // LaunchPad specific
 #include "Energia.h"
-#elif defined(ARDUINO) // Arduino general
+#else // Arduino general
 #include "Arduino.h"
-#else // error
-#error Platform not defined
 #endif // end IDE
+
 
 #ifndef hV_FONT_TERMINAL_RELEASE
 ///

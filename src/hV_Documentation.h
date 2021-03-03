@@ -12,14 +12,14 @@
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
 ///
-/// @date       11 Jan 2021
-/// @version    release 503
+/// @date       01 Mar 2021
+/// @version    release 504
 ///
 /// @copyright  (c) Rei Vilo, 2010-2021
 /// @copyright  CC BY-NC-SA 4.0
 ///
 /// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
-/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+/// @see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
@@ -30,6 +30,8 @@
 /// @mainpage  EPD EXT3 BWR eScreen Basic Library
 /// @details The ePaper_EXT3_Basic_Library is a special edition of the highView Library Suite for the Pervasive Displays e-paper screens and EXT3 extension board.
 ///
+/// The @ref Configuration section defines the GPIOs and SPI bus used.
+///
 /// The @ref Examples section showcases the features the library and how to use them:
 ///
 /// * forms and shapes,
@@ -37,9 +39,6 @@
 /// * orientation,
 /// * set of characters,
 /// * palette of colours.
-///
-/// The @ref Configuration section defines the GPIOs and SPI bus used.
-///
 ///
 /// @author     Rei Vilo
 /// @author     https://embeddedcomputing.weebly.com
@@ -51,7 +50,7 @@
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
 /// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
-/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+/// @see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
@@ -65,7 +64,7 @@
 ///
 /// @section    Copyright Copyright and licence
 /// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
-/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+/// @see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///

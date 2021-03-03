@@ -14,7 +14,7 @@
 /// @copyright  Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
 /// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
-/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+/// @see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
@@ -25,11 +25,10 @@
 // Core library - IDE-based
 #if defined(ENERGIA) // LaunchPad specific
 #include "Energia.h"
-#elif defined(ARDUINO) // Arduino general
+#else // Arduino general
 #include "Arduino.h"
-#else // error
-#error Platform not defined
 #endif // end IDE
+
 
 #ifndef hV_UTILITIES_RELEASE
 ///

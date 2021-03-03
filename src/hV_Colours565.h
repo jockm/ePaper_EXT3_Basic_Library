@@ -19,10 +19,8 @@
 // Core library - IDE-based
 #if defined(ENERGIA) // LaunchPad specific
 #include "Energia.h"
-#elif defined(ARDUINO) // Arduino general
+#else // Arduino general
 #include "Arduino.h"
-#else // error
-#error Platform not defined
 #endif // end IDE
 
 #ifndef hV_COLOURS_RELEASE

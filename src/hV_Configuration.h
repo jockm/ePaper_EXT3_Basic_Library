@@ -15,14 +15,14 @@
 /// @author		Rei Vilo
 /// @author		https://embeddedcomputing.weebly.com
 ///
-/// @date       11 Jan 2021
-/// @version    release 503
+/// @date       01 Mar 2021
+/// @version    release 504
 ///
 /// @copyright	(c) Rei Vilo, 2010-2021
 /// @copyright  Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
 /// @details    The highView Library Suite is shared under the Creative Commons licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0).
-/// @ see https://creativecommons.org/licenses/by-nc-sa/4.0/
+/// @see https://creativecommons.org/licenses/by-nc-sa/4.0/
 ///
 /// * For hobbyists and for personal usage: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA 4.0)
 ///
@@ -33,11 +33,10 @@
 // !!! Help: https://bit.ly/2AdU7cu
 #if defined(ENERGIA) // LaunchPad specific
 #include "Energia.h"
-#elif defined(ARDUINO) // Arduino general
+#else // Arduino general
 #include "Arduino.h"
-#else // error
-#error Platform not defined
 #endif // end IDE
+
 
 
 #ifndef hV_CONFIGURATION_RELEASE
@@ -57,8 +56,9 @@
 #define CONFIGURATION_EXT3_REDBEAR_DUO 4 // specific Particle Photon or ReadBear Duo
 #define CONFIGURATION_EXT3_CC1352 5 ///< specific CC1352
 #define CONFIGURATION_EXT3_ARDUINO_ZERO 6 ///< specific Arduino Zero or M0 Pro
+#define CONFIGURATION_EXT3_FEATHER_M0 7 ///< specific Adafruit Feather M0
 
-#define CONFIGURATION_OPTION CONFIGURATION_EXT3_RASPI ///< selected option
+#define CONFIGURATION_OPTION CONFIGURATION_EXT3_FEATHER_M0 ///< selected option
 /// @}
 
 ///
@@ -86,7 +86,7 @@
 #define FLASH_CS_PIN 24     ///< EXT3 pin 8 -> 24
 #define PANEL_CS_PIN 26     ///< EXT3 pin 9 -> 26
 // If not used, comment out
-//#define PANEL_CSS_PIN 27    ///< EXT3 pin 12 -> NC
+//#define PANEL_CSS_PIN 37    ///< EXT3 pin 12 -> 37
 #define FLASH_CSS_PIN 27    ///< EXT3 pin 20 -> 27
 
 #elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_MSP5430FR5994)
@@ -141,6 +141,18 @@
 #define SPI_CLOCK_PIN 13    ///< EXT3 pin 2 -> 13
 #define SPI_CLOCK_MISO 11   ///< EXT3 pin 6 -> 11
 #define SPI_CLOCK_MOSI 12   ///< EXT3 pin 7 -> 12
+
+#elif (CONFIGURATION_OPTION == CONFIGURATION_EXT3_FEATHER_M0)
+// --- ARDUINO_ZERO configuration, tested
+#warning Default pins for ARDUINO_ZERO
+#define PANEL_BUSY_PIN 13    ///< EXT3 pin 3 -> 4
+#define PANEL_DC_PIN 12      ///< EXT3 pin 4 -> 5
+#define PANEL_RESET_PIN 11   ///< EXT3 pin 5 -> 6
+#define FLASH_CS_PIN 10      ///< EXT3 pin 8 -> 7
+#define PANEL_CS_PIN 9      ///< EXT3 pin 9 -> 8
+// If not used, comment out
+// #define PANEL_CSS_PIN 6     ///< EXT3 pin 12 -> 9
+// #define FLASH_CSS_PIN 5    ///< EXT3 pin 20 -> 10
 
 #else
 #error Invalid CONFIGURATION_OPTION

@@ -429,7 +429,7 @@ void Screen_EPD_EXT3::flush()
         else if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_740_BWR)
         {
             uint8_t data3_565[] = {0x3b, 0x00, 0x14}; // RAM_RW
-        _sendIndexData(0x12, data3_565, 3); // RAM_RW
+            _sendIndexData(0x12, data3_565, 3); // RAM_RW
         }
         _sendIndexData(0x11, redBuffer, _sizeFrame); // Second frame
 
@@ -466,7 +466,7 @@ void Screen_EPD_EXT3::flush()
         else if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_740_BWR)
         {
             uint8_t data10_565[] = {0x00, 0x01}; // OSC
-        _sendIndexData(0x03, data10_565, 2); // OSC mtp_0x12
+            _sendIndexData(0x03, data10_565, 2); // OSC mtp_0x12
         }
         _sendIndexData(0x44, data5_565, 1);
         uint8_t data11_565[] = {0x80 };
@@ -489,7 +489,7 @@ void Screen_EPD_EXT3::flush()
         if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_565_BWR)
         {
             uint8_t data15_565[] = {0x01}; // STV_DIR
-        _sendIndexData(0x61, data15_565, 1); // STV_DIR mtp_0x1c
+            _sendIndexData(0x61, data15_565, 1); // STV_DIR mtp_0x1c
         }
         else if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_581_BWR)
         {
@@ -548,13 +548,17 @@ void Screen_EPD_EXT3::flush()
         delay_ms(10);
 
         // Display Refresh Start
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         uint8_t data18_565[] = {0x3c };
         _sendIndexData(0x15, data18_565, 1); //Display Refresh
         delay_ms(5);
 
         // DC-DC off
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         uint8_t data19_565[] = {0x7f };
         _sendIndexData(0x09, data19_565, 1);
         uint8_t data20_565[] = {0x7d };
@@ -562,7 +566,9 @@ void Screen_EPD_EXT3::flush()
         _sendIndexData(0x09, data5_565, 1);
         delay_ms(200);
 
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         digitalWrite(PANEL_DC_PIN, LOW);
         digitalWrite(PANEL_CS_PIN, LOW);
         digitalWrite(PANEL_RESET_PIN, LOW);
@@ -583,9 +589,9 @@ void Screen_EPD_EXT3::flush()
         else if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_1220_BWR)
     {
             uint8_t data1_970[] = {0x00, 0x3b, 0x00, 0x00, 0x1f, 0x03}; // DUW
-        _sendIndexData(0x13, data1_970, 6); // DUW for Both Master and Slave
+            _sendIndexData(0x13, data1_970, 6); // DUW for Both Master and Slave
             uint8_t data2_970[] = {0x00, 0x3b, 0x00, 0xc9}; // DRFW
-        _sendIndexData(0x90, data2_970, 4); // DRFW for Both Master and Slave
+            _sendIndexData(0x90, data2_970, 4); // DRFW for Both Master and Slave
         }
 
         uint8_t data3_970[] = {0x3b, 0x00, 0x14};
@@ -634,7 +640,7 @@ void Screen_EPD_EXT3::flush()
         else if (_eScreen_EPD_EXT3 == eScreen_EPD_EXT3_1220_BWR)
         {
             uint8_t data10_970[] = {0x00, 0x12}; // OSC
-        _sendIndexData(0x03, data10_970, 2); // OSC
+            _sendIndexData(0x03, data10_970, 2); // OSC
         }
 
         _sendIndexDataMaster(0x44, data5_970, 1); // Master
@@ -717,20 +723,26 @@ void Screen_EPD_EXT3::flush()
         delay_ms(10);
 
         // Display Refresh Start
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         uint8_t data18_970[] = {0x3c};
         _sendIndexData(0x15, data18_970, 1); // Display Refresh
         delay_ms(5);
 
         // DC/DC off
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         uint8_t data19_970[] = {0x7f};
         _sendIndexData(0x09, data19_970, 1);
         uint8_t data20_970[] = {0x7d};
         _sendIndexData(0x05, data20_970, 1);
         _sendIndexData(0x09, data5_970, 1);
         delay_ms(200);
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         digitalWrite(PANEL_DC_PIN, LOW);
         digitalWrite(PANEL_CS_PIN, LOW);
 
@@ -771,15 +783,22 @@ void Screen_EPD_EXT3::flush()
         uint8_t data8[] = {0x00};
         _sendIndexData(0x04, data8, 1); // Power on
         delay_ms(5);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
 
         while (digitalRead(PANEL_BUSY_PIN) != HIGH);
         _sendIndexData(0x12, data8, 1); // Display Refresh
         delay_ms(5);
-
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
 
         _sendIndexData(0x02, data8, 1); // Turn off DC/DC
-        while (digitalRead(PANEL_BUSY_PIN) != HIGH);
+        delay_ms(5);
+        while (digitalRead(PANEL_BUSY_PIN) != HIGH) {
+            delay(100);
+        };
         digitalWrite(PANEL_DC_PIN, LOW);
         digitalWrite(PANEL_CS_PIN, LOW);
 

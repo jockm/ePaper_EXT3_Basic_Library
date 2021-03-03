@@ -24,11 +24,10 @@
 // !!! Help: https://bit.ly/2AdU7cu
 #if defined(ENERGIA) // LaunchPad specific
 #include "Energia.h"
-#elif defined(ARDUINO) // Arduino 1.0 and 1.5 specific
+#else // Arduino general
 #include "Arduino.h"
-#else // error
-#error Platform not defined
 #endif // end IDE
+
 
 
 // Set parameters
@@ -123,9 +122,6 @@ void displayOrientation(bool flag = true)
 ///
 void setup()
 {
-    pinMode(38, OUTPUT);
-    digitalWrite(38, HIGH);
-
     Serial.begin(115200);
     delay(500);
     Serial.println();
