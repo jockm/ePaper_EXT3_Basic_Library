@@ -54,6 +54,7 @@
 #define CONFIGURATION_EXT3_MSP5430FR5994 2 ///< specific MSP5430FR5994 as CGU
 #define CONFIGURATION_EXT3_RASPI 3 ///< specific Raspberry Pi
 #define CONFIGURATION_EXT3_REDBEAR_DUO 4 // specific Particle Photon or ReadBear Duo
+#define CONFIGURATION_EXT3_PARTICLE_PHOTON 4 // specific Particle Photon or ReadBear Duo
 #define CONFIGURATION_EXT3_CC1352 5 ///< specific CC1352
 #define CONFIGURATION_EXT3_ARDUINO_ZERO 6 ///< specific Arduino Zero or M0 Pro
 #define CONFIGURATION_EXT3_FEATHER_M0 7 ///< specific Adafruit Feather M0
